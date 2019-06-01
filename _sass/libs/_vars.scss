@@ -1,0 +1,34 @@
+// Misc.
+	$misc: (
+		z-index-base:	10000
+	);
+
+// Duration.
+	$duration: (
+		navPanel: 0.5s
+	);
+
+// Size.
+	$size: (
+		navPanel: 275px
+	);
+
+// Font.
+	$font: (
+	);
+
+// Palette.
+	$palette: (
+		bg:				rgba(25,45,60,1),
+		bg-alt:			rgba(245,245,245,1),
+		bg-light:		rgba(25,45,60,0.5),
+		bg-dark:		rgba(5,20,25,1),
+		fg:				rgba(255,255,255,1),
+		fg-bold:		rgba(255,255,255,1),
+		fg-light:		rgba(255,255,255,1),
+		border:			rgba(40,60,70,0.75),
+		border-bg:		rgba(40,60,70,1),
+		border-light:	rgba(40,60,70,0.5),
+		accent:			rgba(0,255,255,1),
+		accent-light:	rgba(165,255,255,1)
+	);

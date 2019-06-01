@@ -1,0 +1,85 @@
+/* Header */
+
+#header {
+    @include vendor('transition', 'opacity 2s ease-in-out');
+    position: relative;
+    color: _palette(fg);
+    text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
+    text-align: center;
+    margin: 0;
+    padding: 2em 0 14em 0;
+    cursor: default;
+
+    header {
+        display: inline-block;
+        padding: 0 0 4.5em 0;
+
+        h1 {
+            font-weight: 600;
+            font-size: 2em;
+            letter-spacing: 10px;
+        }
+
+        p {
+            border-top: solid 1px rgba(255, 255, 255, 0.5);
+            color: _palette(fg-light);
+            text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.1875);
+            font-size: 1em;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            padding: 0;
+            margin-top: 0.35em;
+
+            &:before {
+                content: '';
+                display: block;
+                border-top: solid 1px rgba(255, 255, 255, 0.5);
+                margin: 4px 0 0.8em 0;
+            }
+        }
+    }
+
+    footer {
+        @include vendor('transition', (
+            'opacity 2s ease-in-out',
+            'transform 1s ease-in-out'
+        ));
+        @include vendor('transition-delay', '1.25s');
+        position: absolute;
+        bottom: 9em;
+        margin: 0;
+        width: 100%;
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -9em;
+            left: 50%;
+            height: 9em;
+            border-left: solid 1px _palette(accent);
+        }
+
+        &:before {
+            content: '';
+            display: block;
+            width: 90px;
+            height: 66px;
+            position: absolute;
+            left: 50%;
+            bottom: -4.5em;
+            margin-left: -45px;
+            margin-bottom: -33px;
+            background: url('images/circles.svg') no-repeat;
+        }
+    }
+
+    body.is-preload & {
+        opacity: 0;
+
+        footer {
+            @include vendor('transform', 'translateY(1em)');
+            opacity: 0;
+        }
+    }
+}

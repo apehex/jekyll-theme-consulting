@@ -1,0 +1,88 @@
+/* Form */
+
+form {
+    label {
+        display: block;
+        margin: 0 0 0.5em 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select,
+    textarea {
+        @include vendor('transition', 'background-color 0.35s ease-in-out');
+        -webkit-appearance: none;
+        display: block;
+        border: 0;
+        background: #f1f1f1;
+        width: 100%;
+        padding: 0.75em;
+
+        &:focus {
+            background-color: _palette(bg-light);
+        }
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+        line-height: 1em;
+    }
+
+    select {
+        background-size: 1.25em;
+        background-repeat: no-repeat;
+        background-position: calc(100% - 1em) center;
+        padding-right: 1.25em;
+        text-overflow: ellipsis;
+        background-image: svg-url("<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'><path d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='#5a5959' /></svg>");
+
+        option {
+            color: _palette(fg);
+            background: _palette(bg);
+        }
+
+        &:focus {
+            &::-ms-value {
+                background-color: transparent;
+            }
+        }
+
+        &::-ms-expand {
+            display: none;
+        }
+    }
+
+    textarea {
+        min-height: 12em;
+    }
+
+    ::-webkit-input-placeholder {
+        color: _palette(fg-light) !important;
+    }
+
+    :-moz-placeholder {
+        color: _palette(fg-light) !important;
+    }
+
+    ::-moz-placeholder {
+        color: _palette(fg-light) !important;
+    }
+
+    :-ms-input-placeholder {
+        color: _palette(fg-light) !important;
+    }
+
+    ::-moz-focus-inner {
+        border: 0;
+    }
+
+    ul {
+        &.actions {
+            margin-bottom: 0;
+            text-align: center;
+        }
+    }
+}
