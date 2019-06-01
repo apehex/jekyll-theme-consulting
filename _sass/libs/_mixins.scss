@@ -33,13 +33,7 @@
 		$important: '!important';
 	}
 
-	$x: 0.1em;
-
-	@if unit(_size(element-margin)) == 'rem' {
-		$x: 0.1rem;
-	}
-
-	padding: ($tb + nth($pad,1)) ($lr + nth($pad,2)) max($x, $tb - _size(element-margin) + nth($pad,3)) ($lr + nth($pad,4)) #{$important};
+	padding: ($tb + nth($pad,1)) ($lr + nth($pad,2)) max(0.1em, $tb - _size(element-margin) + nth($pad,3)) ($lr + nth($pad,4)) #{$important};
 
 }
 
@@ -49,7 +43,6 @@
 @function svg-url($svg) {
 
 	$svg: str-replace($svg, '"', '\'');
-	$svg: str-replace($svg, '%', '%25');
 	$svg: str-replace($svg, '<', '%3C');
 	$svg: str-replace($svg, '>', '%3E');
 	$svg: str-replace($svg, '&', '%26');

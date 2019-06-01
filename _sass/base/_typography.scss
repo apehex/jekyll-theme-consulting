@@ -1,140 +1,186 @@
-/* Basic */
+///
+/// Editorial by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
 
-    // Set box model to border-box.
-    // Based on css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
-        html {
-            box-sizing: border-box;
-        }
+/* Type */
 
-        *, *:before, *:after {
-            box-sizing: inherit;
-        }
+	body, input, select, textarea {
+		color: _palette(fg);
+		font-family: _font(family);
+		font-size: 13pt;
+		font-weight: _font(weight);
+		line-height: 1.65;
 
-    body {
-        background-color: _palette(bg);
-        background-image: linear-gradient(rgba(25, 45, 60, 0.7), rgba(25, 45, 60, 0.7)), url('../images/bg-1.jpg');
-        background-repeat: no-repeat, no-repeat;
-        background-size: cover, cover;
-        background-position: center 0, center 0;
-        background-attachment: fixed, fixed;
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 18pt;
-        line-height: 1.75em;
-        font-weight: 300;
-        letter-spacing: 1px;
-        color: _palette(fg);
-        text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
-        -webkit-text-stroke: 0.25px;
+		@include breakpoint(xlarge) {
+			font-size: 11pt;
+		}
 
-        &.is-scroll {
-            background-attachment: scroll, scroll;
-            background-size: auto, 100% auto;
-        }
+		@include breakpoint(large) {
+			font-size: 10pt;
+		}
 
-        // Stops initial animations until page loads.
-            &.is-preload {
-                *, *:before, *:after {
-                    @include vendor('animation', 'none !important');
-                    @include vendor('transition', 'none !important');
-                }
-            }
+		@include breakpoint(xxsmall) {
+			font-size: 9pt;
+		}
+	}
 
-    }
+	a {
+		@include vendor('transition', (
+			'color #{_duration(transition)} ease-in-out',
+			'border-bottom-color #{_duration(transition)} ease-in-out'
+		));
+		border-bottom: dotted 1px;
+		color: _palette(accent);
+		text-decoration: none;
 
-    input, textarea, select {
-        font-family: 'Source Sans Pro', sans-serif;
-        font-size: 18pt;
-        line-height: 1.75em;
-        font-weight: 300;
-        letter-spacing: 1px;
-        color: _palette(bg);
-        text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
-        -webkit-text-stroke: 0.25px;
-    }
+		&:hover {
+			border-bottom-color: _palette(accent);
+			color: _palette(accent) !important;
 
-    h1, h2, h3, h4, h5, h6 {
-        font-weight: 400;
-        text-transform: uppercase;
-        line-height: 1.75em;
-    }
+			strong {
+				color: inherit;
+			}
+		}
+	}
 
-    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-        color: inherit;
-        text-decoration: none;
-    }
+	strong, b {
+		color: _palette(fg-bold);
+		font-weight: _font(weight-bold);
+	}
 
-    h2 {
-        font-size: 1.25em;
-        letter-spacing: 8px;
-    }
+	em, i {
+		font-style: italic;
+	}
 
-    h3 {
-        font-size: 1em;
-        letter-spacing: 5px;
-    }
+	p {
+		margin: 0 0 _size(element-margin) 0;
+	}
 
-    strong, b {
-        font-weight: 400;
-    }
+	h1, h2, h3, h4, h5, h6 {
+		color: _palette(fg-bold);
+		font-family: _font(family-heading);
+		font-weight: _font(weight-heading);
+		line-height: 1.5;
+		margin: 0 0 (_size(element-margin) * 0.5) 0;
 
-    em, i {
-        font-style: italic;
-    }
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
+	}
 
-    a {
-        @include vendor('transition', ('border-color 0.35s ease-in-out', 'color 0.35s ease-in-out'));
-        color: _palette(accent-light);
-        text-shadow: 0 0 0.5px _palette(accent);
-        text-decoration: none;
-        border-bottom: dotted 1px _palette(accent-light);
+	h1 {
+		font-size: 4em;
+		margin: 0 0 (_size(element-margin) * 0.25) 0;
+		line-height: 1.3;
+	}
 
-        &:hover {
-            border-bottom-color: _palette(accent);
-        }
-    }
+	h2 {
+		font-size: 1.75em;
+	}
 
-    sub {
-        position: relative;
-        top: 0.5em;
-        font-size: 0.8em;
-    }
+	h3 {
+		font-size: 1.25em;
+	}
 
-    sup {
-        position: relative;
-        top: -0.5em;
-        font-size: 0.8em;
-    }
+	h4 {
+		font-size: 1.1em;
+	}
 
-    hr {
-        border: 0;
-        border-top: solid 1px _palette(border);
-        margin: 2em 0 2em 0;
-    }
+	h5 {
+		font-size: 0.9em;
+	}
 
-    blockquote {
-        border-left: solid 0.5em _palette(border);
-        padding: 1em 0 1em 2em;
-        font-style: italic;
-    }
+	h6 {
+		font-size: 0.7em;
+	}
 
-    p, ul, ol, dl, table {
-        margin-bottom: 1em;
-    }
+	@include breakpoint(xlarge) {
+		h1 {
+			font-size: 3.5em;
+		}
+	}
 
-    header {
-        margin-bottom: 1em;
+	@include breakpoint(medium) {
+		h1 {
+			font-size: 3.25em;
+		}
+	}
 
-        p {
-            display: block;
-            margin: 0.5em 0 0 0;
-            padding: 0 0 1.5em 0;
-        }
-    }
+	@include breakpoint(small) {
+		h1 {
+			font-size: 2em;
+			line-height: 1.4;
+		}
 
-    footer {
-        margin-top: 1em;
-    }
+		h2 {
+			font-size: 1.5em;
+		}
+	}
 
-    br.clear {
-        clear: both;
-    }
+	sub {
+		font-size: 0.8em;
+		position: relative;
+		top: 0.5em;
+	}
+
+	sup {
+		font-size: 0.8em;
+		position: relative;
+		top: -0.5em;
+	}
+
+	blockquote {
+		border-left: solid 3px _palette(border);
+		font-style: italic;
+		margin: 0 0 _size(element-margin) 0;
+		padding: (_size(element-margin) / 4) 0 (_size(element-margin) / 4) _size(element-margin);
+	}
+
+	code {
+		background: _palette(border-bg);
+		border-radius: _size(border-radius);
+		border: solid 1px _palette(border);
+		font-family: _font(family-fixed);
+		font-size: 0.9em;
+		margin: 0 0.25em;
+		padding: 0.25em 0.65em;
+	}
+
+	pre {
+		-webkit-overflow-scrolling: touch;
+		font-family: _font(family-fixed);
+		font-size: 0.9em;
+		margin: 0 0 _size(element-margin) 0;
+
+		code {
+			display: block;
+			line-height: 1.75;
+			padding: 1em 1.5em;
+			overflow-x: auto;
+		}
+	}
+
+	hr {
+		border: 0;
+		border-bottom: solid 1px _palette(border);
+		margin: _size(element-margin) 0;
+
+		&.major {
+			margin: (_size(element-margin) * 1.5) 0;
+		}
+	}
+
+	.align-left {
+		text-align: left;
+	}
+
+	.align-center {
+		text-align: center;
+	}
+
+	.align-right {
+		text-align: right;
+	}

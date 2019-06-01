@@ -1,88 +1,182 @@
+///
+/// Editorial by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
 /* Form */
 
-form {
-    label {
-        display: block;
-        margin: 0 0 0.5em 0;
-    }
+	form {
+		margin: 0 0 _size(element-margin) 0;
+	}
 
-    input[type="text"],
-    input[type="email"],
-    input[type="password"],
-    select,
-    textarea {
-        @include vendor('transition', 'background-color 0.35s ease-in-out');
-        -webkit-appearance: none;
-        display: block;
-        border: 0;
-        background: #f1f1f1;
-        width: 100%;
-        padding: 0.75em;
+	label {
+		color: _palette(fg-bold);
+		display: block;
+		font-size: 0.9em;
+		font-weight: _font(weight-bold);
+		margin: 0 0 (_size(element-margin) * 0.5) 0;
+	}
 
-        &:focus {
-            background-color: _palette(bg-light);
-        }
-    }
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="tel"],
+	input[type="search"],
+	input[type="url"],
+	select,
+	textarea {
+		@include vendor('appearance', 'none');
+		background: _palette(bg);
+		border-radius: _size(border-radius);
+		border: none;
+		border: solid 1px _palette(border);
+		color: inherit;
+		display: block;
+		outline: 0;
+		padding: 0 1em;
+		text-decoration: none;
+		width: 100%;
 
-    input[type="text"],
-    input[type="email"],
-    input[type="password"],
-    select {
-        line-height: 1em;
-    }
+		&:invalid {
+			box-shadow: none;
+		}
 
-    select {
-        background-size: 1.25em;
-        background-repeat: no-repeat;
-        background-position: calc(100% - 1em) center;
-        padding-right: 1.25em;
-        text-overflow: ellipsis;
-        background-image: svg-url("<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'><path d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='#5a5959' /></svg>");
+		&:focus {
+			border-color: _palette(accent);
+			box-shadow: 0 0 0 1px _palette(accent);
+		}
+	}
 
-        option {
-            color: _palette(fg);
-            background: _palette(bg);
-        }
+	.select-wrapper {
+		@include icon;
+		display: block;
+		position: relative;
 
-        &:focus {
-            &::-ms-value {
-                background-color: transparent;
-            }
-        }
+		&:before {
+			color: _palette(border);
+			content: '\f078';
+			display: block;
+			height: _size(element-height);
+			line-height: _size(element-height);
+			pointer-events: none;
+			position: absolute;
+			right: 0;
+			text-align: center;
+			top: 0;
+			width: _size(element-height);
+		}
 
-        &::-ms-expand {
-            display: none;
-        }
-    }
+		select::-ms-expand {
+			display: none;
+		}
+	}
 
-    textarea {
-        min-height: 12em;
-    }
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="tel"],
+	input[type="search"],
+	input[type="url"],
+	select {
+		height: _size(element-height);
+	}
 
-    ::-webkit-input-placeholder {
-        color: _palette(fg-light) !important;
-    }
+	textarea {
+		padding: 0.75em 1em;
+	}
 
-    :-moz-placeholder {
-        color: _palette(fg-light) !important;
-    }
+	input[type="checkbox"],
+	input[type="radio"], {
+		@include vendor('appearance', 'none');
+		display: block;
+		float: left;
+		margin-right: -2em;
+		opacity: 0;
+		width: 1em;
+		z-index: -1;
 
-    ::-moz-placeholder {
-        color: _palette(fg-light) !important;
-    }
+		& + label {
+			@include icon;
+			color: _palette(fg);
+			cursor: pointer;
+			display: inline-block;
+			font-size: 1em;
+			font-weight: _font(weight);
+			padding-left: (_size(element-height) * 0.6) + 0.75em;
+			padding-right: 0.75em;
+			position: relative;
 
-    :-ms-input-placeholder {
-        color: _palette(fg-light) !important;
-    }
+			&:before {
+				background: _palette(bg);
+				border-radius: _size(border-radius);
+				border: solid 1px _palette(border);
+				content: '';
+				display: inline-block;
+				height: (_size(element-height) * 0.6);
+				left: 0;
+				line-height: (_size(element-height) * 0.575);
+				position: absolute;
+				text-align: center;
+				top: 0;
+				width: (_size(element-height) * 0.6);
+			}
+		}
 
-    ::-moz-focus-inner {
-        border: 0;
-    }
+		&:checked + label {
+			&:before {
+				background: _palette(fg-bold);
+				border-color: _palette(fg-bold);
+				color: _palette(bg);
+				content: '\f00c';
+			}
+		}
 
-    ul {
-        &.actions {
-            margin-bottom: 0;
-            text-align: center;
-        }
-    }
-}
+		&:focus + label {
+			&:before {
+				border-color: _palette(accent);
+				box-shadow: 0 0 0 1px _palette(accent);
+			}
+		}
+	}
+
+	input[type="checkbox"] {
+		& + label {
+			&:before {
+				border-radius: _size(border-radius);
+			}
+		}
+	}
+
+	input[type="radio"] {
+		& + label {
+			&:before {
+				border-radius: 100%;
+			}
+		}
+	}
+
+	::-webkit-input-placeholder {
+		color: _palette(fg-light) !important;
+		opacity: 1.0;
+	}
+
+	:-moz-placeholder {
+		color: _palette(fg-light) !important;
+		opacity: 1.0;
+	}
+
+	::-moz-placeholder {
+		color: _palette(fg-light) !important;
+		opacity: 1.0;
+	}
+
+	:-ms-input-placeholder {
+		color: _palette(fg-light) !important;
+		opacity: 1.0;
+	}
+
+	.formerize-placeholder {
+		color: _palette(fg-light) !important;
+		opacity: 1.0;
+	}

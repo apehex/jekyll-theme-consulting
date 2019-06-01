@@ -1,10 +1,16 @@
 <!-- Banner -->
 <section id="banner">
+  <div class="content">
     <header>
-        <h2>{{ site.title }}</h2>
+      <h1>{{ include.title }}</h1>
+      {% if include.subtitle %}<p>{{ include.subtitle }}</p>{% endif %}
     </header>
-    <p>{{ site.description }}</p>
-    <footer>
-        <a href="#first" class="button style2 scrolly">Act on this message</a>
-    </footer>
+    {% if include.description %}<p>{{ include.description }}</p>{% endif %}
+    <ul class="actions">
+      <li><a href="{{ include.button_url | default: '#' }}" class="button big">{{ include.button_label | default: 'Ask for advice!' }}</a></li>
+    </ul>
+  </div>
+  <span class="image object">
+    <img src="{{ include.image_url | default: 'assets/images/filler.jpg' | absolute_url }}" alt="" />
+  </span>
 </section>

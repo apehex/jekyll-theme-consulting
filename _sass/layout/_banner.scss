@@ -1,44 +1,75 @@
+///
+/// Editorial by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
 /* Banner */
 
-#banner {
-    position: relative;
-    color: _palette(fg);
-    text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
-    text-align: center;
-    background: _palette(bg) url('images/banner.svg') bottom center no-repeat;
-    padding: 5em 0 5em 0;
-    margin: 0;
-    background-size: 125% auto;
+	#banner {
+		@include padding(6em, 0);
+		@include vendor('display', 'flex');
 
-    .button {
-        color: _palette(accent);
-        text-shadow: 0 0 0.5px _palette(bg-light);
-    }
+		h1 {
+			margin-top: -0.125em;
+		}
 
-    header {
-        margin: 0 0 2em 0;
+		.content {
+			@include vendor('flex-grow', '1');
+			@include vendor('flex-shrink', '1');
+			width: 50%;
+		}
 
-        h2 {
-            font-weight: 400;
-            font-size: 1.75em;
-            letter-spacing: 8px;
-        }
-    }
+		.image {
+			@include vendor('flex-grow', '0');
+			@include vendor('flex-shrink', '0');
+			display: block;
+			margin: 0 0 _size(element-margin) (_size(element-margin) * 2);
+			width: 50%;
 
-    p {
-        margin: 0;
-    }
+			img {
+				height: 100%;
+				-moz-object-fit: cover;
+				-webkit-object-fit: cover;
+				-ms-object-fit: cover;
+				object-fit: cover;
+				-moz-object-position: center;
+				-webkit-object-position: center;
+				-ms-object-position: center;
+				object-position: center;
+				width: 100%;
+			}
+		}
 
-    footer {
-        margin: 2em 0 0 0;
-    }
+		@include orientation(portrait) {
+			@include vendor('flex-direction', 'column-reverse');
 
-    a {
-        color: inherit;
-        border-bottom-color: _palette(border);
+			h1 {
+				br {
+					display: none;
+				}
+			}
 
-        &:hover {
-            border-bottom-color: _palette(border-light);
-        }
-    }
-}
+			.content {
+				@include vendor('flex-grow', '0');
+				@include vendor('flex-shrink', '0');
+				width: 100%;
+			}
+
+			.image {
+				@include vendor('flex-grow', '0');
+				@include vendor('flex-shrink', '0');
+				margin: 0 0 (_size(element-margin) * 2) 0;
+				height: 25em;
+				max-height: 50vh;
+				min-height: 18em;
+				width: 100%;
+			}
+
+			@include breakpoint(xsmall) {
+				.image {
+					max-height: 35vh;
+				}
+			}
+		}
+	}

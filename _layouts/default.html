@@ -1,22 +1,38 @@
-<!DOCTYPE HTML>
-<!--
-    Drop by MOODULE
-    https://github.com/moodule
-    Free for personal and commercial use under the CCA 4.0 license
--->
-<html>
-    
-    {% include head.html %}
+{% assign collection = site.collections | where "label", page.collection | first %}
 
-    <body class="is-preload">
+{% assign menu = collection.menu | default: site.data.navigation.menu %}
 
-        {% include header.html %}
+{% assign title = collection.title | default: site.title | default: page.title %}
+{% assign subtitle = collection.subtitle | default: site.subtitle | default: page.subtitle %}
+{% assign description = collection.description | default: site.description | default: page.description %}
 
-        {{ content }}
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
-        {% include footer.html %}
+{% include head.html %}
 
-        {% include scripts.html %}
+<body>
 
-    </body>
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                {% include header.html title={{ title }} subtitle={{ subtitle }} %}
+
+                {{ content }}
+
+            </div>
+        </div>
+
+        {% include sidebar.html menu={{ menu }} %}
+
+    </div>
+
+    {% include scripts.html %}
+
+</body>
+
 </html>
