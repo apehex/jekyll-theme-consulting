@@ -1,0 +1,35 @@
+/* Table */
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+table {
+    width: 100%;
+
+    tbody {
+        tr {
+            border-top: solid 1px #eae9e9;
+
+            &:first-child {
+                border-top: 0;
+            }
+        }
+    }
+
+    td {
+        padding: 0.75em 1.25em 0.75em 1.25em;
+    }
+
+    th {
+        text-align: left;
+        font-weight: 400;
+        padding: 0.75em 1.25em 0.75em 1.25em;
+    }
+
+    thead {
+        background: _palette(bg);
+    }
+}

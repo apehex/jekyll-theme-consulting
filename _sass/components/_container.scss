@@ -1,0 +1,14 @@
+/* Container */
+
+.container {
+    max-width: 100%;
+    width: 50%;
+
+    @include breakpoint('<=wide') {
+        width: 50%;
+    }
+
+    @include breakpoint('<=normal') {
+        width: 95%;
+    }
+}

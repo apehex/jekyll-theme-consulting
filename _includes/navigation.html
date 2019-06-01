@@ -1,0 +1,22 @@
+<!-- Navbar -->
+<nav id="nav">
+    <ul>
+    {% for item in site.data.navigation.menu %}
+        {% if item.menu[0] %}
+        <li class="submenu {% if item.url == page.url %} current {% endif %}">
+            <a href="{{ item.url | absolute_url }}">{{ item.title }}</a>
+            <ul>
+                {% for subitem in item.menu %}
+                <li {% if subitem.url == page.url %} class="current" {% endif %}>
+                    <a href="{{ subitem.url | absolute_url }}">{{ subitem.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+        <li {% if item.url == page.url %} class="current" {% endif %}>
+            <a href="{{ item.url | absolute_url }}">{{ item.title }}</a>
+        </li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+</nav>

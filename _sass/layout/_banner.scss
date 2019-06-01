@@ -1,0 +1,44 @@
+/* Banner */
+
+#banner {
+    position: relative;
+    color: _palette(fg);
+    text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
+    text-align: center;
+    background: _palette(bg) url('images/banner.svg') bottom center no-repeat;
+    padding: 5em 0 5em 0;
+    margin: 0;
+    background-size: 125% auto;
+
+    .button {
+        color: _palette(accent);
+        text-shadow: 0 0 0.5px _palette(bg-light);
+    }
+
+    header {
+        margin: 0 0 2em 0;
+
+        h2 {
+            font-weight: 400;
+            font-size: 1.75em;
+            letter-spacing: 8px;
+        }
+    }
+
+    p {
+        margin: 0;
+    }
+
+    footer {
+        margin: 2em 0 0 0;
+    }
+
+    a {
+        color: inherit;
+        border-bottom-color: _palette(border);
+
+        &:hover {
+            border-bottom-color: _palette(border-light);
+        }
+    }
+}

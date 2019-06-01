@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   zoomAndPan="disable"
+   viewBox="0 0 90 66"
+   height="66"
+   width="90"
+   fill="none"
+   fill-opacity="1"
+   stroke="#00ffff"
+   stroke-width="1"
+   stroke-opacity="1">
+  <ellipse
+     id="lower"
+     cx="45"
+     cy="46"
+     rx="44.5"
+     ry="19.5"/>
+  <ellipse
+     id="upper"
+     cx="45"
+     cy="16"
+     rx="35.5"
+     ry="15.5"/>
+</svg>

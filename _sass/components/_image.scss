@@ -1,0 +1,37 @@
+/* Image */
+
+.image {
+    display: inline-block;
+    border: 0;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    &.featured {
+        display: block;
+        width: 100%;
+        margin: 0 0 2em 0;
+    }
+
+    &.fit {
+        display: block;
+        width: 100%;
+    }
+
+    &.left {
+        float: left;
+        margin: 0 2em 2em 0;
+    }
+
+    &.centered {
+        display: block;
+        margin: 0 0 2em 0;
+
+        img {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+}

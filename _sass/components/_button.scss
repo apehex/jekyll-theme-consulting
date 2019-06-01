@@ -1,0 +1,65 @@
+/* Button */
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button,
+.button {
+    @include vendor('transition', ('background-color 0.35s ease-in-out', 'color 0.35s ease-in-out'));
+    -webkit-appearance: none;
+    position: relative;
+    display: inline-block;
+    background: _palette(bg);
+    color: _palette(fg);
+    cursor: pointer;
+    outline: 0;
+    padding: 1em 3em 1em 3em;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
+    border: 0;
+    border-radius: 3em;
+
+    &:hover {
+        background: _palette(accent);
+    }
+
+    &.style2 {
+        color: _palette(accent-light);
+        background: _palette(bg);
+        box-shadow: inset 0 0 0 1px _palette(accent);
+
+        &:hover {
+            background: _palette(bg-light);
+            color: _palette(accent-light) !important;
+            text-shadow: 0 0 0.5px _palette(accent) !important;
+        }
+    }
+
+    &.style3 {
+        background: none;
+        color: _palette(accent);
+        box-shadow: inset 0 0 0 1px #dad9d9;
+
+        &:hover {
+            background: rgba(58, 57, 57, 0.025);
+        }
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 32px;
+        position: absolute;
+        left: 0;
+        bottom: -32px;
+        padding-left: auto;
+        padding-right: auto;
+        z-index: 100;
+        background-image: url('images/falling.svg');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+}
