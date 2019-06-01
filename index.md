@@ -1,6 +1,6 @@
 ---
 layout: home
-title: DROP
+title: CONSULTING
 subtitle: by Moodule
 ---
 {% for drop in site.drops %}

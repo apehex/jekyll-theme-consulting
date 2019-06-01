@@ -1,23 +1,23 @@
-# Drop - Jekyll theme
+# Consulting - Jekyll theme
 
-> A vertical scrolling template for Jekyll, with a falling drop theme.
+> A multilingual jekyll template for businesses.
 
-You can preview the theme [here](https://moodule.github.io/jekyll-theme-drop)
+You can preview the theme [here](https://moodule.github.io/jekyll-theme-consulting)
 
-![Drop Theme](assets/images/screenshot.jpg "Drop Theme")
+![Consulting Theme](assets/images/screenshot.jpg "Consulting Theme")
 
 # Installation
 
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
-gem "jekyll-theme-drop"
+gem "jekyll-theme-consulting"
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: jekyll-theme-drop
+theme: jekyll-theme-consulting
 ```
 
 And then execute:
@@ -26,7 +26,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install jekyll-theme-drop
+    $ gem install jekyll-theme-consulting
 
 # Usage
 
@@ -68,7 +68,7 @@ To post your website as a Github page, fork this reposity and create a branch na
 
 # Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/moodule/jekyll-theme-drop. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant][contributor-covenant] code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/moodule/jekyll-theme-consulting. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant][contributor-covenant] code of conduct.
 
 # Development
 
@@ -77,7 +77,7 @@ To set up your environment to develop this theme, run `bundle install`.
 To test the theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using the theme. Add pages, documents, data, etc. like normal to test the theme's contents. As you make modifications to the theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
 
 When the theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to the theme-gem, please edit the regexp in `jekyll-theme-drop.gemspec` accordingly.
+To add a custom directory to the theme-gem, please edit the regexp in `jekyll-theme-consulting.gemspec` accordingly.
 
 # Credits
 

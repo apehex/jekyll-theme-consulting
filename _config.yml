@@ -1,10 +1,10 @@
 # Site settings
-title: Drop
+title: Consulting
 subtitle: by Moodule
 description: >- # this means to ignore newlines until "baseurl:"
   A responsive site template designed by <a href="david.mougeolle@moodule.net">DM</a> for <a href="https://github.com/moodule">MOODULE</a>.<br />
   It’s responsive, built on HTML5/CSS3, and entirely free<br />
-  under the <a href="https://github.com/moodule/jekyll-theme-drop/blob/master/LICENSE">Creative Commons license</a>.
+  under the <a href="https://github.com/moodule/jekyll-theme-consulting/blob/master/LICENSE">Creative Commons license</a>.
 
 # Contact information
 street_address: 1234 Somewhere Road
@@ -34,7 +34,7 @@ privacy_policy_url: /privacy-policy
 
 # Collections
 collections:
-  drops:
+  articles:
     output: true
 
 # Build settings
