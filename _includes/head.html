@@ -1,10 +1,13 @@
 <head>
-    <title>{{ site.title }} - {{ site.subtitle }}</title>
+    <title>{{ include.title }} - {{ include.subtitle }}</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="{{ 'assets/css/styles.css' | absolute_url }}" />
+    <link rel="stylesheet" href="{{ 'assets/css/main.css' | absolute_url }}" />
     {% if site.favicon_url %}
     <link rel="icon" href="{{ site.favicon_url | absolute_url }}" />
     {% endif %}
     <noscript><link rel="stylesheet" href="{{ 'assets/css/noscript.css' | absolute_url }}" /></noscript>
+    <!--[if lte IE 8]><script src="{{ 'assets/js/ie/html5shiv.js' | absolute_url }}"></script><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="{{ 'assets/css/ie9.css' | absolute_url }}" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="{{ 'assets/css/ie8.css' | absolute_url }}" /><![endif]-->
 </head>

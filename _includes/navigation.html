@@ -1,10 +1,13 @@
-<!-- Navbar -->
-<nav id="nav">
+<!-- Menu -->
+<nav id="menu">
+    <header class="major">
+    <h2>Menu</h2>
+    </header>
     <ul>
-    {% for item in site.data.navigation.menu %}
+    {% for item in include.menu %}
         {% if item.menu[0] %}
-        <li class="submenu {% if item.url == page.url %} current {% endif %}">
-            <a href="{{ item.url | absolute_url }}">{{ item.title }}</a>
+        <li>
+            <span class="opener {% if item.url == page.url %} current {% endif %}">{{ item.title }}</span>
             <ul>
                 {% for subitem in item.menu %}
                 <li {% if subitem.url == page.url %} class="current" {% endif %}>
@@ -12,6 +15,7 @@
                 </li>
                 {% endfor %}
             </ul>
+        </li>
         {% else %}
         <li {% if item.url == page.url %} class="current" {% endif %}>
             <a href="{{ item.url | absolute_url }}">{{ item.title }}</a>
