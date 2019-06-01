@@ -2,13 +2,13 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name          = "jekyll-theme-drop"
-  spec.version       = "0.1.2"
+  spec.name          = "jekyll-theme-consulting"
+  spec.version       = "0.1.0"
   spec.authors       = ["apehex"]
   spec.email         = ["apehex@protonmail.com"]
 
-  spec.summary       = "A Jekyll template on the theme of falling drops."
-  spec.homepage      = "https://github.com/apehex/jekyll-theme-overflow"
+  spec.summary       = "A multilingual Jekyll template for businesses."
+  spec.homepage      = "https://github.com/apehex/jekyll-theme-consulting"
   spec.license       = "CC-BY-4.0"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
