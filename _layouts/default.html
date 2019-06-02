@@ -1,6 +1,6 @@
-{% assign collection = site.collections | where "label", page.collection | first %}
+{% assign collection = site.collections | where: "label", page.collection | first %}
 
-{% assign menu = collection.menu | default: site.data.navigation.menu %}
+{% assign menu = collection.menu | default: site.menu %}
 
 {% assign title = collection.title | default: site.title | default: page.title %}
 {% assign subtitle = collection.subtitle | default: site.subtitle | default: page.subtitle %}
@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
-{% include head.html %}
+{% include head.html title=title subtitle=subtitle %}
 
 <body>
 
@@ -20,14 +20,14 @@
         <div id="main">
             <div class="inner">
 
-                {% include header.html title={{ title }} subtitle={{ subtitle }} %}
+                {% include header.html title=title subtitle=subtitle %}
 
                 {{ content }}
 
             </div>
         </div>
 
-        {% include sidebar.html menu={{ menu }} %}
+        {% include sidebar.html menu=menu %}
 
     </div>
 
