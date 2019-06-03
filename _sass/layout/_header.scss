@@ -28,6 +28,12 @@
 			text-align: right;
 		}
 
+		.language {
+			.en:lang(en), .fr:lang(fr), .de:lang(de){
+				font-weight: bold;
+			}
+		}
+
 		@include breakpoint(xlarge) {
 			
 		}
