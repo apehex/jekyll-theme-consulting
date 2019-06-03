@@ -1,5 +1,7 @@
 ---
 layout: page
+lang: en
+lang-ref: generic-page
 title: Generic
 subtitle: 
 ---
