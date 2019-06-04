@@ -29,6 +29,10 @@
 		}
 
 		.language {
+			a {
+				border: none;
+			}
+			
 			.en:lang(en), .fr:lang(fr), .de:lang(de){
 				font-weight: bold;
 			}
