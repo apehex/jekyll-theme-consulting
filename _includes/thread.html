@@ -1,5 +1,5 @@
 {% assign posts=site.posts | where:"lang", page.lang %}
-{%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+{% assign date_format = site.date_format | default: "%b %-d, %Y" %}
 
 {%- if posts.size > 0 -%}
 <section>
@@ -7,7 +7,7 @@
         <h2>{{ page.list_title | default: "Posts" }}</h2>
     </header>
     <div class="posts">
-        {%- for post in site.posts -%}
+        {%- for post in posts -%}
         <article>
             <a href="{{ post.url | absolute_url }}" class="image"><img src="{{ post.image | absolute_url }}" alt="" /></a>
             <h3>{{ post.title | escape }}</h3>
