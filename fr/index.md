@@ -2,7 +2,6 @@
 layout: home
 lang: fr
 lang-ref: home-page
-permalink: /fr
 title: Mise en page de l'Accueil
 subtitle: avec une bannière
 description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
