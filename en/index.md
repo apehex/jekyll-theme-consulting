@@ -2,7 +2,6 @@
 layout: home
 lang: en
 lang-ref: home-page
-permalink: /en
 title: Home Layout
 subtitle: with a banner
 description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.

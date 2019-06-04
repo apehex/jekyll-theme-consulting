@@ -2,14 +2,13 @@
 layout: page
 lang: en
 lang-ref: elements-page
-permalink: /en/elements
 title: Elements
 subtitle: 
 ---
 <!-- Content -->
 <section>
     <header class="main">
-        <h1>Elements</h1>
+        <h1>{{ page.title }}</h1>
     </header>
 
     <!-- Content -->

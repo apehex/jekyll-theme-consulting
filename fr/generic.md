@@ -1,15 +1,15 @@
 ---
 layout: page
-lang: en
+lang: fr
 lang-ref: generic-page
-permalink: /en/generic
-title: Generic
-subtitle: 
+title: Page Générique
+subtitle: sans bannière
+description: c'est pourquoi ce texte n'apparaît pas.
 ---
 <!-- Content -->
 <section>
     <header class="main">
-        <h1>Generic</h1>
+        <h1>{{ page.title }}</h1>
     </header>
 
     <span class="image main"><img src="{{ 'assets/images/pic11.jpg' | absolute_url }}" alt="" /></span>
