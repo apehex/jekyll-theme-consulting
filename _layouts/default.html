@@ -1,11 +1,10 @@
-{% assign collection = site.collections | where: "label", page.collection | first %}
 {% assign lang = page.lang | default: site.lang | default: 'en' %}
 
 {% assign menu = site.data.translations.menu[page.menu][lang] %}
 
-{% assign title = collection.title | default: site.title | default: page.title %}
-{% assign subtitle = collection.subtitle | default: site.subtitle | default: page.subtitle %}
-{% assign description = collection.description | default: site.description | default: page.description %}
+{% assign title = page.title | default: site.title %}
+{% assign subtitle = page.subtitle | default: site.subtitle %}
+{% assign description = page.description | default: site.description %}
 
 <!DOCTYPE html>
 <html lang="{{ lang }}">
