@@ -47,6 +47,11 @@ defaults:
       type: "redirects"
     values:
       layout: "redirect"
+  -
+    scope:
+      path: ""
+    values:
+      menu: default
 
 # Build settings
 permalink: pretty

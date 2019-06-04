@@ -1,16 +1,17 @@
 # Navigation menu
 menu:
-  en:
-    - title: Home
-      url: /en
-    - title: Generic
-      url: /en/generic
-    - title: Elements
-      url: /en/elements
-  fr:
-    - title: Accueil
-      url: /fr
-    - title: Générique
-      url: /fr/generique
-    - title: Eléments
-      url: /fr/elements
+  default:
+    en:
+      - title: Home
+        url: /en
+      - title: Generic
+        url: /en/generic
+      - title: Elements
+        url: /en/elements
+    fr:
+      - title: Accueil
+        url: /fr
+      - title: Générique
+        url: /fr/generique
+      - title: Eléments
+        url: /fr/elements
