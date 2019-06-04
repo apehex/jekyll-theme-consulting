@@ -6,8 +6,8 @@
   <a href="{{ '' | absolute_url }}" class="logo">
     <strong>{{ include.title }}</strong> - {{ include.subtitle }}
   </a>
-  {% include language.html %}
-  <ul class="icons">
+  <ul class="icons language">
+    {% include language.html %}
     {% if site.twitter_url %}
     <li><a href="{{ site.twitter_url }}" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
     {% endif %}
