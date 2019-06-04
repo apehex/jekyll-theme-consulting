@@ -34,6 +34,9 @@ privacy_policy_url: /privacy-policy
 
 # Collections
 collections:
+  redirects:
+    output: true
+    permalink: /:path/
   articles:
     output: true
 
@@ -45,6 +48,14 @@ menu:
     url: /generic
   - title: Elements
     url: /elements
+
+# Default settings
+defaults:
+  -
+    scope:
+      type: "redirects"
+    values:
+      layout: "redirect"
 
 # Build settings
 permalink: pretty
