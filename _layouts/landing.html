@@ -1,8 +1,5 @@
-{% assign collection = site.collections | where: "label", page.collection | first %}
 {% assign lang = page.lang | default: site.lang | default: 'en' %}
-
-{% assign menus = collection.menu | default: site.data.translations.menu %}
-{% assign menu = menus[lang] %}
+{% assign menu = site.data.translations.menu[page.menu][lang] %}
 
 <!DOCTYPE html>
 <html lang="{{ lang }}">
