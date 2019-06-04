@@ -2,6 +2,7 @@
 layout: page
 lang: en
 lang-ref: generic-page
+permalink: /en/generic
 title: Generic
 subtitle: 
 ---

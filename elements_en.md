@@ -2,6 +2,7 @@
 layout: page
 lang: en
 lang-ref: elements-page
+permalink: /en/elements
 title: Elements
 subtitle: 
 ---
