@@ -40,15 +40,6 @@ collections:
   articles:
     output: true
 
-# Navigation menu
-menu:
-  - title: Home
-    url: /
-  - title: Generic
-    url: /generic
-  - title: Elements
-    url: /elements
-
 # Default settings
 defaults:
   -
