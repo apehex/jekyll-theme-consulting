@@ -34,15 +34,46 @@
 				margin-bottom: 0;
 			}
 
+			.ensem {
+				background-image: url('images/ensem.svg');
+			}
+
+			.cie {
+				background-image: url('images/cie.svg');
+			}
+
+			.cnefic {
+				background-image: url('images/cnefic.svg');
+			}
+
+			.eisti {
+				background-image: url('images/eisti.svg');
+			}
+
+			.ieam {
+				background-image: url('images/ieam.svg');
+			}
+
+			.ifg {
+				background-image: url('images/ifg.svg');
+			}
+
+			.marine {
+				background-image: url('images/marine.svg');
+			}
+
 			.icon {
 				@include vendor('flex-grow', '0');
 				@include vendor('flex-shrink', '0');
 				display: block;
 				height: 10em;
+				width: 10em;
 				line-height: 10em;
 				margin: 0 _size(element-margin) 0 0;
+				background-size: 40%;
+				background-position: 50% 50%;
+				background-repeat: no-repeat;
 				text-align: center;
-				width: 10em;
 
 				&:before {
 					color: _palette(accent);
