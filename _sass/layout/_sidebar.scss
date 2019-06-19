@@ -10,6 +10,7 @@
 		form {
 			@include icon;
 			position: relative;
+			margin-left: 4em;
 
 			&:before {
 				@include vendor('transform', 'scaleX(-1)');
@@ -89,11 +90,11 @@
 			border: 0;
 			display: block;
 			height: 7.5em;
-			left: _size(sidebar-width);
+			left: 0;
 			line-height: 7.5em;
 			outline: 0;
 			overflow: hidden;
-			position: absolute;
+			position: fixed;
 			text-align: center;
 			text-indent: 7.5em;
 			top: 0;
@@ -135,7 +136,7 @@
 
 			.toggle {
 				height: 6.25em;
-				left: _size(sidebar-width-alt);
+				left: 0;
 				line-height: 6.25em;
 				text-indent: 5em;
 				width: 5em;
