@@ -3,7 +3,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-consulting"
-  spec.version       = "0.1.14"
+  spec.version       = "0.1.15"
   spec.authors       = ["apehex"]
   spec.email         = ["apehex@protonmail.com"]
 
@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/apehex/jekyll-theme-consulting"
   spec.license       = "CC-BY-4.0"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
+  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|sitemap.xml|LICENSE|README)!i) }
 
   spec.add_runtime_dependency "jekyll", "~> 3.8"
 
