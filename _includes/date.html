@@ -1,0 +1,24 @@
+{% assign day = include.date | date: "%-d" %}
+{% assign month = include.date | date: "%-m" %}
+{% if page.lang == "en" %}
+    {{ include.date | date: "%B" }} {{ day }}, {{ include.date | date: "%Y" }}
+{% elsif page.lang == "fr" %}
+    {% if day == "1" %}
+        {{ day }}<sup>er</sup>
+    {% else %} {{ day }}
+    {% endif %}
+    {% case month %}
+            {% when  '1' %}janvier
+            {% when  '2' %}février
+            {% when  '3' %}mars
+            {% when  '4' %}avril
+            {% when  '5' %}mai
+            {% when  '6' %}juin
+            {% when  '7' %}juillet
+            {% when  '8' %}août
+            {% when  '9' %}septembre
+            {% when '10' %}octobre
+            {% when '11' %}novembre
+            {% when '12' %}décembre
+    {% endcase %} {{ include.date | date: "%Y" }}
+{% endif %}
