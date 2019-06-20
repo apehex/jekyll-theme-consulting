@@ -8,7 +8,7 @@ permalink: /sitemap.xml
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   {% for page in pages %}
   {% assign versions=pages | where:"lang-ref", page.lang-ref %}
-  {% if page.id contains "404" %}{% else %}
+  {% unless page.url contains "404" %}
   <url>
     <loc>{{ page.url | absolute_url}}</loc>
     {% for version in versions %}
@@ -16,6 +16,6 @@ permalink: /sitemap.xml
     {% endfor %}
     <changefreq>weekly</changefreq>
   </url>
-  {% endif %}
+  {% endunless %}
   {% endfor %}
 </urlset>
