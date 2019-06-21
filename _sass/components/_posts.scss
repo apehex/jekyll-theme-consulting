@@ -58,35 +58,7 @@
 			}
 		}
 
-		@include breakpoint(xlarge-to-max) {
-			article {
-				&:nth-child(3n + 1) {
-					&:before {
-						display: none;
-					}
-
-					&:after {
-						width: 100%;
-					}
-				}
-
-				&:nth-last-child(1),
-				&:nth-last-child(2),
-				&:nth-last-child(3) {
-					margin-bottom: 0;
-
-					&:before {
-						height: 100%;
-					}
-
-					&:after {
-						display: none;
-					}
-				}
-			}
-		}
-
-		@include breakpoint(xlarge) {
+		@include breakpoint('<=xlarge') {
 			article {
 				width: calc(50% - #{$gutter});
 
@@ -96,34 +68,7 @@
 			}
 		}
 
-		@include breakpoint(small-to-xlarge) {
-			article {
-				&:nth-child(2n + 1) {
-					&:before {
-						display: none;
-					}
-
-					&:after {
-						width: 100%;
-					}
-				}
-
-				&:nth-last-child(1),
-				&:nth-last-child(2) {
-					margin-bottom: 0;
-
-					&:before {
-						height: 100%;
-					}
-
-					&:after {
-						display: none;
-					}
-				}
-			}
-		}
-
-		@include breakpoint(small) {
+		@include breakpoint('<=small') {
 			$gutter: _size(gutter) * 1.5;
 
 			margin: 0 0 _size(element-margin) ($gutter * -1);
@@ -149,7 +94,7 @@
 			}
 		}
 
-		@include breakpoint(xsmall) {
+		@include breakpoint('<=xsmall') {
 			$gutter: _size(gutter) * 1.5;
 
 			margin: 0 0 _size(element-margin) 0;

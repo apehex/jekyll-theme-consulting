@@ -8,7 +8,7 @@
 
 	#search {
 		form {
-			@include icon;
+			@include icon(false, solid);
 			position: relative;
 			margin-left: 4em;
 
@@ -84,7 +84,7 @@
 		}
 
 		.toggle {
-			@include icon;
+			@include icon(false, solid);
 			@include vendor('transition', 'left 0.5s ease');
 			-webkit-tap-highlight-color: rgba(255,255,255,0);
 			border: 0;
@@ -118,7 +118,7 @@
 			margin-left: (_size(sidebar-width) * -1);
 		}
 
-		@include breakpoint(xlarge) {
+		@include breakpoint('<=xlarge') {
 			$pad: 1.5em / 0.9;
 
 			width: _size(sidebar-width-alt);
@@ -142,7 +142,7 @@
 				width: 5em;
 
 				&:before {
-					font-size: 2rem;
+					font-size: 1.5rem;
 				}
 			}
 
@@ -151,7 +151,7 @@
 			}
 		}
 
-		@include breakpoint(large) {
+		@include breakpoint('<=large') {
 			box-shadow: 0 0 5em 0 rgba(0, 0, 0, 0.175);
 			height: 100%;
 			left: 0;
@@ -185,17 +185,17 @@
 				width: 6em;
 
 				&:before {
-					font-size: 2rem;
+					font-size: 1.5rem;
 					margin-left: (-0.875em / 2);
 				}
 			}
 
-			body.is-loading & {
+			body.is-preload & {
 				display: none;
 			}
 		}
 
-		@include breakpoint(small) {
+		@include breakpoint('<=small') {
 			.toggle {
 				text-indent: 7.25em;
 				width: 7.25em;
