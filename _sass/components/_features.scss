@@ -112,7 +112,7 @@
 			}
 		}
 
-		@include breakpoint(medium) {
+		@include breakpoint('<=medium') {
 			margin: 0 0 _size(element-margin) 0;
 			width: 100%;
 
@@ -155,7 +155,7 @@
 			}
 		}
 
-		@include breakpoint(xsmall) {
+		@include breakpoint('<=xsmall') {
 			article {
 				@include vendor('flex-direction', 'column');
 				@include vendor('align-items', 'flex-start');
@@ -179,7 +179,7 @@
 			}
 		}
 
-		@include breakpoint(xsmall) {
+		@include breakpoint('<=xsmall') {
 			article {
 				.icon {
 					&:before {

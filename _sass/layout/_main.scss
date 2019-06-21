@@ -26,7 +26,7 @@
 			}
 		}
 
-		@include breakpoint(xlarge) {
+		@include breakpoint('<=xlarge') {
 			> .inner {
 				@include padding(0, 5em);
 
@@ -36,7 +36,7 @@
 			}
 		}
 
-		@include breakpoint(large) {
+		@include breakpoint('<=large') {
 			> .inner {
 				@include padding(0, 4em);
 
@@ -46,7 +46,7 @@
 			}
 		}
 
-		@include breakpoint(small) {
+		@include breakpoint('<=small') {
 			> .inner {
 				@include padding(0, 2em);
 

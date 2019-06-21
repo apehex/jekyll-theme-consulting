@@ -50,8 +50,6 @@
 		}
 
 		&.fit {
-			display: block;
-			margin: 0 0 (_size(element-margin) * 0.5) 0;
 			width: 100%;
 		}
 
@@ -59,13 +57,13 @@
 			font-size: 0.6em;
 		}
 
-		&.big {
+		&.large {
 			font-size: 1em;
 			height: 3.65em;
 			line-height: 3.65em;
 		}
 
-		&.special {
+		&.primary {
 			background-color: _palette(accent);
 			box-shadow: none;
 			color: _palette(bg) !important;
