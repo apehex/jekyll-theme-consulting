@@ -44,6 +44,8 @@
 		}
 
 		@include breakpoint('<=small') {
+		padding-left: 4em;
+
 			.logo {
 				font-size: 1.25em;
 				margin: 0;
