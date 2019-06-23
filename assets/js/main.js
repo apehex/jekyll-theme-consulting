@@ -73,15 +73,9 @@
 		var $sidebar = $('#sidebar'),
 			$sidebar_inner = $sidebar.children('.inner');
 
-		// Inactive by default on <= large.
-			breakpoints.on('<=large', function() {
-				$sidebar.addClass('inactive');
-			});
-
-			breakpoints.on('>large', function() {
-				$sidebar.removeClass('inactive');
-			});
-
+		// ALWAYS inactive by default
+			$sidebar.addClass('inactive');
+			
 		// Hack: Workaround for Chrome/Android scrollbar position bug.
 			if (browser.os == 'android'
 			&&	browser.name == 'chrome')
@@ -106,10 +100,6 @@
 
 			// Link clicks.
 				$sidebar.on('click', 'a', function(event) {
-
-					// >large? Bail.
-						if (breakpoints.active('>large'))
-							return;
 
 					// Vars.
 						var $a = $(this),
@@ -142,10 +132,6 @@
 			// Prevent certain events inside the panel from bubbling.
 				$sidebar.on('click touchend touchstart touchmove', function(event) {
 
-					// >large? Bail.
-						if (breakpoints.active('>large'))
-							return;
-
 					// Prevent propagation.
 						event.stopPropagation();
 
@@ -153,10 +139,6 @@
 
 			// Hide panel on body click/tap.
 				$body.on('click touchend', function(event) {
-
-					// >large? Bail.
-						if (breakpoints.active('>large'))
-							return;
 
 					// Deactivate.
 						$sidebar.addClass('inactive');
@@ -167,72 +149,10 @@
 		// Note: If you do anything to change the height of the sidebar's content, be sure to
 		// trigger 'resize.sidebar-lock' on $window so stuff doesn't get out of sync.
 
-			$window.on('load.sidebar-lock', function() {
-
-				var sh, wh, st;
-
-				// Reset scroll position to 0 if it's 1.
-					if ($window.scrollTop() == 1)
-						$window.scrollTop(0);
-
-				$window
-					.on('scroll.sidebar-lock', function() {
-
-						var x, y;
-
-						// <=large? Bail.
-							if (breakpoints.active('<=large')) {
-
-								$sidebar_inner
-									.data('locked', 0)
-									.css('position', '')
-									.css('top', '');
-
-								return;
-
-							}
-
-						// Calculate positions.
-							x = Math.max(sh - wh, 0);
-							y = Math.max(0, $window.scrollTop() - x);
-
-						// Lock/unlock.
-							if ($sidebar_inner.data('locked') == 1) {
-
-								if (y <= 0)
-									$sidebar_inner
-										.data('locked', 0)
-										.css('position', '')
-										.css('top', '');
-								else
-									$sidebar_inner
-										.css('top', -1 * x);
-
-							}
-							else {
-
-								if (y > 0)
-									$sidebar_inner
-										.data('locked', 1)
-										.css('position', 'fixed')
-										.css('top', -1 * x);
-
-							}
-
-					})
-					.on('resize.sidebar-lock', function() {
-
-						// Calculate heights.
-							wh = $window.height();
-							sh = $sidebar_inner.outerHeight() + 30;
-
-						// Trigger scroll.
-							$window.trigger('scroll.sidebar-lock');
-
-					})
-					.trigger('resize.sidebar-lock');
-
-				});
+			$sidebar_inner
+				.data('locked', 0)
+				.css('position', '')
+				.css('top', '');
 
 	// Menu.
 		var $menu = $('#menu'),
