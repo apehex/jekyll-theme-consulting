@@ -25,7 +25,8 @@
 		}
 
 		.icons {
-			@include vendor('flex', '1');
+			position: absolute;
+			right: 0;
 			text-align: right;
 		}
 
@@ -39,24 +40,7 @@
 			}
 		}
 
-		@include breakpoint('<=xlarge') {
-			
-		}
-
 		@include breakpoint('<=small') {
-		padding-left: 4em;
-
-			.logo {
-				font-size: 1.25em;
-				margin: 0;
-			}
-
-			.icons {
-				height: (6.25em / 1.25);
-				line-height: (6.25em / 1.25);
-				position: absolute;
-				right: (-0.625em / 1.25);
-				top: 0;
-			}
+			padding-left: 4em;
 		}
 	}
