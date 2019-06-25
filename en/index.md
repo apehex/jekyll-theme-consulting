@@ -99,3 +99,48 @@ description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum prim
         </article>
     </div>
 </section>
+
+<!-- Section -->
+<section>
+    <header class="major">
+        <h2>In et posuere neque</h2>
+    </header>
+    <div class="facts">
+        <article>
+            <p class="fact-intro">Pellentesque habitant</p>
+            <h3 class="fact">874</h3>
+            <p class="fact-outro">morbi tristique senectus et netus</p>
+            <span class="icon fa-gem"></span>
+        </article>
+        <article>
+            <p class="fact-intro">Et malesuada</p>
+            <h3 class="fact">10+</h3>
+            <p class="fact-outro">fames ac turpis egestas</p>
+            <span class="icon fa-gem"></span>
+        </article>
+        <article>
+            <p class="fact-intro">Mauris vitae</p>
+            <h3 class="fact">90</h3>
+            <p class="fact-outro">viverra lorem, nec dapibus nisl</p>
+            <span class="icon fa-gem"></span>
+        </article>
+        <article>
+            <p class="fact-intro">Cras quis</p>
+            <h3 class="fact">9853678</h3>
+            <p class="fact-outro">quam quam</p>
+            <span class="icon fa-gem"></span>
+        </article>
+        <article>
+            <p class="fact-intro">Maecenas</p>
+            <h3 class="fact">-2</h3>
+            <p class="fact-outro">ultricies mollis purus non dictum</p>
+            <span class="icon fa-gem"></span>
+        </article>
+        <article>
+            <p class="fact-intro">Nullam venenatis ante tortor</p>
+            <h3 class="fact">10+</h3>
+            <p class="fact-outro">non vulputate tortor volutpat sollicitudin</p>
+            <span class="icon fa-gem"></span>
+        </article>
+    </div>
+</section>
