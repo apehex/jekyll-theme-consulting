@@ -178,14 +178,4 @@
 				}
 			}
 		}
-
-		@include breakpoint('<=xsmall') {
-			article {
-				.icon {
-					&:before {
-						font-size: 1.25rem;
-					}
-				}
-			}
-		}
 	}
