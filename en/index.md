@@ -107,40 +107,40 @@ description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum prim
     </header>
     <div class="facts">
         <article>
-            <p class="fact-intro">Pellentesque habitant</p>
-            <h3 class="fact">874</h3>
-            <p class="fact-outro">morbi tristique senectus et netus</p>
+            <div class="fact-intro"><p>Pellentesque habitant</p></div>
+            <div class="fact"><h3>874</h3></div>
+            <div class="fact-outro"><p>morbi tristique senectus et netus</p></div>
             <span class="icon fa-gem"></span>
         </article>
         <article>
-            <p class="fact-intro">Et malesuada</p>
-            <h3 class="fact">10+</h3>
-            <p class="fact-outro">fames ac turpis egestas</p>
-            <span class="icon fa-gem"></span>
+            <div class="fact-intro"><p>Et malesuada</p></div>
+            <div class="fact"><h3>10+</h3></div>
+            <div class="fact-outro"><p>fames ac turpis egestas</p></div>
+            <span class="icon fa-hand-paper"></span>
         </article>
         <article>
-            <p class="fact-intro">Mauris vitae</p>
-            <h3 class="fact">90</h3>
-            <p class="fact-outro">viverra lorem, nec dapibus nisl</p>
-            <span class="icon fa-gem"></span>
+            <div class="fact-intro"><p>Mauris vitae</p></div>
+            <div class="fact"><h3>90</h3></div>
+            <div class="fact-outro"><p>viverra lorem, nec dapibus nisl</p></div>
+            <span class="icon solid fa-rocket"></span>
         </article>
         <article>
-            <p class="fact-intro">Cras quis</p>
-            <h3 class="fact">9853678</h3>
-            <p class="fact-outro">quam quam</p>
-            <span class="icon fa-gem"></span>
+            <div class="fact-intro"><p>Cras quis</p></div>
+            <div class="fact"><h3>9853678</h3></div>
+            <div class="fact-outro"><p>quam quam</p></div>
+            <span class="icon solid fa-suitcase"></span>
         </article>
         <article>
-            <p class="fact-intro">Maecenas</p>
-            <h3 class="fact">-2</h3>
-            <p class="fact-outro">ultricies mollis purus non dictum</p>
-            <span class="icon fa-gem"></span>
+            <div class="fact-intro"><p>Maecenas</p></div>
+            <div class="fact"><h3>425</h3></div>
+            <div class="fact-outro"><p>ultricies mollis purus non dictum</p></div>
+            <span class="icon brands fa-canadian-maple-leaf"></span>
         </article>
         <article>
-            <p class="fact-intro">Nullam venenatis ante tortor</p>
-            <h3 class="fact">10+</h3>
-            <p class="fact-outro">non vulputate tortor volutpat sollicitudin</p>
-            <span class="icon fa-gem"></span>
+            <div class="fact-intro"><p>Nullam venenatis</p></div>
+            <div class="fact"><h3>-2</h3></div>
+            <div class="fact-outro"><p>ante tortor, non vulputate tortor volutpat sollicitudin</p></div>
+            <span class="icon brands fa-deploydog"></span>
         </article>
     </div>
 </section>

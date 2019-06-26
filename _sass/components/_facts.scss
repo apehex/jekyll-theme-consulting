@@ -50,32 +50,49 @@
 		.fact-intro {
 			position: relative;
 			width: 100%;
-			height: 30%;
+			height: 20%;
 			margin: 0;
-			vertical-align: text-bottom;
-			text-align: center;
-			text-transform: capitalize;
-			font-size: 1.5rem;
+			display: table;
+
+			p {
+				display: table-cell;
+				vertical-align: bottom;
+				text-align: center;
+				text-transform: uppercase;
+				font-size: 1.5rem;
+			}
 		}
 
 		.fact {
 			position: relative;
+			width: 100%;
 			height: 20%;
 			margin: 0;
-			vertical-align: text-baseline;
-			text-align: center;
-			text-transform: capitalize;
-			font-size: 3rem;
+			display: table;
+
+			h3 {
+				display: table-cell;
+				vertical-align: baseline;
+				text-align: center;
+				text-transform: uppercase;
+				font-size: 3rem;
+			}
 		}
 
 		.fact-outro {
 			position: relative;
+			width: 100%;
 			height: 30%;
 			margin: 0;
-			vertical-align: text-top;
-			text-align: center;
-			text-transform: capitalize;
-			font-size: 1.5rem;
+			display: table;
+
+			p {
+				display: table-cell;
+				vertical-align: top;
+				text-align: center;
+				text-transform: capitalize;
+				font-size: 1.5rem;
+			}
 		}
 	}
 
@@ -86,15 +103,15 @@
 			color: _palette(accent-inverted);
 		}
 
-		.fact-intro {
+		.fact-intro p {
 			color: #ffffff;
 		}
 
-		.fact {
+		.fact h3 {
 			color: #ffffff;
 		}
 
-		.fact-outro {
+		.fact-outro p {
 			color: #ffffff;
 		}
 
