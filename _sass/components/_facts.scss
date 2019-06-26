@@ -1,10 +1,4 @@
-///
-/// Editorial by HTML5 UP
-/// html5up.net | @ajlkn
-/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-///
-
-/* Posts */
+/* Facts */
 
 .facts {
 	$gutter: 1px;
@@ -55,6 +49,7 @@
 			display: table;
 
 			p {
+				margin: 0;
 				display: table-cell;
 				vertical-align: bottom;
 				text-align: center;
@@ -71,6 +66,7 @@
 			display: table;
 
 			h3 {
+				margin: 0;
 				display: table-cell;
 				vertical-align: baseline;
 				text-align: center;
@@ -87,10 +83,11 @@
 			display: table;
 
 			p {
+				margin: 0;
 				display: table-cell;
 				vertical-align: top;
 				text-align: center;
-				text-transform: capitalize;
+				text-transform: lowercase;
 				font-size: 1.5rem;
 			}
 		}
