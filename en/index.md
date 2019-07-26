@@ -9,6 +9,75 @@ description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum prim
 <!-- Section -->
 <section>
     <header class="major">
+        <h2>In et posuere neque</h2>
+    </header>
+    <div class="facts">
+        <article>
+            <div class="fact-intro on"><p>Pellentesque habitant</p></div>
+            <div class="fact on"><h3>874</h3></div>
+            <div class="fact-outro on"><p>morbi tristique senectus et netus</p></div>
+            <span class="icon fa-gem on"></span>
+            <div class="fact-intro off"><p>Habitant pellentesque</p></div>
+            <div class="fact off"><h3>478</h3></div>
+            <div class="fact-outro off"><p>netus et senectus trisitque morbi</p></div>
+            <span class="icon fa-moon off"></span>
+        </article>
+        <article>
+            <div class="fact-intro on"><p>Et malesuada</p></div>
+            <div class="fact on"><h3>10+</h3></div>
+            <div class="fact-outro on"><p>fames ac turpis egestas</p></div>
+            <span class="icon fa-hand-paper on"></span>
+            <div class="fact-intro off"><p>Malesuada et</p></div>
+            <div class="fact off"><h3>+01</h3></div>
+            <div class="fact-outro off"><p>egestas turpis ac fames</p></div>
+            <span class="icon fa-hand-paper off"></span>
+        </article>
+        <article>
+            <div class="fact-intro on"><p>Mauris vitae</p></div>
+            <div class="fact on"><h3>90</h3></div>
+            <div class="fact-outro on"><p>viverra lorem, nec dapibus nisl</p></div>
+            <span class="icon solid fa-rocket on"></span>
+            <div class="fact-intro off"><p>Vitae mauris</p></div>
+            <div class="fact off"><h3>09</h3></div>
+            <div class="fact-outro off"><p>nisl dapibus nec, lorem viverra</p></div>
+            <span class="icon solid fa-rocket off"></span>
+        </article>
+        <article>
+            <div class="fact-intro on"><p>Cras quis</p></div>
+            <div class="fact on"><h3>9853678</h3></div>
+            <div class="fact-outro on"><p>quam quam</p></div>
+            <span class="icon solid fa-suitcase on"></span>
+            <div class="fact-intro off"><p>Quis cras</p></div>
+            <div class="fact off"><h3>8763589</h3></div>
+            <div class="fact-outro off"><p>quam quam</p></div>
+            <span class="icon solid fa-suitcase off"></span>
+        </article>
+        <article>
+            <div class="fact-intro on"><p>Maecenas</p></div>
+            <div class="fact on"><h3>425</h3></div>
+            <div class="fact-outro on"><p>ultricies mollis purus non dictum</p></div>
+            <span class="icon brands fa-canadian-maple-leaf on"></span>
+            <div class="fact-intro off"><p>Maecenas</p></div>
+            <div class="fact off"><h3>524</h3></div>
+            <div class="fact-outro off"><p>dictum non purus mollis ultricies</p></div>
+            <span class="icon brands fa-canadian-maple-leaf off"></span>
+        </article>
+        <article>
+            <div class="fact-intro on"><p>Nullam venenatis</p></div>
+            <div class="fact on"><h3>-2</h3></div>
+            <div class="fact-outro on"><p>ante tortor, non vulputate tortor volutpat sollicitudin</p></div>
+            <span class="icon brands fa-deploydog on"></span>
+            <div class="fact-intro off"><p>Venenatis nullam</p></div>
+            <div class="fact off"><h3>2-</h3></div>
+            <div class="fact-outro off"><p>sollicitudin volutpat tortor vulputate non, tortor ante</p></div>
+            <span class="icon brands fa-deploydog off"></span>
+        </article>
+    </div>
+</section>
+
+<!-- Section -->
+<section>
+    <header class="major">
         <h2>Erat lacinia</h2>
     </header>
     <div class="features">
@@ -96,51 +165,6 @@ description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum prim
             <ul class="actions">
                 <li><a href="#" class="button">More</a></li>
             </ul>
-        </article>
-    </div>
-</section>
-
-<!-- Section -->
-<section>
-    <header class="major">
-        <h2>In et posuere neque</h2>
-    </header>
-    <div class="facts">
-        <article>
-            <div class="fact-intro"><p>Pellentesque habitant</p></div>
-            <div class="fact"><h3>874</h3></div>
-            <div class="fact-outro"><p>morbi tristique senectus et netus</p></div>
-            <span class="icon fa-gem"></span>
-        </article>
-        <article>
-            <div class="fact-intro"><p>Et malesuada</p></div>
-            <div class="fact"><h3>10+</h3></div>
-            <div class="fact-outro"><p>fames ac turpis egestas</p></div>
-            <span class="icon fa-hand-paper"></span>
-        </article>
-        <article>
-            <div class="fact-intro"><p>Mauris vitae</p></div>
-            <div class="fact"><h3>90</h3></div>
-            <div class="fact-outro"><p>viverra lorem, nec dapibus nisl</p></div>
-            <span class="icon solid fa-rocket"></span>
-        </article>
-        <article>
-            <div class="fact-intro"><p>Cras quis</p></div>
-            <div class="fact"><h3>9853678</h3></div>
-            <div class="fact-outro"><p>quam quam</p></div>
-            <span class="icon solid fa-suitcase"></span>
-        </article>
-        <article>
-            <div class="fact-intro"><p>Maecenas</p></div>
-            <div class="fact"><h3>425</h3></div>
-            <div class="fact-outro"><p>ultricies mollis purus non dictum</p></div>
-            <span class="icon brands fa-canadian-maple-leaf"></span>
-        </article>
-        <article>
-            <div class="fact-intro"><p>Nullam venenatis</p></div>
-            <div class="fact"><h3>-2</h3></div>
-            <div class="fact-outro"><p>ante tortor, non vulputate tortor volutpat sollicitudin</p></div>
-            <span class="icon brands fa-deploydog"></span>
         </article>
     </div>
 </section>
