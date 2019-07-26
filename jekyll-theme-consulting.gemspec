@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["apehex"]
   spec.email         = ["apehex@protonmail.com"]
 
-  spec.summary       = "A multilingual Jekyll template for businesses."
+  spec.summary       = "A sober Jekyll template for businesses, with multilingual support."
   spec.homepage      = "https://github.com/apehex/jekyll-theme-consulting"
   spec.license       = "CC-BY-4.0"
 
