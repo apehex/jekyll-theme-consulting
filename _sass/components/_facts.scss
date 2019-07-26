@@ -35,7 +35,6 @@
 			margin: 0;
 			width: 100%;
 			height: 20%;
-			display: block;
 			text-align: center;
 			font-size: 3rem;
 			color: _palette(accent);
@@ -46,7 +45,6 @@
 			width: 100%;
 			height: 20%;
 			margin: 0;
-			display: table;
 
 			p {
 				margin: 0;
@@ -63,7 +61,6 @@
 			width: 100%;
 			height: 20%;
 			margin: 0;
-			display: table;
 
 			h3 {
 				margin: 0;
@@ -80,7 +77,6 @@
 			width: 100%;
 			height: 30%;
 			margin: 0;
-			display: table;
 
 			p {
 				margin: 0;
@@ -93,25 +89,54 @@
 		}
 	}
 
+	article {
+		.off {
+			display: none;
+		}
+
+		.on.icon {
+			display: block;
+		}
+
+		.on.fact-intro {
+			display: table;
+		}
+
+		.on.fact {
+			display: table;
+		}
+
+		.on.fact-outro {
+			display: table;
+		}
+	}
+
 	article:hover {
 		background-color: _palette(accent);
 
-		.icon {
+		.on {
+			display: none;
+		}
+
+		.off.icon {
+			display: block;
 			color: _palette(accent-inverted);
 		}
 
-		.fact-intro p {
+		.off.fact-intro {
+			display: table;
 			color: #ffffff;
 		}
 
-		.fact h3 {
+		.off.fact {
+			display: table;
 			color: #ffffff;
 		}
 
-		.fact-outro p {
+		.off.fact-outro {
+			display: table;
 			color: #ffffff;
 		}
-
 	}
 
 	@include breakpoint('<=small') {
