@@ -13,7 +13,7 @@
 		@include vendor('flex-shrink', '1');
 		margin: 0 0 $gutter $gutter;
 		position: relative;
-		min-height: 416px;
+		min-height: 512px;
 
 		&:before {
 			background: _palette(border);
@@ -144,37 +144,16 @@
 	@include breakpoint('<=small') {
 		$gutter: _size(gutter) * 1.5;
 
-		margin: 0 0 _size(element-margin) ($gutter * -1);
-		width: calc(100% + #{$gutter});
-
 		article {
 			margin: 0 0 $gutter $gutter;
-			width: calc(50% - #{$gutter});
-
-			&:before {
-				height: calc(100% + #{$gutter});
-				left: ($gutter * -0.5);
-			}
-
-			&:nth-last-child(3) {
-				margin-bottom: $gutter;
-			}
+			width: 50%;
 		}
 	}
 
 	@include breakpoint('<=xsmall') {
 		$gutter: _size(gutter) * 1.5;
 
-		margin: 0 0 _size(element-margin) 0;
-		width: 100%;
-
 		article {
-			margin: 0 0 $gutter 0;
-			width: 100%;
-
-			&:before {
-				display: none;
-			}
 
 			&:after {
 				width: 100%;
