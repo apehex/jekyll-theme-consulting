@@ -11,8 +11,8 @@ description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum prim
     <header class="major">
         <h2>In et posuere neque</h2>
     </header>
-    <div class="facts">
-        <article>
+    <div class="facts row">
+        <article class="col-1">
             <div class="fact-intro on"><p>Pellentesque habitant</p></div>
             <div class="fact on"><h3>874</h3></div>
             <div class="fact-outro on"><p>morbi tristique senectus et netus</p></div>
@@ -22,7 +22,7 @@ description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum prim
             <div class="fact-outro off"><p>netus et senectus trisitque morbi</p></div>
             <span class="icon fa-moon off"></span>
         </article>
-        <article>
+        <article class="col-1">
             <div class="fact-intro on"><p>Et malesuada</p></div>
             <div class="fact on"><h3>10+</h3></div>
             <div class="fact-outro on"><p>fames ac turpis egestas</p></div>
@@ -32,7 +32,7 @@ description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum prim
             <div class="fact-outro off"><p>egestas turpis ac fames</p></div>
             <span class="icon fa-hand-paper off"></span>
         </article>
-        <article>
+        <article class="col-1">
             <div class="fact-intro on"><p>Mauris vitae</p></div>
             <div class="fact on"><h3>90</h3></div>
             <div class="fact-outro on"><p>viverra lorem, nec dapibus nisl</p></div>
@@ -42,7 +42,7 @@ description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum prim
             <div class="fact-outro off"><p>nisl dapibus nec, lorem viverra</p></div>
             <span class="icon solid fa-rocket off"></span>
         </article>
-        <article>
+        <article class="col-1">
             <div class="fact-intro on"><p>Cras quis</p></div>
             <div class="fact on"><h3>9853678</h3></div>
             <div class="fact-outro on"><p>quam quam</p></div>
@@ -52,7 +52,7 @@ description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum prim
             <div class="fact-outro off"><p>quam quam</p></div>
             <span class="icon solid fa-suitcase off"></span>
         </article>
-        <article>
+        <article class="col-1">
             <div class="fact-intro on"><p>Maecenas</p></div>
             <div class="fact on"><h3>425</h3></div>
             <div class="fact-outro on"><p>ultricies mollis purus non dictum</p></div>
@@ -62,14 +62,14 @@ description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum prim
             <div class="fact-outro off"><p>dictum non purus mollis ultricies</p></div>
             <span class="icon brands fa-canadian-maple-leaf off"></span>
         </article>
-        <article>
+        <article class="col-1">
             <div class="fact-intro on"><p>Nullam venenatis</p></div>
             <div class="fact on"><h3>-2</h3></div>
-            <div class="fact-outro on"><p>ante tortor, non vulputate tortor volutpat sollicitudin</p></div>
+            <div class="fact-outro on"><p>non vulputate tortor volutpat sollicitudin</p></div>
             <span class="icon brands fa-deploydog on"></span>
             <div class="fact-intro off"><p>Venenatis nullam</p></div>
             <div class="fact off"><h3>2-</h3></div>
-            <div class="fact-outro off"><p>sollicitudin volutpat tortor vulputate non, tortor ante</p></div>
+            <div class="fact-outro off"><p>sollicitudin volutpat tortor vulputate non</p></div>
             <span class="icon brands fa-deploydog off"></span>
         </article>
     </div>
