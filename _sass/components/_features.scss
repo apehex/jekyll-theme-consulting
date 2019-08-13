@@ -66,6 +66,10 @@
 				background-image: url('images/ub.svg');
 			}
 
+			.uca {
+				background-image: url('images/uca.svg');
+			}
+
 			.icon {
 				@include vendor('flex-grow', '0');
 				@include vendor('flex-shrink', '0');
