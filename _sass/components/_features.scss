@@ -11,28 +11,15 @@
 
 		@include vendor('display', 'flex');
 		@include vendor('flex-wrap', 'wrap');
-		margin: 0 0 _size(element-margin) ($gutter * -1);
-		width: calc(100% + #{$gutter});
+		margin: 0 0 0 0;
+		width: 100%;
 
 		article {
 			@include vendor('align-items', 'center');
 			@include vendor('display', 'flex');
-			margin: 0 0 $gutter $gutter;
+			margin: 0 0 $gutter 0;
 			position: relative;
-			width: calc(50% - #{$gutter});
-
-			&:nth-child(2n - 1) {
-				margin-right: ($gutter * 0.5);
-			}
-
-			&:nth-child(2n) {
-				margin-left: ($gutter * 0.5);
-			}
-
-			&:nth-last-child(1),
-			&:nth-last-child(2) {
-				margin-bottom: 0;
-			}
+			width: 50%;
 
 			.ensem {
 				background-image: url('images/ensem.svg');
@@ -123,23 +110,6 @@
 			article {
 				margin: 0 0 $gutter 0;
 				width: 100%;
-
-				&:nth-child(2n - 1) {
-					margin-right: 0;
-				}
-
-				&:nth-child(2n) {
-					margin-left: 0;
-				}
-
-				&:nth-last-child(1),
-				&:nth-last-child(2) {
-					margin-bottom: $gutter;
-				}
-
-				&:last-child {
-					margin-bottom: 0;
-				}
 
 				.icon {
 					height: 8em;
