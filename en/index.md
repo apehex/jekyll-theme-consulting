@@ -43,16 +43,6 @@ description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum prim
             <span class="icon solid fa-rocket off"></span>
         </article>
         <article class="col-1 col-4-medium col-12-small">
-            <div class="fact-intro on"><p>Cras quis</p></div>
-            <div class="fact on"><h3>9853678</h3></div>
-            <div class="fact-outro on"><p>quam quam</p></div>
-            <span class="icon solid fa-suitcase on"></span>
-            <div class="fact-intro off"><p>Quis cras</p></div>
-            <div class="fact off"><h3>8763589</h3></div>
-            <div class="fact-outro off"><p>quam quam</p></div>
-            <span class="icon solid fa-suitcase off"></span>
-        </article>
-        <article class="col-1 col-4-medium col-12-small">
             <div class="fact-intro on"><p>Maecenas</p></div>
             <div class="fact on"><h3>425</h3></div>
             <div class="fact-outro on"><p>ultricies mollis purus non dictum</p></div>
@@ -61,16 +51,6 @@ description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum prim
             <div class="fact off"><h3>524</h3></div>
             <div class="fact-outro off"><p>dictum non purus mollis ultricies</p></div>
             <span class="icon brands fa-canadian-maple-leaf off"></span>
-        </article>
-        <article class="col-1 col-4-medium col-12-small">
-            <div class="fact-intro on"><p>Nullam venenatis</p></div>
-            <div class="fact on"><h3>-2</h3></div>
-            <div class="fact-outro on"><p>non vulputate tortor volutpat sollicitudin</p></div>
-            <span class="icon brands fa-deploydog on"></span>
-            <div class="fact-intro off"><p>Venenatis nullam</p></div>
-            <div class="fact off"><h3>2-</h3></div>
-            <div class="fact-outro off"><p>sollicitudin volutpat tortor vulputate non</p></div>
-            <span class="icon brands fa-deploydog off"></span>
         </article>
     </div>
 </section>
