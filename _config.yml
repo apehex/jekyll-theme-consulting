@@ -61,7 +61,7 @@ sass:
 
 # Publication settings
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://moodule.github.io/jekyll-theme-consulting" # the base hostname & protocol for your site, e.g. http://example.com
 author: David Mougeolle
 copyright_holder: Untitled
 
