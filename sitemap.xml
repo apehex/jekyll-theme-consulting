@@ -1,0 +1,129 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  
+  
+  <url>
+    <loc>https://apehex.github.io/jekyll-theme-consulting/</loc>
+    
+    <xhtml:link rel="alternate" hreflang="" href="https://apehex.github.io/jekyll-theme-consulting/" />
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-consulting/en/" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://apehex.github.io/jekyll-theme-consulting/fr/" />
+    
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  
+  
+  
+  <url>
+    <loc>https://apehex.github.io/jekyll-theme-consulting/en/elements/</loc>
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-consulting/en/elements/" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://apehex.github.io/jekyll-theme-consulting/fr/elements/" />
+    
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  
+  
+  
+  <url>
+    <loc>https://apehex.github.io/jekyll-theme-consulting/en/generic/</loc>
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-consulting/en/generic/" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://apehex.github.io/jekyll-theme-consulting/fr/generique/" />
+    
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  
+  
+  
+  <url>
+    <loc>https://apehex.github.io/jekyll-theme-consulting/en/</loc>
+    
+    <xhtml:link rel="alternate" hreflang="" href="https://apehex.github.io/jekyll-theme-consulting/" />
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-consulting/en/" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://apehex.github.io/jekyll-theme-consulting/fr/" />
+    
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  
+  
+  
+  <url>
+    <loc>https://apehex.github.io/jekyll-theme-consulting/fr/elements/</loc>
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-consulting/en/elements/" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://apehex.github.io/jekyll-theme-consulting/fr/elements/" />
+    
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  
+  
+  
+  <url>
+    <loc>https://apehex.github.io/jekyll-theme-consulting/fr/generique/</loc>
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-consulting/en/generic/" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://apehex.github.io/jekyll-theme-consulting/fr/generique/" />
+    
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  
+  
+  
+  <url>
+    <loc>https://apehex.github.io/jekyll-theme-consulting/fr/</loc>
+    
+    <xhtml:link rel="alternate" hreflang="" href="https://apehex.github.io/jekyll-theme-consulting/" />
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-consulting/en/" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://apehex.github.io/jekyll-theme-consulting/fr/" />
+    
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  
+  
+  
+  <url>
+    <loc>https://apehex.github.io/jekyll-theme-consulting/en/jekyll/update/2019/02/08/welcome-to-jekyll/</loc>
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-consulting/en/jekyll/update/2019/02/08/welcome-to-jekyll/" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://apehex.github.io/jekyll-theme-consulting/fr/jekyll/update/2019/02/08/bienvenue/" />
+    
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  
+  
+  
+  <url>
+    <loc>https://apehex.github.io/jekyll-theme-consulting/fr/jekyll/update/2019/02/08/bienvenue/</loc>
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-consulting/en/jekyll/update/2019/02/08/welcome-to-jekyll/" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://apehex.github.io/jekyll-theme-consulting/fr/jekyll/update/2019/02/08/bienvenue/" />
+    
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  
+</urlset>
