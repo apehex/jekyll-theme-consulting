@@ -169,3 +169,50 @@
 		}
 	}
 }
+
+/* Inverted */
+
+.inverted #search {
+	form {
+		&:before {
+			color: _palette(fg);
+		}
+	}
+}
+
+#sidebar.inverted {
+	background-color: _palette(bg-inverted);
+
+	header.major > :last-child {
+		border-bottom: solid 3px _palette(fg-inverted);
+	}
+
+	a.toggle {
+		color: _palette(accent-inverted);
+
+		&:hover {
+			color: _palette(accent-inverted);
+		}
+	}
+
+	> .inner {
+
+		> * {
+			border-bottom: solid 2px _palette(border-inverted);
+		}
+
+		> .alt {
+			background-color: darken(_palette(bg-inverted), 2);
+		}
+	}
+}
+
+#sidebar.inverted.inactive {
+	a.toggle {
+		color: _palette(accent);
+
+		&:hover {
+			color: _palette(accent);
+		}
+	}
+}
