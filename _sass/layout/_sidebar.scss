@@ -71,16 +71,15 @@
 		height: 100%;
 
 		> * {
-			border-bottom: solid 2px _palette(border);
-			margin: 0 0 (_size(element-margin) * 1.75) 0;
-			padding: 0 $pad (_size(element-margin) * 1.75) $pad;
+			border-bottom: 0;
+			margin: 0;
+			padding: 0 $pad 0 $pad;
 
 			> :last-child {
 				margin-bottom: 0;
 			}
 
 			&:last-child {
-				border-bottom: 0;
 				margin-bottom: 0;
 				padding-bottom: 0;
 			}
@@ -88,7 +87,7 @@
 
 		> .alt {
 			background-color: darken(_palette(bg-alt), 2);
-			border-bottom: 0;
+			border-bottom: solid 2px _palette(border);
 			margin: ($pad * -1) 0 ($pad * 2) ($pad * -1);
 			padding: $pad;
 			width: calc(100% + $pad);
@@ -202,11 +201,12 @@
 	> .inner {
 
 		> * {
-			border-bottom: solid 2px _palette(border-inverted);
+			border-bottom: 0;
 		}
 
 		> .alt {
 			background-color: darken(_palette(bg-inverted), 2);
+			border-bottom: solid 2px _palette(border-inverted);
 		}
 	}
 }
