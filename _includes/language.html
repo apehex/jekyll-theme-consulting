@@ -1,7 +1,7 @@
 {% assign posts=site.posts | where:"lang-ref", page.lang-ref | sort: 'lang' %}
 {% assign pages=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' | concat: posts %}
 
-<ul class="icons language">
+<ul class="language">
 	{% for page in pages %}
 	{% if page.lang != "x-default" %}
 	<li>
