@@ -6,41 +6,60 @@
 
 /* Header */
 
-	#header {
-		@include vendor('display', 'flex');
-		border-bottom: solid 5px _palette(accent);
-		padding: 2em 0 1em 0;
-		position: relative;
+#header {
+	@include vendor('display', 'flex');
+	border-bottom: solid 5px _palette(accent);
+	padding: 2em 0 1em 0;
+	position: relative;
 
-		> * {
-			margin-bottom: 0;
-		}
+	> * {
+		margin-bottom: 0;
+	}
 
-		.logo {
-			@include vendor('flex', '2');
-			border-bottom: 0;
-			color: inherit;
-			font-family: _font(family-heading);
-			font-size: 1.125em;
-		}
+	.logo {
+		@include vendor('flex', '2');
+		border-bottom: 0;
+		color: inherit;
+		font-family: _font(family-heading);
+		font-size: 1.125em;
+	}
 
-		.icons {
-			position: absolute;
-			right: 0;
-			text-align: right;
-		}
+	.icons {
+	}
 
-		.language {
-			a {
-				border: none;
+	.language {
+		position: absolute;
+		right: 0;
+		text-align: right;
+
+		li {
+			display: inline-block;
+			margin: 0;
+			padding: 0 1em 0 0;
+
+			&:last-child {
+				padding-right: 0;
 			}
-			
-			.en:lang(en), .fr:lang(fr), .de:lang(de){
-				font-weight: bold;
+
+			.icon {
+				color: inherit;
+
+				&:before {
+					font-size: 1.25em;
+				}
 			}
 		}
 
-		@include breakpoint('<=small') {
-			padding-left: 4em;
+		a {
+			border: none;
+		}
+		
+		.en:lang(en), .fr:lang(fr), .de:lang(de){
+			font-weight: bold;
 		}
 	}
+
+	@include breakpoint('<=small') {
+		padding-left: 4em;
+	}
+}
