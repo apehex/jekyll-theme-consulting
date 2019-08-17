@@ -69,6 +69,9 @@
 		padding: $pad 0 $pad 0;
 		width: _size(sidebar-width-alt);
 		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 
 		> * {
 			border-bottom: 0;
@@ -91,13 +94,6 @@
 			margin: ($pad * -1) 0 ($pad * 2) ($pad * -1);
 			padding: $pad;
 			width: calc(100% + $pad);
-		}
-
-		&:after {
-			content: '';
-			display: block;
-			height: 4em;
-			width: 100%;
 		}
 	}
 
@@ -194,7 +190,7 @@
 		color: _palette(accent-inverted);
 
 		&:hover {
-			color: _palette(accent-inverted);
+			color: _palette(accent-cp);
 		}
 	}
 
