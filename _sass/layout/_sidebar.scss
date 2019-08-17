@@ -16,7 +16,7 @@
 			@include vendor('transform', 'scaleX(-1)');
 			color: _palette(fg);
 			content: '\f002';
-			cursor: default;
+			cursor: pointer;
 			display: block;
 			font-size: 1.5em;
 			height: _size(element-height) / 1.375;
