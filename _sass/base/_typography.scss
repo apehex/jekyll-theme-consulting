@@ -201,8 +201,8 @@ body .inverted {
 		color: _palette(accent-inverted);
 
 		&:hover {
-			border-bottom-color: _palette(accent-inverted);
-			color: _palette(accent-inverted);
+			border-bottom-color: _palette(accent-cp);
+			color: _palette(accent-cp);
 
 			strong {
 				color: inherit;
