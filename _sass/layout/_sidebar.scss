@@ -177,6 +177,10 @@
 		&:before {
 			color: _palette(fg);
 		}
+
+		input[type="text"] {
+			color: _palette(fg);
+		}
 	}
 }
 
