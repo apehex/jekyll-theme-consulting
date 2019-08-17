@@ -68,6 +68,7 @@
 
 	> ul {
 		> li {
+			position: relative;
 			border-top: solid 1px _palette(border);
 			margin: 0.5em 0 0 0;
 			padding: 0.5em 0 0 0;
@@ -92,6 +93,20 @@
 				border-top: 0;
 				margin-top: 0;
 				padding-top: 0;
+			}
+
+			&::before {
+				border-left: 6px solid transparent;
+				content: "";
+				display: block;
+				position: absolute;
+				left: -1em;
+				top: 0;
+				height: 100%;
+			}
+
+			&.current::before, &:hover::before {
+				border-left: 6px solid _palette(accent);
 			}
 		}
 	}
@@ -136,6 +151,10 @@
 				border-top: 0;
 				margin-top: 0;
 				padding-top: 0;
+			}
+
+			&.current::before, &:hover::before {
+				border-left: 6px solid _palette(accent-inverted);
 			}
 		}
 	}

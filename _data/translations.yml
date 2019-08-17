@@ -3,15 +3,15 @@ menu:
   default:
     en:
       - title: Home
-        url: /en
+        url: /en/
       - title: Generic
-        url: /en/generic
+        url: /en/generic/
       - title: Elements
-        url: /en/elements
+        url: /en/elements/
     fr:
       - title: Accueil
-        url: /fr
+        url: /fr/
       - title: Générique
-        url: /fr/generique
+        url: /fr/generique/
       - title: Eléments
-        url: /fr/elements
+        url: /fr/elements/
