@@ -26,6 +26,10 @@ ul.icons {
 			&:before {
 				font-size: 1.25em;
 			}
+
+			&:hover{
+				color: _palette(accent-cp);
+			}
 		}
 	}
 }
