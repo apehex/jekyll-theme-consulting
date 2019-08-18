@@ -6,31 +6,30 @@
 
 /* Main */
 
-	#main {
-		@include vendor('flex-grow', '1');
-		@include vendor('flex-shrink', '1');
-		width: 100%;
+#main {
+	@include vendor('flex-grow', '1');
+	@include vendor('flex-shrink', '1');
+	width: 100%;
 
-		> .inner {
-			margin: 0 auto;
-			max-width: 110em;
+	> .inner {
+		margin: 0 auto;
+		max-width: 110em;
 
-			> section {
-				@include padding(6em, 6em);
-				border-top: solid 2px _palette(border);
+		> section {
+			@include padding(6em, 6em);
+			border-top: solid 2px _palette(border);
 
-				&:first-of-type {
-				 	border-top: 0 !important;
-				}
-			}
-
-			#header {
-				margin: 0 6em 0 6em;
+			&:first-of-type {
+			 	border-top: 0 !important;
 			}
 		}
 
+		#header {
+			margin: 0 6em 0 6em;
+		}
+
 		@include breakpoint('<=xlarge') {
-			> .inner > section {
+			> section {
 				@include padding(5em, 5em);
 			}
 
@@ -40,7 +39,7 @@
 		}
 
 		@include breakpoint('<=large') {
-			> .inner > section {
+			> section {
 				@include padding(4em, 4em);
 			}
 
@@ -59,3 +58,4 @@
 			}
 		}
 	}
+}
