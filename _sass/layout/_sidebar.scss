@@ -137,32 +137,6 @@
 	body.is-preload & {
 		display: none;
 	}
-
-	@include breakpoint('<=small') {
-		.toggle {
-			text-indent: 7.25em;
-			width: 7.25em;
-
-			&:before {
-				color: _palette(fg);
-				margin-left: (-0.125em / 2);
-				margin-top: (-0.5em / 2);
-				font-size: 1.1rem;
-				z-index: 1;
-			}
-
-			&:after {
-				background: transparentize(lighten(_palette(fg), 35), 0.25);
-				border-radius: _size(border-radius);
-				content: '';
-				height: 3.5em;
-				left: 1em;
-				position: absolute;
-				top: 1em;
-				width: 5em;
-			}
-		}
-	}
 }
 
 /* Inverted */
