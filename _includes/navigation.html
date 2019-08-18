@@ -1,8 +1,5 @@
 <!-- Menu -->
 <nav id="menu">
-    <header class="major">
-        <h2>Menu</h2>
-    </header>
     <ul>
     {% for item in include.menu %}
         <li {% if item.url == page.url %} class="current" {% endif %}>

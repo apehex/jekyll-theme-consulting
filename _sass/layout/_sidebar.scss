@@ -151,7 +151,7 @@
 			content: '';
 		}
 
-		&#sidebar-logo-button img {
+		&#sidebar-logo-button svg {
 			position: absolute;
 			top: 20%;
 			left: 4%;
@@ -160,6 +160,7 @@
 			font-size: 1.5rem;
 			line-height: inherit;
 			text-indent: 0;
+			fill: _palette(accent);
 		}
 	}
 
@@ -200,6 +201,14 @@
 		&:hover {
 			color: _palette(accent-cp);
 		}
+
+		&#sidebar-logo-button svg {
+			fill: _palette(accent-inverted);
+		}
+
+		&#sidebar-logo-button:hover svg {
+			fill: _palette(accent-cp);
+		}
 	}
 
 	> .inner {
@@ -221,6 +230,14 @@
 
 		&:hover {
 			color: _palette(accent);
+		}
+
+		&#sidebar-logo-button svg {
+			fill: _palette(accent);
+		}
+
+		&#sidebar-logo-button:hover svg {
+			fill: _palette(accent);
 		}
 	}
 }
