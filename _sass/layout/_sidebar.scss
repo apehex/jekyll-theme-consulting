@@ -12,23 +12,6 @@
 		position: relative;
 		margin-left: 4em;
 
-		&:before {
-			@include vendor('transform', 'scaleX(-1)');
-			color: _palette(fg);
-			content: '\f002';
-			cursor: pointer;
-			display: block;
-			font-size: 1.5em;
-			height: _size(element-height) / 1.375;
-			line-height: _size(element-height) / 1.375;
-			opacity: 0.325;
-			position: absolute;
-			right: 0;
-			text-align: center;
-			top: 0;
-			width: _size(element-height) / 1.375;
-		}
-
 		input[type="text"] {
 			padding-right: _size(element-height);
 		}
