@@ -101,31 +101,65 @@
 		@include icon(false, solid);
 		@include vendor('transition', 'left 0.5s ease');
 		-webkit-tap-highlight-color: rgba(255,255,255,0);
+		position: fixed;
+		left: 0;
 		border: 0;
 		display: block;
+		width: 6em;
 		height: 6.25em;
-		left: 0;
-		line-height: 6.25em;
 		outline: 0;
 		overflow: hidden;
-		position: fixed;
+		line-height: 6.25em;
 		text-align: center;
 		text-indent: 6em;
-		top: 0;
-		width: 6em;
 		z-index: _misc(z-index-base);
 
+		&#sidebar-toggle-button {
+			top:0;
+		}
+
+		&#sidebar-search-button {
+			top:6.25em;
+		}
+
+		&#sidebar-logo-button {
+			top:12.5em;
+		}
+
 		&:before {
-			margin-left: (-0.875em / 2);
-			content: '\f0c9';
-			font-size: 1.5rem;
-			height: inherit;
-			left: 0;
-			line-height: inherit;
 			position: absolute;
-			text-indent: 0;
+			left: 0;
 			top: 0;
 			width: inherit;
+			height: inherit;
+			margin-left: (-0.875em / 2);
+			font-size: 1.5rem;
+			line-height: inherit;
+			text-indent: 0;
+		}
+
+		&#sidebar-toggle-button:before {
+			content: '\f0c9';
+		}
+
+		&#sidebar-search-button:before {
+			content: '\f002';
+		}
+
+		&#sidebar-logo-button:before {
+			display: none;
+			content: '';
+		}
+
+		&#sidebar-logo-button img {
+			position: absolute;
+			top: 20%;
+			left: 4%;
+			width: 60%;
+			height: 60%;
+			font-size: 1.5rem;
+			line-height: inherit;
+			text-indent: 0;
 		}
 	}
 
