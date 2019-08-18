@@ -83,8 +83,19 @@
 					.appendTo($head);
 
 		// Toggle.
-			$('<a href="#sidebar" class="toggle">Toggle</a>')
-				.appendTo($sidebar)
+			$('#sidebar-toggle-button')
+				.on('click', function(event) {
+
+					// Prevent default.
+						event.preventDefault();
+						event.stopPropagation();
+
+					// Toggle.
+						$sidebar.toggleClass('inactive');
+
+				});
+
+			$('#sidebar-search-button')
 				.on('click', function(event) {
 
 					// Prevent default.
