@@ -187,10 +187,12 @@
 
 		&#sidebar-logo-button svg {
 			fill: _palette(accent-inverted);
+			stroke: _palette(accent-inverted);
 		}
 
 		&#sidebar-logo-button:hover svg {
 			fill: _palette(accent-cp);
+			stroke: _palette(accent-cp);
 		}
 	}
 
@@ -217,10 +219,12 @@
 
 		&#sidebar-logo-button svg {
 			fill: _palette(accent);
+			stroke: _palette(accent);
 		}
 
 		&#sidebar-logo-button:hover svg {
 			fill: _palette(accent);
+			stroke: _palette(accent);
 		}
 	}
 }
