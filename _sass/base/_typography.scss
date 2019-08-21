@@ -193,7 +193,7 @@ body .inverted {
 }
 
 .inverted {
-	input, select, textarea, p {
+	p {
 		color: _palette(fg-inverted);
 	}
 
@@ -227,11 +227,15 @@ body .inverted {
 	}
 
 	code {
-		background: _palette(border-bg-inverted);
-		border: solid 1px _palette(border-inverted);
+		background: _palette(border-bg);
+		border: solid 1px _palette(border);
 	}
 
 	hr {
 		border-bottom: solid 1px _palette(border-inverted);
+	}
+
+	input, select, textarea {
+		color: _palette(fg);
 	}
 }
