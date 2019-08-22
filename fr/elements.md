@@ -6,7 +6,7 @@ subtitle: sans bannière
 description: c'est pourquoi ce texte n'apparaît pas.
 ---
 <!-- Content -->
-<section>
+<section id="normal-style">
     <header class="main">
         <h1>{{ page.title }}</h1>
     </header>
@@ -415,7 +415,7 @@ print 'It took ' + i + ' iterations to sort the deck.';
 </section>
 
 <!-- Inverted Section -->
-<section class="inverted">
+<section id="normal-style" class="inverted">
     <header class="main">
         <h1>{{ page.title }}</h1>
     </header>
