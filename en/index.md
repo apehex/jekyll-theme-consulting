@@ -1,6 +1,5 @@
 ---
 layout: home
-lang: en
 lang-ref: home-page
 title: Home Layout
 subtitle: with a banner

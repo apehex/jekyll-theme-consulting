@@ -1,6 +1,5 @@
 ---
 layout: page
-lang: fr
 lang-ref: generic-page
 title: Page Générique
 subtitle: sans bannière

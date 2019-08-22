@@ -1,6 +1,5 @@
 ---
 layout: page
-lang: fr
 lang-ref: elements-page
 title: Divers Eléments
 subtitle: sans bannière

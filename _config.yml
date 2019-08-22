@@ -52,6 +52,16 @@ defaults:
       path: ""
     values:
       menu: default
+  -
+    scope:
+      path: "en"
+    values:
+      lang: "en"
+  -
+    scope:
+      path: "fr"
+    values:
+      lang: "fr"
 
 # Build settings
 permalink: pretty

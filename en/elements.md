@@ -1,6 +1,5 @@
 ---
 layout: page
-lang: en
 lang-ref: elements-page
 title: Elements
 subtitle: without a banner
