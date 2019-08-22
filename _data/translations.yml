@@ -8,6 +8,11 @@ menu:
         url: /en/generic/
       - title: Elements
         url: /en/elements/
+        menu:
+          - title: Normal Style
+            url: /en/elements/#normal-style
+          - title: Inverted Style
+            url: /en/elements/#inverted-style
     fr:
       - title: Accueil
         url: /fr/
@@ -15,3 +20,8 @@ menu:
         url: /fr/generique/
       - title: Eléments
         url: /fr/elements/
+        menu:
+          - title: Thème Normal
+            url: /fr/elements/#normal-style
+          - title: Thème Inversé
+            url: /fr/elements/#inverted-style
