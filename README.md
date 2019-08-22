@@ -117,6 +117,8 @@ To add a custom directory to the theme-gem, please edit the regexp in `jekyll-th
 
 Inspired by the work of [@ajlkn][ajlkn].
 
+Uses the basic template from the [cookie consent plugin][cookieconsent].
+
 Repository [Jekyll logo][jekyll-logo] icon licensed under a [Creative Commons Attribution 4.0 International License][cc4-license].
 
 ## License
@@ -126,5 +128,6 @@ The theme is available as open source under the terms of the [CC-BY-4.0](LICENSE
 [ajlkn]: https://aj.lkn.io/
 [cc4-license]: http://choosealicense.com/licenses/cc-by-4.0/
 [contributor-covenant]: http://contributor-covenant.org
+[cookieconsent]: https://github.com/osano/cookieconsent
 [html5up]: https://html5up.net/
 [jekyll-logo]: https://github.com/jekyll/brand
