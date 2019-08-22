@@ -1,6 +1,5 @@
 ---
 layout: page
 lang-ref: privacy-policy
-title: CDM
-subtitle: Politique de Confidentialité
+title: Politique de Confidentialité
 ---
