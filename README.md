@@ -39,32 +39,66 @@ and [creating pages](https://jekyllrb.com/docs/pages/).
 You can use the following custom parameters in `_config.yml`.
 
 ### Site
-- `subtitle` sets the text for the lighter colored text next to your site's title.
+Both `title` and `subtitle` are displayed side by side :
+- in the tab name
+- at the top of the page, in the header
 
 ### Social
-- `500px_url`
-- `facebook_url`
-- `github_url`
-- `gitlab_url`
-- `googleplus_url`
-- `instagram_url`
-- `linkedin_url`
-- `pinterest_url`
-- `slack_url`
-- `twitter_url`
+Social icons will appear for each url your fill in, among `facebook_url` etc.
 
 ### Contact
-- `street_address`
-- `city`
-- `state`
-- `zip_code`
-- `country`
-- `phone`
-- `email`
+Your contact information can be used in contact forms, the footer or anywhere else.
 
 ## Publication
 
-To post your website as a Github page, fork this reposity and create a branch named `gh-pages`, then start editing the `_config.yml` file.
+### On Github Pages
+
+In your own website's repository, edit the `_config.yml` file:
+
+```yaml
+url: "https://<github-account-name>.github.io/<repository-name>"
+```
+
+Build the website with:
+
+    $ JEKYLL_ENV=production bundle exec jekyll build
+
+Commit all your work to the current branch.
+
+Create a branch named `gh-pages`:
+
+    $ git checkout -b gh-pages
+
+And finally replace the repository's content with the generated webpages:
+
+    $ mkdir ~/backup
+    $ mv ./* ~/backup/
+    $ mv ~/backup/.git ./
+    $ mv ~/backup/_site/* ./
+    $ git add .
+    $ git commit -m "First draft"
+
+The repository's content is backup in the home directory of the user.
+
+And finally push to github
+
+    $ git push --u origin gh-pages
+
+### On any server
+
+In your own website's directory, edit the `_config.yml` file:
+
+```yaml
+url: "https:<domain-name>"
+```
+
+Build the website with:
+
+    $ JEKYLL_ENV=production bundle exec jekyll build
+
+Copy the content of the folder `_site` to your server, most likely in `www`.
+
+If necessary, configure your server to serve this directory.
 
 # Contributing
 
