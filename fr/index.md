@@ -1,6 +1,5 @@
 ---
 layout: home
-lang: fr
 lang-ref: home-page
 title: Mise en page de l'Accueil
 subtitle: avec une bannière
