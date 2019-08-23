@@ -8,13 +8,15 @@ You can preview the theme [here](https://moodule.github.io/jekyll-theme-consulti
 
 # Features
 
-> *Multilingual*: easily manage pages, menu, url, dates, sitemap in several languages
+> **Responsive**: out of the box support for all screen sizes, be it smartphones, laptops, tablets...
 
-> *Customizable*: theme colors, menu, social items can be changed from a central config file
+> **Multilingual**: easily manage pages, menu, url, dates, sitemap in several languages
 
-> *GDPR ready*: bundled with a cookie consent plugin and a boilerplate privacy policy compliant with GDPR
+> **Customizable**: theme colors, menu, social items can be changed from a central config file
 
-> *SEO ready*: sitemap, robots.txt and tags are automatically generated for the website
+> **GDPR ready**: bundled with a cookie consent plugin and a boilerplate privacy policy compliant with GDPR
+
+> **SEO ready**: sitemap, robots.txt and tags are automatically generated for the website
 
 # Installation
 
