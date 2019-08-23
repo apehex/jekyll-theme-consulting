@@ -1,10 +1,20 @@
 # Consulting - Jekyll theme
 
-> A multilingual jekyll template for businesses.
+> A sober, hassle-free, jekyll template for businesses.
 
 You can preview the theme [here](https://moodule.github.io/jekyll-theme-consulting)
 
 ![Consulting Theme](assets/images/screenshot.jpg "Consulting Theme")
+
+# Features
+
+> *Multilingual*: easily manage pages, menu, url, dates, sitemap in several languages
+
+> *Customizable*: theme colors, menu, social items can be changed from a central config file
+
+> *GDPR ready*: bundled with a cookie consent plugin and a boilerplate privacy policy compliant with GDPR
+
+> *SEO ready*: sitemap, robots.txt and tags are automatically generated for the website
 
 # Installation
 
