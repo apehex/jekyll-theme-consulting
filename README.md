@@ -61,7 +61,7 @@ Your contact information can be used in contact forms, the footer or anywhere el
 
 ## Publication
 
-### On Github Pages
+### On Github Pages
 
 In your own website's repository, edit the `_config.yml` file:
 
@@ -94,7 +94,7 @@ And finally push to github
 
     $ git push --u origin gh-pages
 
-### On any server
+### On any server
 
 In your own website's directory, edit the `_config.yml` file:
 
@@ -123,7 +123,7 @@ To test the theme, run `bundle exec jekyll serve` and open your browser at `http
 When the theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
 To add a custom directory to the theme-gem, please edit the regexp in `jekyll-theme-consulting.gemspec` accordingly.
 
-# Credits
+# Credits
 
 Inspired by the work of [@ajlkn][ajlkn].
 
