@@ -34,6 +34,9 @@ favicon_url: /assets/images/favicon.ico
 legal_terms_url: /legal-terms
 privacy_policy_url: /privacy-policy
 
+# Privacy notice
+hosting_third_party: github
+
 # Collections
 collections:
   redirects:
