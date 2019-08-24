@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["David Mougeolle"]
   spec.email         = ["david.mougeolle@moodule.net"]
 
-  spec.summary       = "A sober Jekyll template for businesses, with multilingual support."
+  spec.summary       = "A sober, hassle-free, full-featured, Jekyll template for businesses."
   spec.homepage      = "https://github.com/moodule/jekyll-theme-consulting"
   spec.license       = "CC-BY-4.0"
 
