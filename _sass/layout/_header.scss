@@ -9,8 +9,10 @@
 #header {
 	@include vendor('display', 'flex');
 	border-bottom: solid 5px _palette(accent);
-	padding: 2em 0 1em 0;
 	position: relative;
+	background-size: 100% auto;
+	background-position: center top;
+	background-repeat: no-repeat;
 
 	> * {
 		margin-bottom: 0;
@@ -29,6 +31,7 @@
 
 	.language {
 		position: absolute;
+		padding: 0 1em 0 0;
 		right: 0;
 		text-align: right;
 
@@ -58,8 +61,11 @@
 			font-weight: bold;
 		}
 	}
+}
 
-	@include breakpoint('<=small') {
-		padding-left: 4em;
-	}
+/* Inverted */
+
+#header.inverted {
+	background-color: _palette(bg-alt-inverted);
+	border-bottom: solid 5px _palette(accent-inverted);
 }
