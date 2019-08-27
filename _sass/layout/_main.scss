@@ -25,7 +25,8 @@
 		}
 
 		#header {
-			margin: 0 6em 0 6em;
+			padding: 2em 6em 1em 6em;
+			margin: 0;
 		}
 
 		@include breakpoint('<=xlarge') {
@@ -34,7 +35,7 @@
 			}
 
 			#header {
-				margin: 0 5em 0 5em;
+				padding: 2em 5em 1em 5em;
 			}
 		}
 
@@ -44,17 +45,13 @@
 			}
 
 			#header {
-				margin: 0 4em 0 4em;
+				padding: 2em 4em 1em 4em;
 			}
 		}
 
 		@include breakpoint('<=small') {
 			> .inner > section {
 				@include padding(3em, 3em);
-			}
-
-			#header {
-				margin: 0 3em 0 3em;
 			}
 		}
 	}
