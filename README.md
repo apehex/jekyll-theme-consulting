@@ -131,6 +131,8 @@ Inspired by the work of [@ajlkn][ajlkn].
 
 Uses the basic template from the [cookie consent plugin][cookieconsent].
 
+Space image in the banner: the Pillars of Creation, courtesy of NASA.
+
 Repository [Jekyll logo][jekyll-logo] icon licensed under a [Creative Commons Attribution 4.0 International License][cc4-license].
 
 ## License
