@@ -50,6 +50,7 @@ defaults:
       type: "redirects"
     values:
       layout: "redirect"
+      lang: "x-default"
   -
     scope:
       path: ""
