@@ -21,6 +21,36 @@
   
   
   <url>
+    <loc>https://apehex.github.io/jekyll-theme-consulting/legal-terms/</loc>
+    
+    <xhtml:link rel="alternate" hreflang="" href="https://apehex.github.io/jekyll-theme-consulting/legal-terms/" />
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-consulting/en/legal-terms/" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://apehex.github.io/jekyll-theme-consulting/fr/mentions-legales/" />
+    
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  
+  
+  
+  <url>
+    <loc>https://apehex.github.io/jekyll-theme-consulting/privacy-policy/</loc>
+    
+    <xhtml:link rel="alternate" hreflang="" href="https://apehex.github.io/jekyll-theme-consulting/privacy-policy/" />
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-consulting/en/privacy-policy/" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://apehex.github.io/jekyll-theme-consulting/fr/politique-de-confidentialite/" />
+    
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  
+  
+  
+  <url>
     <loc>https://apehex.github.io/jekyll-theme-consulting/en/elements/</loc>
     
     <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-consulting/en/elements/" />
@@ -62,6 +92,36 @@
   
   
   <url>
+    <loc>https://apehex.github.io/jekyll-theme-consulting/en/legal-terms/</loc>
+    
+    <xhtml:link rel="alternate" hreflang="" href="https://apehex.github.io/jekyll-theme-consulting/legal-terms/" />
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-consulting/en/legal-terms/" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://apehex.github.io/jekyll-theme-consulting/fr/mentions-legales/" />
+    
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  
+  
+  
+  <url>
+    <loc>https://apehex.github.io/jekyll-theme-consulting/en/privacy-policy/</loc>
+    
+    <xhtml:link rel="alternate" hreflang="" href="https://apehex.github.io/jekyll-theme-consulting/privacy-policy/" />
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-consulting/en/privacy-policy/" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://apehex.github.io/jekyll-theme-consulting/fr/politique-de-confidentialite/" />
+    
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  
+  
+  
+  <url>
     <loc>https://apehex.github.io/jekyll-theme-consulting/fr/elements/</loc>
     
     <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-consulting/en/elements/" />
@@ -95,6 +155,36 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-consulting/en/" />
     
     <xhtml:link rel="alternate" hreflang="fr" href="https://apehex.github.io/jekyll-theme-consulting/fr/" />
+    
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  
+  
+  
+  <url>
+    <loc>https://apehex.github.io/jekyll-theme-consulting/fr/mentions-legales/</loc>
+    
+    <xhtml:link rel="alternate" hreflang="" href="https://apehex.github.io/jekyll-theme-consulting/legal-terms/" />
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-consulting/en/legal-terms/" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://apehex.github.io/jekyll-theme-consulting/fr/mentions-legales/" />
+    
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  
+  
+  
+  <url>
+    <loc>https://apehex.github.io/jekyll-theme-consulting/fr/politique-de-confidentialite/</loc>
+    
+    <xhtml:link rel="alternate" hreflang="" href="https://apehex.github.io/jekyll-theme-consulting/privacy-policy/" />
+    
+    <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-consulting/en/privacy-policy/" />
+    
+    <xhtml:link rel="alternate" hreflang="fr" href="https://apehex.github.io/jekyll-theme-consulting/fr/politique-de-confidentialite/" />
     
     <changefreq>weekly</changefreq>
   </url>

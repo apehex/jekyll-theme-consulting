@@ -1,10 +1,22 @@
 # Consulting - Jekyll theme
 
-> A multilingual jekyll template for businesses.
+> A sober, hassle-free, jekyll template for businesses.
 
 You can preview the theme [here](https://apehex.github.io/jekyll-theme-consulting)
 
 ![Consulting Theme](assets/images/screenshot.jpg "Consulting Theme")
+
+# Features
+
+> **Responsive**: out of the box support for all screen sizes, be it smartphones, laptops, tablets...
+
+> **Multilingual**: easily manage pages, menu, url, dates, sitemap in several languages
+
+> **Customizable**: theme colors, menu, social items can be changed from a central config file
+
+> **GDPR ready**: bundled with a cookie consent plugin and a boilerplate privacy policy compliant with GDPR
+
+> **SEO ready**: sitemap, robots.txt and tags are automatically generated for the website
 
 # Installation
 
@@ -39,32 +51,66 @@ and [creating pages](https://jekyllrb.com/docs/pages/).
 You can use the following custom parameters in `_config.yml`.
 
 ### Site
-- `subtitle` sets the text for the lighter colored text next to your site's title.
+Both `title` and `subtitle` are displayed side by side :
+- in the tab name
+- at the top of the page, in the header
 
 ### Social
-- `500px_url`
-- `facebook_url`
-- `github_url`
-- `gitlab_url`
-- `googleplus_url`
-- `instagram_url`
-- `linkedin_url`
-- `pinterest_url`
-- `slack_url`
-- `twitter_url`
+Social icons will appear for each url your fill in, among `facebook_url` etc.
 
 ### Contact
-- `street_address`
-- `city`
-- `state`
-- `zip_code`
-- `country`
-- `phone`
-- `email`
+Your contact information can be used in contact forms, the footer or anywhere else.
 
 ## Publication
 
-To post your website as a Github page, fork this reposity and create a branch named `gh-pages`, then start editing the `_config.yml` file.
+### On Github Pages
+
+In your own website's repository, edit the `_config.yml` file:
+
+```yaml
+url: "https://<github-account-name>.github.io/<repository-name>"
+```
+
+Build the website with:
+
+    $ JEKYLL_ENV=production bundle exec jekyll build
+
+Commit all your work to the current branch.
+
+Create a branch named `gh-pages`:
+
+    $ git checkout -b gh-pages
+
+And finally replace the repository's content with the generated webpages:
+
+    $ mkdir ~/backup
+    $ mv ./* ~/backup/
+    $ mv ~/backup/.git ./
+    $ mv ~/backup/_site/* ./
+    $ git add .
+    $ git commit -m "First draft"
+
+The repository's content is backup in the home directory of the user.
+
+And finally push to github
+
+    $ git push --u origin gh-pages
+
+### On any server
+
+In your own website's directory, edit the `_config.yml` file:
+
+```yaml
+url: "https:<domain-name>"
+```
+
+Build the website with:
+
+    $ JEKYLL_ENV=production bundle exec jekyll build
+
+Copy the content of the folder `_site` to your server, most likely in `www`.
+
+If necessary, configure your server to serve this directory.
 
 # Contributing
 
@@ -79,9 +125,13 @@ To test the theme, run `bundle exec jekyll serve` and open your browser at `http
 When the theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
 To add a custom directory to the theme-gem, please edit the regexp in `jekyll-theme-consulting.gemspec` accordingly.
 
-# Credits
+# Credits
 
 Inspired by the work of [@ajlkn][ajlkn].
+
+Uses the basic template from the [cookie consent plugin][cookieconsent].
+
+Space image in the banner: the Pillars of Creation, courtesy of NASA.
 
 Repository [Jekyll logo][jekyll-logo] icon licensed under a [Creative Commons Attribution 4.0 International License][cc4-license].
 
@@ -92,5 +142,6 @@ The theme is available as open source under the terms of the [CC-BY-4.0](LICENSE
 [ajlkn]: https://aj.lkn.io/
 [cc4-license]: http://choosealicense.com/licenses/cc-by-4.0/
 [contributor-covenant]: http://contributor-covenant.org
+[cookieconsent]: https://github.com/osano/cookieconsent
 [html5up]: https://html5up.net/
 [jekyll-logo]: https://github.com/jekyll/brand
