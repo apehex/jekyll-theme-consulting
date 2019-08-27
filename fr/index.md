@@ -4,6 +4,20 @@ lang-ref: home-page
 title: Mise en page de l'Accueil
 subtitle: avec une bannière
 description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
+header:
+    style:
+        class: inverted
+        image: /assets/images/pillars-of-creation.jpg
+banner:
+    title: 'Titre Puissant'
+    subtitle: 'Sur Fond Extraterrestre'
+    desription: 'Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.'
+    style:
+        class: inverted
+        image: /assets/images/pillars-of-creation.jpg
+    button:
+        url: '#contact'
+        label: 'Wow'
 ---
 <!-- Section -->
 <section>
@@ -55,7 +69,7 @@ description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum prim
 </section>
 
 <!-- Section -->
-<section>
+<section class="inverted">
     <header class="major">
         <h2>Erat lacinia</h2>
     </header>
@@ -147,3 +161,5 @@ description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum prim
         </article>
     </div>
 </section>
+
+{% include contact.html %}

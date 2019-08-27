@@ -1,8 +1,11 @@
 ---
 layout: default
 ---
-{% include banner.html title=page.title subtitle=page.subtitle description=page.description button_label=page.cta_label button_url=page.cta_destination %}
+{% assign banner = page.banner | default: site.banner %}
+{% assign title = banner.title | default: page.title | default: site.title %}
+{% assign subtitle = banner.subtitle | default: page.subtitle | default: site.subtitle %}
+{% assign description = banner.description | default: page.description | default: site.description %}
+
+{% include banner.html title=title subtitle=subtitle description=description button=banner.button style=banner.style %}
 
 {{ content }}
-
-{% include thread.html %}
