@@ -1,5 +1,5 @@
 <!-- Header -->
-<header id="header">
+<header id="header" {% if include.style %}class="{{ include.style.class | default: '' }}" style="background-image: url({{ include.style.image | absolute_url }});"{% endif %}>
     <a href="{{ '' | absolute_url }}" class="logo">
         <strong>{{ include.title }}</strong> - {{ include.subtitle }}
     </a>

@@ -4,6 +4,20 @@ lang-ref: home-page
 title: Home Layout
 subtitle: with a banner
 description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
+header:
+    style:
+        class: inverted
+        image: /assets/images/pillars-of-creation.jpg
+banner:
+    title: 'Impactful Title'
+    subtitle: 'Enhanced by an Otherwordly Image'
+    desription: 'Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.'
+    style:
+        class: inverted
+        image: /assets/images/pillars-of-creation.jpg
+    button:
+        url: '#contact'
+        label: 'Wow'
 ---
 <!-- Section -->
 <section>
@@ -55,7 +69,7 @@ description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum prim
 </section>
 
 <!-- Section -->
-<section>
+<section class="inverted">
     <header class="major">
         <h2>Erat lacinia</h2>
     </header>
@@ -147,3 +161,5 @@ description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum prim
         </article>
     </div>
 </section>
+
+{% include contact.html %}
