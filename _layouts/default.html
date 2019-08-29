@@ -2,10 +2,10 @@
 ---
 {% assign lang = page.lang | default: site.lang | default: 'en' %}
 {% assign menu = site.data.translations.menu[page.menu][lang] %}
+{% assign header = page.header | default: site.header %}
 {% assign title = page.title | default: site.title %}
 {% assign subtitle = page.subtitle | default: site.subtitle %}
 {% assign description = page.description | default: site.description %}
-{% assign header = page.header | default: site.header %}
 
 <!DOCTYPE html>
 <!--
@@ -26,7 +26,7 @@
         <div id="main">
             <div class="inner">
 
-                {% include header.html title=title subtitle=subtitle style=header.style %}
+                {% include header.html title=header.title subtitle=header.subtitle style=header.style %}
 
                 {{ content }}
 
