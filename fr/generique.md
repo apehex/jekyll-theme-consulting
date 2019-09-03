@@ -1,14 +1,17 @@
 ---
 layout: page
 lang-ref: generic-page
-title: Page Générique
-subtitle: sans bannière
-description: c'est pourquoi ce texte n'apparaît pas.
+title: "Thème Jekyll Consulting"
+subtitle: Un Patron de Site
+description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
+header:
+    title: "Thème Jekyll Consulting"
+    subtitle: "Page Générique"
 ---
 <!-- Content -->
 <section>
     <header class="main">
-        <h1>{{ page.title }}</h1>
+        <h1>Page Générique</h1>
     </header>
 
     <span class="image main"><img src="{{ 'assets/images/pic11.jpg' | absolute_url }}" alt="" /></span>
