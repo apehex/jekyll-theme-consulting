@@ -1,71 +1,89 @@
 ---
 layout: page
-lang-ref: privacy-policy
-title: Politique de Confidentialité
+lang-ref: privacy-policy-page
+title: Thème Jekyll Consulting
+subtitle: Un Patron de Site
+description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
+header:
+    title: Thème Jekyll Consulting
+    subtitle: Politique de Confidentialité
 ---
-# Privacy Policy
+<section>
+    <header class="main">
+        <h1>Politique de Confidentialité</h1>
+        <h3>Effective date: {{ site.time | date: '%F' }}</h3>
+    </header>
+    <p>{{ site.copyright_holder }} ("us", "we", or "our") operates the <a href="{{ site.url }}">website</a> (the "Service").</p>
+    <p>We take your privacy seriously. To better protect your privacy this page details our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.</p>
+</section>
 
-Effective date: {{ site.time | date: '%F' }}
+<section>
+    <header class="major">
+        <h2>Personal Data</h2>
+    </header>
+    <p>Our definition of personal data is based on the privacy laws and regulations of the EU, including the General Data Protection Regulation (GDPR).</p>
+    <p>These are widely regarded as the strongest privacy protections in the world. We consider any information about you or your behavior that can be traced back to you as personal data.</p>
+</section>
 
-{{ site.copyright_holder }} ("us", "we", or "our") operates the {{ site.url }} website (the "Service").
+<section>
+    <header class="major">
+        <h2>Collection of Routine Information</h2>
+    </header>
+    <p>We do not log or share any personal information about our visitors.</p>
+    <p>This website tracks basic information about their visitors, required by normal internet traffic.</p>
+    <p>This information includes, but is not limited to, IP addresses, browser details, timestamps and referring pages. None of this information can personally identify specific visitors to this website. The information is tracked for routine administration and maintenance purposes.</p>
+</section>
 
-We take your privacy seriously. To better protect your privacy this page details our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.
+<section>
+    <header class="major">
+        <h2>Cookies</h2>
+    </header>
+    <p>Where necessary, this website uses cookies to store information about a visitor’s preferences and history in order to better serve the visitor and/or present the visitor with customized content.</p>
+</section>
 
+<section>
+    <header class="major">
+        <h2>Advertisement and Other Third Parties</h2>
+    </header>
+    <p>This website does not contain any third party advertisement.</p>
+    <p>It is hosted on {{ site.hosting_third_party }}.</p>
+</section>
 
-## Personal Data
+<section>
+    <header class="major">
+        <h2>Links to Third Party Websites</h2>
+    </header>
+    <p>We have included links on this website for your use and reference.</p>
+</section>
 
-Our definition of personal data is based on the privacy laws and regulations of the EU, including the General Data Protection Regulation (GDPR).
+<section>
+    <header class="major">
+        <h2>Third Party Privacy Policy</h2>
+    </header>
+    <p>We are not responsible for the privacy policies on the above mentioned third parties. You should be aware that the privacy policies of these websites may differ from our own.</p>
+    <p>Third parties may use cookies, scripts and/or web beacons to track visitors' activities on this website in order to display advertisements and other useful information. Such tracking is done directly by the third parties through their own servers and is subject to their own privacy policies. This website has no access or control over these cookies, scripts and/or web beacons that may be used by third parties.</p>
+    <
+    <p>Learn how to <a href="http://www.google.com/privacy_ads.html">opt out of Google’s cookie usage</a>.</p>
+</section>
 
-These are widely regarded as the strongest privacy protections in the world. We consider any information about you or your behavior that can be traced back to you as personal data.
+<section>
+    <header class="major">
+        <h2>Security</h2>
+    </header>
+    <p>The security of your personal information is important to us, but remember that no method of transmission over the Internet, or method of electronic storage, is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.</p>
+</section>
 
+<section>
+    <header class="major">
+        <h2>Changes To This Privacy Policy</h2>
+    </header>
+    <p>This Privacy Policy is effective as of {{ site.time | date: '%F'}} and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page.</p>
+    <p>We reserve the right to update or change our Privacy Policy at any time and you should check this Privacy Policy periodically. If we make any material changes to this Privacy Policy, we will notify you either through the email address you have provided us, or by placing a prominent notice on our website.</p>
+</section>
 
-## Collection of Routine Information
-
-We do not log or share any personal information about our visitors.
-
-This website tracks basic information about their visitors, required by normal internet traffic.
-
-This information includes, but is not limited to, IP addresses, browser details, timestamps and referring pages. None of this information can personally identify specific visitors to this website. The information is tracked for routine administration and maintenance purposes.
-
-
-## Cookies
-
-Where necessary, this website uses cookies to store information about a visitor’s preferences and history in order to better serve the visitor and/or present the visitor with customized content.
-
-
-## Advertisement and Other Third Parties
-
-This website does not contain any third party advertisement.
-
-It is hosted on {{ site.hosting_third_party }}.
-
-
-## Links to Third Party Websites
-
-We have included links on this website for your use and reference.
-
-
-## Third Party Privacy Policy
-
-We are not responsible for the privacy policies on the above mentioned third parties. You should be aware that the privacy policies of these websites may differ from our own.
-
-Third parties may use cookies, scripts and/or web beacons to track visitors' activities on this website in order to display advertisements and other useful information. Such tracking is done directly by the third parties through their own servers and is subject to their own privacy policies. This website has no access or control over these cookies, scripts and/or web beacons that may be used by third parties.
-
-Learn how to [opt out of Google’s cookie usage](http://www.google.com/privacy_ads.html).
-
-
-## Security
-
-The security of your personal information is important to us, but remember that no method of transmission over the Internet, or method of electronic storage, is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.
-
-
-## Changes To This Privacy Policy
-
-This Privacy Policy is effective as of {{ site.time | date: '%F'}} and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page.
-
-We reserve the right to update or change our Privacy Policy at any time and you should check this Privacy Policy periodically. If we make any material changes to this Privacy Policy, we will notify you either through the email address you have provided us, or by placing a prominent notice on our website.
-
-
-## Contact Information
-
-For any questions or concerns regarding the privacy policy, please send us an email to {{ site.email }}.
+<section>
+    <header class="major">
+        <h2>Nous Contacter</h2>
+    </header>
+    <p>Pour toute question concernant notre politique de confidentialité, merci de nous envoyer un email à <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+</section>
