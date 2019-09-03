@@ -1,15 +1,17 @@
 ---
 layout: home
 lang-ref: home-page
-title: Home Layout
-subtitle: with a banner
+title: Jekyll Theme Consulting
+subtitle: A Site Template
 description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
 header:
+    title: Jekyll Theme Consulting
+    subtitle: Home Layout
     style:
         class: inverted
         image: /assets/images/pillars-of-creation.jpg
 banner:
-    title: 'Impactful Title'
+    title: 'With a Banner'
     subtitle: 'Enhanced by an Otherwordly Image'
     desription: 'Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.'
     style:

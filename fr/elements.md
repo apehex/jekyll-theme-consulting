@@ -1,14 +1,17 @@
 ---
 layout: page
 lang-ref: elements-page
-title: Divers Eléments
-subtitle: sans bannière
-description: c'est pourquoi ce texte n'apparaît pas.
+title: "Thème Jekyll Consulting"
+subtitle: "Un Patron de Site"
+description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
+header:
+    title: "Thème Jekyll Consulting"
+    subtitle: "Divers Eléments"
 ---
 <!-- Content -->
 <section id="theme-normal">
     <header class="main">
-        <h1>{{ page.title }}</h1>
+        <h1>Divers Eléments</h1>
     </header>
 
     <!-- Content -->

@@ -1,14 +1,17 @@
 ---
 layout: page
 lang-ref: elements-page
-title: Elements
-subtitle: without a banner
-description: that's why this text doesn't show
+title: Jekyll Theme Consulting
+subtitle: A Site Template
+description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
+header:
+    title: Jekyll Theme Consulting
+    subtitle: Elements
 ---
 <!-- Content -->
 <section id="normal-style">
     <header class="main">
-        <h1>{{ page.title }}</h1>
+        <h1>Elements</h1>
     </header>
 
     <!-- Content -->

@@ -1,13 +1,17 @@
 ---
 layout: page
 lang-ref: generic-page
-title: Generic
-subtitle: 
+title: Jekyll Theme Consulting
+subtitle: A Site Template
+description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
+header:
+    title: Jekyll Theme Consulting
+    subtitle: Generic Page
 ---
 <!-- Content -->
 <section>
     <header class="main">
-        <h1>{{ page.title }}</h1>
+        <h1>Generic Page</h1>
     </header>
 
     <span class="image main"><img src="{{ 'assets/images/pic11.jpg' | absolute_url }}" alt="" /></span>
