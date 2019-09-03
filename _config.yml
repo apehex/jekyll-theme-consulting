@@ -16,23 +16,51 @@ phone: (716) 555-5555
 email: youremailaddress@gmail.com
 
 # Social settings
-500px_url: https://github.com/moodule
-facebook_url: https://github.com/moodule
-github_url: https://github.com/moodule
-gitlab_url: https://github.com/moodule
-instagram_url: https://github.com/moodule
-linkedin_url: https://github.com/moodule
-medium_url: https://github.com/moodule
-pinterest_url: https://github.com/moodule
-slack_url: https://github.com/moodule
-snapchat_url: https://github.com/moodule
-twitter_url: https://github.com/moodule
+500px:
+  url:
+  label: 
+facebook:
+  url: https://github.com/moodule
+  label:
+github:
+  url: https://github.com/moodule
+  label:
+gitlab:
+  url:
+  label:
+instagram:
+  url: https://github.com/moodule
+  label:
+linkedin:
+  url:
+  label:
+medium:
+  url: https://github.com/moodule
+  label:
+pinterest:
+  url:
+  label:
+slack:
+  url:
+  label:
+snapchat:
+  url: https://github.com/moodule
+  label:
+twitter:
+  url: https://github.com/moodule
+  label:
 
 # Optional elements
-logo_url: /assets/images/logo.svg
-favicon_url: /assets/images/favicon.ico
-legal_terms_url: /legal-terms
-privacy_policy_url: /privacy-policy
+logo:
+  url: /assets/images/logo.svg
+  alt: logo
+favicon:
+  url: /assets/images/favicon.ico
+  alt: favicon
+legal_terms:
+  url: /en/legal-terms/
+privacy_policy:
+  url: /en/privacy-policy/
 
 # Privacy notice
 hosting_third_party: github
@@ -77,6 +105,8 @@ sass:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://moodule.github.io/jekyll-theme-consulting" # the base hostname & protocol for your site, e.g. http://example.com
 author: David Mougeolle
-copyright_holder: Untitled
+copyright:
+  holder: Untitled
+  license: CC0
 
 # Exclude from processing

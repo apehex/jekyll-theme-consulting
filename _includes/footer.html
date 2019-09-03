@@ -2,10 +2,10 @@
 <footer id="footer">
 	<section class="inverted">
 	    <p class="copyright">
-	    	&copy; {{ site.copyright_holder }}. All rights reserved.
-	    	Design: <a href="https://github.com/moodule">MOODULE</a>.
-	    	{% if site.privacy_policy_url %}<a href="{{ site.privacy_policy_url | absolute_url }}">Privacy policy</a>.{% endif %}
-	    	{% if site.legal_terms_url %}<a href="{{ site.legal_terms_url | absolute_url }}">Legal terms</a>.{% endif %}
+	    	&copy; {{ site.copyright.holder }}. {{ site.copyright.license}}.
+	    	Design & Jekyll Integration: <a href="https://github.com/moodule">MOODULE</a>.
+	    	{% if site.privacy_policy.url %}<a href="{{ site.privacy_policy.url | absolute_url }}">Privacy policy</a>.{% endif %}
+	    	{% if site.legal_terms.url %}<a href="{{ site.legal_terms.url | absolute_url }}">Legal terms</a>.{% endif %}
 	    </p>
 	</section>
 </footer>
