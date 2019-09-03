@@ -13,7 +13,7 @@ header:
         <h1>Politique de Confidentialité</h1>
         <h3>Effective date: {{ site.time | date: '%F' }}</h3>
     </header>
-    <p>{{ site.copyright_holder }} ("us", "we", or "our") operates the <a href="{{ site.url }}">website</a> (the "Service").</p>
+    <p>{{ site.copyright.holder }} ("us", "we", or "our") operates the <a href="{{ site.url }}">website</a> (the "Service").</p>
     <p>We take your privacy seriously. To better protect your privacy this page details our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.</p>
 </section>
 
