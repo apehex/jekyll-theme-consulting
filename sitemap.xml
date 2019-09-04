@@ -21,28 +21,6 @@
   
   
   <url>
-    <loc>https://apehex.github.io/jekyll-theme-consulting/legal-terms/</loc>
-    
-    <xhtml:link rel="alternate" hreflang="" href="https://apehex.github.io/jekyll-theme-consulting/legal-terms/" />
-    
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  
-  
-  
-  <url>
-    <loc>https://apehex.github.io/jekyll-theme-consulting/privacy-policy/</loc>
-    
-    <xhtml:link rel="alternate" hreflang="" href="https://apehex.github.io/jekyll-theme-consulting/privacy-policy/" />
-    
-    <changefreq>weekly</changefreq>
-  </url>
-  
-  
-  
-  
-  <url>
     <loc>https://apehex.github.io/jekyll-theme-consulting/en/elements/</loc>
     
     <xhtml:link rel="alternate" hreflang="en" href="https://apehex.github.io/jekyll-theme-consulting/en/elements/" />
