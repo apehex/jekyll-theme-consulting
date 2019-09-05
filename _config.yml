@@ -1,6 +1,5 @@
 # Site settings
 title: Jekyll Theme Consulting
-subtitle: A Site Template
 description: >- # this means to ignore newlines until "baseurl:"
   A responsive site template designed by <a href="david.mougeolle@moodule.net">DM</a> for <a href="https://github.com/moodule">MOODULE</a>.<br />
   It’s responsive, built on HTML5/CSS3, and entirely free<br />
@@ -100,7 +99,7 @@ plugins:
   - jekyll-seo-tag
 
 # Publication settings
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://moodule.github.io/jekyll-theme-consulting" # the base hostname & protocol for your site, e.g. http://example.com
 author: David Mougeolle
 copyright:
