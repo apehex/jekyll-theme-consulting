@@ -56,9 +56,8 @@ legal_terms:
   url: /en/legal-terms/
 privacy_policy:
   url: /en/privacy-policy/
-
-# Privacy notice
-hosting_third_party: github
+  third_party:
+    hosting: github
 
 # Collections
 collections:

@@ -44,7 +44,7 @@ header:
         <h2>Advertisement and Other Third Parties</h2>
     </header>
     <p>This website does not contain any third party advertisement.</p>
-    <p>It is hosted on {{ site.hosting_third_party }}.</p>
+    <p>It is hosted on {{ site.privacy_policy.third_party.hosting }}.</p>
 </section>
 
 <section>
