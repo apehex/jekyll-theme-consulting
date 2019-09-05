@@ -9,6 +9,6 @@
     <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url }}" />
     {% endfor %}
     <noscript><link rel="stylesheet" href="{{ 'assets/css/noscript.css' | absolute_url }}" /></noscript>
-    {% if site.favicon %}<link rel="icon" href="{{ site.favicon.url | absolute_url }}" />{% endif %}
+    {% if site.favicon %}<link rel="icon" href="{{ site.favicon | absolute_url }}" />{% endif %}
     {% seo %}
 </head>
