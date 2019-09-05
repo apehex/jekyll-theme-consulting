@@ -2,9 +2,6 @@
 layout: page
 lang-ref: "privacy-policy-page"
 title: "Thème Jekyll Consulting"
-subtitle: "Un Patron de Site"
-description: >-
-    Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
 header:
     title: "Thème Jekyll Consulting"
     subtitle: "Politique de Confidentialité"

@@ -2,25 +2,20 @@
 layout: home
 lang-ref: home-page
 title: "Thème Jekyll Consulting"
-subtitle: "Un Patron de Site"
-description: >-
-    Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
 header:
     title: "Thème Jekyll Consulting"
     subtitle: "Mise en Page de l'Accueil"
     style:
         class: inverted
-        image:
-            path: "/assets/images/pillars-of-creation.jpg"
+        image: "/assets/images/pillars-of-creation.jpg"
 banner:
     title: "Avec une Bannière"
     subtitle: "Sur Fond Extraterrestre"
     desription: >-
-        Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
+        A responsive site template designed by <a href="apehex@protonmail.com">DM</a> for <a href="https://github.com/apehex">apehex</a>.<br />It’s responsive, built on HTML5/CSS3, and entirely free<br />under the <a href="https://github.com/apehex/jekyll-theme-consulting/blob/master/LICENSE">Creative Commons license</a>.
     style:
         class: inverted
-        image:
-            path: "/assets/images/pillars-of-creation.jpg"
+        image: "/assets/images/pillars-of-creation.jpg"
     button:
         label: "Wow"
 ---

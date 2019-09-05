@@ -4,7 +4,6 @@
 {% assign menu = site.data.menus[page.menu][lang] %}
 {% assign header = page.header | default: site.header %}
 {% assign title = page.title | default: site.title %}
-{% assign subtitle = page.subtitle | default: site.subtitle %}
 {% assign description = page.description | default: site.description %}
 
 <!DOCTYPE html>
@@ -15,7 +14,7 @@
 -->
 <html lang="{{ lang }}">
 
-{% include head.html title=title subtitle=subtitle description=description %}
+{% include head.html title=title description=description %}
 
 <body>
 
