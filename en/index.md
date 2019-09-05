@@ -2,25 +2,20 @@
 layout: home
 lang-ref: home-page
 title: "Jekyll Theme Consulting"
-subtitle: "A Site Template"
-description: >-
-    Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
 header:
     title: "Jekyll Theme Consulting"
     subtitle: "Home Layout"
     style:
         class: inverted
-        image:
-            path: "/assets/images/pillars-of-creation.jpg"
+        image: "/assets/images/pillars-of-creation.jpg"
 banner:
     title: "With a Banner"
     subtitle: "Enhanced by an Otherwordly Image"
     desription: >-
-        Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
+        A responsive site template designed by <a href="david.mougeolle@moodule.net">DM</a> for <a href="https://github.com/moodule">MOODULE</a>.<br />It’s responsive, built on HTML5/CSS3, and entirely free<br />under the <a href="https://github.com/moodule/jekyll-theme-consulting/blob/master/LICENSE">Creative Commons license</a>.
     style:
         class: inverted
-        image:
-            path: "/assets/images/pillars-of-creation.jpg"
+        image: "/assets/images/pillars-of-creation.jpg"
     button:
         label: "Wow"
 ---

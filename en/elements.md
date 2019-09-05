@@ -2,9 +2,6 @@
 layout: page
 lang-ref: elements-page
 title: "Jekyll Theme Consulting"
-subtitle: "A Site Template"
-description: >-
-    Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
 header:
     title: "Jekyll Theme Consulting"
     subtitle: Elements
