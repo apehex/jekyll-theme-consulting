@@ -1,12 +1,13 @@
 ---
 layout: page
 lang-ref: legal-terms-page
-title: Thème Jekyll Consulting
-subtitle: Un Patron de Site
-description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
+title: "Thème Jekyll Consulting"
+subtitle: "Un Patron de Site"
+description: >-
+    Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
 header:
-    title: Thème Jekyll Consulting
-    subtitle: Mentions Légales
+    title: "Thème Jekyll Consulting"
+    subtitle: "Mentions Légales"
 ---
 <section>
     <header class="main">

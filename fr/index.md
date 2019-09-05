@@ -1,25 +1,28 @@
 ---
 layout: home
 lang-ref: home-page
-title: Thème Jekyll Consulting
-subtitle: Un Patron de Site
-description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
+title: "Thème Jekyll Consulting"
+subtitle: "Un Patron de Site"
+description: >-
+    Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
 header:
     title: "Thème Jekyll Consulting"
     subtitle: "Mise en Page de l'Accueil"
     style:
         class: inverted
-        image: /assets/images/pillars-of-creation.jpg
+        image:
+            path: "/assets/images/pillars-of-creation.jpg"
 banner:
     title: "Avec une Bannière"
     subtitle: "Sur Fond Extraterrestre"
-    desription: 'Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.'
+    desription: >-
+        Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
     style:
         class: inverted
-        image: /assets/images/pillars-of-creation.jpg
+        image:
+            path: "/assets/images/pillars-of-creation.jpg"
     button:
-        url: '#contact'
-        label: 'Wow'
+        label: "Wow"
 ---
 <!-- Section -->
 <section>

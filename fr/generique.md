@@ -2,8 +2,9 @@
 layout: page
 lang-ref: generic-page
 title: "Thème Jekyll Consulting"
-subtitle: Un Patron de Site
-description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
+subtitle: "Un Patron de Site"
+description: >-
+    Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
 header:
     title: "Thème Jekyll Consulting"
     subtitle: "Page Générique"
