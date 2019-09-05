@@ -1,25 +1,28 @@
 ---
 layout: home
 lang-ref: home-page
-title: Jekyll Theme Consulting
-subtitle: A Site Template
-description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
+title: "Jekyll Theme Consulting"
+subtitle: "A Site Template"
+description: >-
+    Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
 header:
-    title: Jekyll Theme Consulting
-    subtitle: Home Layout
+    title: "Jekyll Theme Consulting"
+    subtitle: "Home Layout"
     style:
         class: inverted
-        image: /assets/images/pillars-of-creation.jpg
+        image:
+            path: "/assets/images/pillars-of-creation.jpg"
 banner:
-    title: 'With a Banner'
-    subtitle: 'Enhanced by an Otherwordly Image'
-    desription: 'Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.'
+    title: "With a Banner"
+    subtitle: "Enhanced by an Otherwordly Image"
+    desription: >-
+        Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
     style:
         class: inverted
-        image: /assets/images/pillars-of-creation.jpg
+        image:
+            path: "/assets/images/pillars-of-creation.jpg"
     button:
-        url: '#contact'
-        label: 'Wow'
+        label: "Wow"
 ---
 <!-- Section -->
 <section>

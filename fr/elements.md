@@ -3,7 +3,8 @@ layout: page
 lang-ref: elements-page
 title: "Thème Jekyll Consulting"
 subtitle: "Un Patron de Site"
-description: Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
+description: >-
+    Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
 header:
     title: "Thème Jekyll Consulting"
     subtitle: "Divers Eléments"
