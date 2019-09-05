@@ -1,6 +1,6 @@
 # Site settings
-title: Consulting
-subtitle: by Moodule
+title: Jekyll Theme Consulting
+subtitle: A Site Template
 description: >- # this means to ignore newlines until "baseurl:"
   A responsive site template designed by <a href="david.mougeolle@moodule.net">DM</a> for <a href="https://github.com/moodule">MOODULE</a>.<br />
   It’s responsive, built on HTML5/CSS3, and entirely free<br />
@@ -51,12 +51,8 @@ twitter:
   label:
 
 # Optional elements
-logo:
-  url: /assets/images/logo.svg
-  alt: logo
-favicon:
-  url: /assets/images/favicon.ico
-  alt: favicon
+logo: /assets/images/logo.svg
+favicon: /assets/images/favicon.ico
 legal_terms:
   url: /en/legal-terms/
 privacy_policy:
@@ -100,9 +96,11 @@ permalink: pretty
 markdown: kramdown
 sass:
   style: compressed
+plugins:
+  - jekyll-seo-tag
 
 # Publication settings
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://moodule.github.io/jekyll-theme-consulting" # the base hostname & protocol for your site, e.g. http://example.com
 author: David Mougeolle
 copyright:
