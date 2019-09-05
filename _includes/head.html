@@ -2,7 +2,6 @@
 {% assign pages=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' | concat: posts %}
 
 <head>
-    <title>{{ include.title }} - {{ include.subtitle }}</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="{{ 'assets/css/main.css' | absolute_url }}" />
@@ -10,5 +9,6 @@
     <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url }}" />
     {% endfor %}
     <noscript><link rel="stylesheet" href="{{ 'assets/css/noscript.css' | absolute_url }}" /></noscript>
-    {% if site.favicon.url %}<link rel="icon" href="{{ site.favicon.url | absolute_url }}" />{% endif %}
+    {% if site.favicon %}<link rel="icon" href="{{ site.favicon.url | absolute_url }}" />{% endif %}
+    {% seo %}
 </head>
