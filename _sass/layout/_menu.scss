@@ -6,7 +6,7 @@
 
 /* Menu */
 
-#menu {
+#menu, #results {
 	ul {
 		@include vendor('user-select', 'none');
 		color: _palette(fg-bold);
@@ -114,7 +114,7 @@
 
 /* Inverted */
 
-.inverted #menu {
+.inverted #menu, .inverted #results {
 	ul {
 		color: _palette(fg-bold-inverted);
 
