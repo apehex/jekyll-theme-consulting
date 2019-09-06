@@ -23,6 +23,6 @@ window.cookieconsent.initialise({
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('search-results'),
-  json: '/index.json'
+	json: "{{ '/index.json' | absolute_url }}"
 })
 </script>
