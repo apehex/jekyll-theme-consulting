@@ -27,9 +27,9 @@
     <noscript><link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-consulting/assets/css/noscript.css" /></noscript>
     <link rel="icon" href="https://apehex.github.io/jekyll-theme-consulting/assets/images/favicon.ico" />
     <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Jekyll Theme Consulting | A responsive site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.</title>
+<title>Theme Elements Showcase | Jekyll Theme Consulting</title>
 <meta name="generator" content="Jekyll v3.8.6" />
-<meta property="og:title" content="Jekyll Theme Consulting" />
+<meta property="og:title" content="Theme Elements Showcase" />
 <meta name="author" content="apehex" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="A responsive site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license." />
@@ -38,11 +38,11 @@
 <meta property="og:url" content="https://apehex.github.io/jekyll-theme-consulting/en/elements/" />
 <meta property="og:site_name" content="Jekyll Theme Consulting" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Jekyll Theme Consulting" />
+<meta property="twitter:title" content="Theme Elements Showcase" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@apehex" />
 <script type="application/ld+json">
-{"@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://apehex.github.io/jekyll-theme-consulting/assets/images/logo.png"},"name":"apehex"},"url":"https://apehex.github.io/jekyll-theme-consulting/en/elements/","headline":"Jekyll Theme Consulting","author":{"@type":"Person","name":"apehex"},"description":"A responsive site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.","@context":"https://schema.org"}</script>
+{"@type":"WebPage","url":"https://apehex.github.io/jekyll-theme-consulting/en/elements/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://apehex.github.io/jekyll-theme-consulting/assets/images/logo.png"},"name":"apehex"},"headline":"Theme Elements Showcase","author":{"@type":"Person","name":"apehex"},"description":"A responsive site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -496,7 +496,7 @@ print 'It took ' + i + ' iterations to sort the deck.';
 <!-- Inverted Section -->
 <section id="inverted-style" class="inverted">
     <header class="main">
-        <h1>Jekyll Theme Consulting</h1>
+        <h1>Theme Elements Showcase</h1>
     </header>
 
     <!-- Content -->
@@ -912,11 +912,17 @@ print 'It took ' + i + ' iterations to sort the deck.';
   <div class="inner">
 
     <!-- Search -->
-      <section id="search" class="alt">
-        <form method="post" action="#">
-          <input type="text" name="query" id="query" placeholder="Search" />
-        </form>
-      </section>
+<section id="search" class="alt">
+    <form method="post" action="javascript:void(0);">
+        <input type="text" name="search-input" id="search-input" placeholder="Search" />
+    </form>
+</section>
+
+<nav id="results">
+    <ul id="search-results">
+    </ul>
+</nav>
+
 
     <!-- Menu -->
 <nav id="menu">
@@ -952,6 +958,7 @@ print 'It took ' + i + ' iterations to sort the deck.';
     
     </ul>
 </nav>
+
 
     <!-- Social Icons -->
 <div id="social">
@@ -993,6 +1000,7 @@ print 'It took ' + i + ' iterations to sort the deck.';
 
 </div>
 
+
     </div>
 
     <!-- Footer -->
@@ -1027,6 +1035,15 @@ window.cookieconsent.initialise({
 	}
 });
 </script>
+<script src="https://apehex.github.io/jekyll-theme-consulting/assets/js/simple-jekyll-search.min.js" type="text/javascript"></script>
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('search-results'),
+  json: '/index.json'
+})
+</script>
+
 
 </body>
 

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://apehex.github.io/jekyll-theme-consulting/sitemap.xml

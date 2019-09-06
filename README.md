@@ -135,6 +135,8 @@ Inspired by the work of [@ajlkn][ajlkn].
 
 Uses the basic template from the [cookie consent plugin][cookieconsent].
 
+Uses the [simple Jekyll search plugin][simple-jekyll-search].
+
 Space image in the banner: the Pillars of Creation, courtesy of NASA.
 
 Repository [Jekyll logo][jekyll-logo] icon licensed under a [Creative Commons Attribution 4.0 International License][cc4-license].
@@ -149,3 +151,4 @@ The theme is available as open source under the terms of the [CC-BY-4.0](LICENSE
 [cookieconsent]: https://github.com/osano/cookieconsent
 [html5up]: https://html5up.net/
 [jekyll-logo]: https://github.com/jekyll/brand
+[simple-jekyll-search]: https://github.com/christian-fei/Simple-Jekyll-Search

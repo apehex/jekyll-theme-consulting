@@ -46,7 +46,7 @@
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@apehex" />
 <script type="application/ld+json">
-{"image":"https://apehex.github.io/jekyll-theme-consulting/assets/images/pic01.jpg","@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://apehex.github.io/jekyll-theme-consulting/assets/images/logo.png"},"name":"apehex"},"url":"https://apehex.github.io/jekyll-theme-consulting/en/jekyll/update/2019/02/08/welcome-to-jekyll/","headline":"Welcome to Jekyll!","dateModified":"2019-02-08T13:33:42+01:00","datePublished":"2019-02-08T13:33:42+01:00","author":{"@type":"Person","name":"apehex"},"description":"To add new posts, simply add a file in the _posts directory that follows the convention…","mainEntityOfPage":{"@type":"WebPage","@id":"https://apehex.github.io/jekyll-theme-consulting/en/jekyll/update/2019/02/08/welcome-to-jekyll/"},"@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","url":"https://apehex.github.io/jekyll-theme-consulting/en/jekyll/update/2019/02/08/welcome-to-jekyll/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://apehex.github.io/jekyll-theme-consulting/assets/images/logo.png"},"name":"apehex"},"headline":"Welcome to Jekyll!","dateModified":"2019-02-08T13:33:42+01:00","datePublished":"2019-02-08T13:33:42+01:00","author":{"@type":"Person","name":"apehex"},"description":"To add new posts, simply add a file in the _posts directory that follows the convention…","image":"https://apehex.github.io/jekyll-theme-consulting/assets/images/pic01.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://apehex.github.io/jekyll-theme-consulting/en/jekyll/update/2019/02/08/welcome-to-jekyll/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -136,11 +136,17 @@
   <div class="inner">
 
     <!-- Search -->
-      <section id="search" class="alt">
-        <form method="post" action="#">
-          <input type="text" name="query" id="query" placeholder="Search" />
-        </form>
-      </section>
+<section id="search" class="alt">
+    <form method="post" action="javascript:void(0);">
+        <input type="text" name="search-input" id="search-input" placeholder="Search" />
+    </form>
+</section>
+
+<nav id="results">
+    <ul id="search-results">
+    </ul>
+</nav>
+
 
     <!-- Menu -->
 <nav id="menu">
@@ -176,6 +182,7 @@
     
     </ul>
 </nav>
+
 
     <!-- Social Icons -->
 <div id="social">
@@ -217,6 +224,7 @@
 
 </div>
 
+
     </div>
 
     <!-- Footer -->
@@ -251,6 +259,15 @@ window.cookieconsent.initialise({
 	}
 });
 </script>
+<script src="https://apehex.github.io/jekyll-theme-consulting/assets/js/simple-jekyll-search.min.js" type="text/javascript"></script>
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('search-results'),
+  json: '/index.json'
+})
+</script>
+
 
 </body>
 
