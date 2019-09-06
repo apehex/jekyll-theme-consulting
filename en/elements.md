@@ -1,7 +1,7 @@
 ---
 layout: page
 lang-ref: elements-page
-title: "Jekyll Theme Consulting"
+title: Theme Elements Showcase
 header:
     title: "Jekyll Theme Consulting"
     subtitle: Elements
