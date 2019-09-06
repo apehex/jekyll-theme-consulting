@@ -3,7 +3,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-consulting"
-  spec.version       = "0.6.2"
+  spec.version       = "0.6.3"
   spec.authors       = ["David Mougeolle"]
   spec.email         = ["david.mougeolle@moodule.net"]
 
@@ -11,10 +11,10 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/moodule/jekyll-theme-consulting"
   spec.license       = "CC-BY-4.0"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|sitemap.md|robots.txt|index.json|LICENSE|README|en/privacy-policy.md)!i) }
+  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|sitemap.md|robots.txt|LICENSE|README|en/privacy-policy.md)!i) }
 
   spec.add_runtime_dependency "jekyll", "~> 3.8"
-  spec.add_runtime_dependency "jekyll-seo-tag"
+  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.6"
 
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 12.0"
