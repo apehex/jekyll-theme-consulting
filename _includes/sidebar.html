@@ -2,12 +2,7 @@
 <div id="sidebar" class="inverted">
   <div class="inner">
 
-    <!-- Search -->
-      <section id="search" class="alt">
-        <form method="post" action="#">
-          <input type="text" name="query" id="query" placeholder="Search" />
-        </form>
-      </section>
+    {% include search.html %}
 
     {% include navigation.html menu=include.menu %}
 
