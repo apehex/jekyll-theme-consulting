@@ -71,6 +71,11 @@
 			}
 		}
 
+		> #results {
+			max-height: 30%;
+			overflow-y: auto;
+		}
+
 		> .alt {
 			background-color: darken(_palette(bg-alt), 2);
 			border-bottom: solid 2px _palette(border);
