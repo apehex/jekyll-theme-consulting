@@ -18,3 +18,11 @@ window.cookieconsent.initialise({
 	}
 });
 </script>
+<script src="{{ 'assets/js/simple-jekyll-search.min.js' | absolute_url }}" type="text/javascript"></script>
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('search-results'),
+  json: '/index.json'
+})
+</script>
