@@ -1,7 +1,7 @@
 ---
 layout: page
 lang-ref: legal-terms-page
-title: "Thème Jekyll Consulting"
+title: "Mentions Légales"
 header:
     title: "Thème Jekyll Consulting"
     subtitle: "Mentions Légales"

@@ -17,6 +17,7 @@ banner:
         class: inverted
         image: "/assets/images/pillars-of-creation.jpg"
     button:
+        url: "#contact"
         label: "Wow"
 ---
 <!-- Section -->

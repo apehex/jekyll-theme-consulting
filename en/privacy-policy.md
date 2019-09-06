@@ -1,7 +1,7 @@
 ---
 layout: page
 lang-ref: privacy-policy-page
-title: Jekyll Theme Consulting
+title: Privacy Policy
 header:
     title: Jekyll Theme Consulting
     subtitle: Privacy Policy

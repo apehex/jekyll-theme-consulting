@@ -1,7 +1,7 @@
 ---
 layout: page
 lang-ref: elements-page
-title: "Thème Jekyll Consulting"
+title: "Démonstration des Eléments du Thème"
 header:
     title: "Thème Jekyll Consulting"
     subtitle: "Divers Eléments"

@@ -1,7 +1,7 @@
 ---
 layout: page
 lang-ref: generic-page
-title: Jekyll Theme Consulting
+title: JGeneric Page
 header:
     title: Jekyll Theme Consulting
     subtitle: Generic Page
