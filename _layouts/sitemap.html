@@ -1,11 +1,11 @@
 ---
 permalink: /sitemap.xml
 ---
-{% assign posts=site.posts | sort: 'lang' %}
-{% assign pages=site.html_pages | sort: 'lang' | concat: posts %}
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  {% for page in pages %}
+{% assign posts=site.posts | sort: 'lang' %}
+{% assign pages=site.html_pages | sort: 'lang' | concat: posts %}
+{% for page in pages %}
   {% assign versions=pages | where:"lang-ref", page.lang-ref %}
   {% unless page.url contains "404" %}
   <url>
@@ -16,5 +16,5 @@ permalink: /sitemap.xml
     <changefreq>weekly</changefreq>
   </url>
   {% endunless %}
-  {% endfor %}
+{% endfor %}
 </urlset>
