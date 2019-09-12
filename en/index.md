@@ -3,7 +3,7 @@ layout: home
 lang-ref: home-page
 title: "Jekyll Theme Consulting"
 header:
-    title: "Jekyll Theme Consulting"
+    title: "Consulting"
     subtitle: "Home Layout"
     style:
         class: inverted
