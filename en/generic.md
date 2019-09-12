@@ -3,7 +3,7 @@ layout: page
 lang-ref: generic-page
 title: Generic Page
 header:
-    title: Jekyll Theme Consulting
+    title: Consulting
     subtitle: Generic Page
 ---
 <!-- Content -->

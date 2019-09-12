@@ -3,7 +3,7 @@ layout: page
 lang-ref: elements-page
 title: "Démonstration des Eléments du Thème"
 header:
-    title: "Thème Jekyll Consulting"
+    title: "Consulting"
     subtitle: "Divers Eléments"
 ---
 <!-- Content -->
