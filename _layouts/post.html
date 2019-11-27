@@ -9,9 +9,9 @@ layout: default
             <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
                 {% include date.html date=page.date %}
             </time>
-            {% if page.author %}
+            {%- if page.author -%}
             • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-            {% endif %}
+            {%- endif -%}
         </p>
     </header>
 
@@ -19,9 +19,9 @@ layout: default
         {{ content }}
     </div>
 
-    {% if site.disqus.shortname %}
+    {%- if site.disqus.shortname -%}
     {% include disqus_comments.html %}
-    {% endif %}
+    {%- endif -%}
 
     <a class="u-url" href="{{ page.url | absolute_url }}" hidden></a>
 </article>

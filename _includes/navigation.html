@@ -1,21 +1,21 @@
 <!-- Menu -->
 <nav id="menu">
     <ul>
-    {% for item in include.menu %}
+    {%- for item in include.menu -%}
         <li {% if item.url == page.url %} class="current" {% endif %}>
-        {% if item.menu[0] %}
+        {%- if item.menu[0] -%}
             <span class="opener">{{ item.title }}</span>
             <ul>
-                {% for subitem in item.menu %}
+                {%- for subitem in item.menu -%}
                 <li {% if subitem.url == page.url %} class="current" {% endif %}>
                     <a href="{{ subitem.url | absolute_url }}">{{ subitem.title }}</a>
                 </li>
-                {% endfor %}
+                {%- endfor -%}
             </ul>
-        {% else %}
+        {%- else -%}
             <a href="{{ item.url | absolute_url }}">{{ item.title }}</a>
         </li>
-        {% endif %}
-    {% endfor %}
+        {%- endif -%}
+    {%- endfor -%}
     </ul>
 </nav>

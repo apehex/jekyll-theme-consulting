@@ -1,21 +1,17 @@
 ---
 permalink: /index.json
 ---
-
-{% assign posts=site.posts | sort: 'lang' %}
-{% assign pages=site.html_pages | sort: 'lang' | concat: posts %}
-
+{%- assign posts=site.posts | sort: 'lang' -%}
+{%- assign pages=site.html_pages | sort: 'lang' | concat: posts -%}
 [
-  {% for page in pages %}
+  {%- for page in pages -%}
     {
-
       "lang"           : "{{ page.lang }}",
       "title"          : "{{ page.title | default: site.title | escape }}",
       "description"    : "{{ page.description | default: site.description | strip_html | strip_newlines | escape }}",
       "url"            : "{{ site.url }}{{ site.baseurl }}{{ page.url }}",
       "tags"           : "{{ page.tags | join: ', ' }}",
       "date"           : "{{ page.date }}"
-
     } {% unless forloop.last %},{% endunless %}
-  {% endfor %}
+  {%- endfor -%}
 ]

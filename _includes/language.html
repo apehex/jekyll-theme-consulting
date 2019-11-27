@@ -1,12 +1,11 @@
-{% assign posts=site.posts | where:"lang-ref", page.lang-ref | sort: 'lang' %}
-{% assign pages=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' | concat: posts %}
-
+{%- assign posts=site.posts | where:"lang-ref", page.lang-ref | sort: 'lang' -%}
+{%- assign pages=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' | concat: posts -%}
 <ul class="language">
-	{% for page in pages %}
-	{% if page.lang != "x-default" %}
+	{%- for page in pages -%}
+	{%- if page.lang != "x-default" -%}
 	<li>
 	    <a href="{{ page.url | absolute_url }}" class="{{ page.lang }}">{{ page.lang }}</a>
 	</li>
-	{% endif %}
-	{% endfor %}
+	{%- endif -%}
+	{%- endfor -%}
 </ul>

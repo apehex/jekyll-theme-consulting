@@ -1,6 +1,5 @@
-{% assign posts=site.posts | where:"lang", page.lang %}
-{% assign date_format = site.date_format | default: "%b %-d, %Y" %}
-
+{%- assign posts=site.posts | where:"lang", page.lang -%}
+{%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
 {%- if posts.size > 0 -%}
 <section>
     <header class="major">
@@ -17,7 +16,7 @@
                 <li><a href="{{ post.url | absolute_url }}" class="button">More</a></li>
             </ul>
         </article>
-        {% endfor %}
+        {%- endfor -%}
     </div>
 </section>
 
