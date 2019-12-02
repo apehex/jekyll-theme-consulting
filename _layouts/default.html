@@ -5,6 +5,8 @@
 {%- assign header = page.header | default: site.header -%}
 {%- assign title = page.title | default: site.title -%}
 {%- assign description = page.description | default: site.description -%}
+{%- assign stylesheets = page.stylesheets | default: site.stylesheets -%}
+{%- assign scripts = page.scripts | default: site.scripts -%}
 <!DOCTYPE html>
 <!--
     Consulting template by apehex
@@ -13,7 +15,7 @@
 -->
 <html lang="{{ lang }}">
 
-{% include head.html title=title description=description %}
+{% include head.html title=title description=description stylesheets=stylesheets %}
 
 <body>
 
@@ -37,7 +39,7 @@
 
     {% include footer.html %}
 
-    {% include scripts.html %}
+    {% include scripts.html scripts=scripts %}
 
 </body>
 
