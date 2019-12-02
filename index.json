@@ -1,149 +1,92 @@
-
-
-
-[
-  
-    {
-
+[{
       "lang"           : "",
       "title"          : "Jekyll Theme Consulting",
       "description"    : "A responsive site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
       "url"            : "https://apehex.github.io/jekyll-theme-consulting/",
       "tags"           : "",
       "date"           : ""
-
-    } ,
-  
-    {
-
+    } ,{
       "lang"           : "en",
       "title"          : "Theme Elements Showcase",
       "description"    : "A responsive site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
       "url"            : "https://apehex.github.io/jekyll-theme-consulting/en/elements/",
       "tags"           : "",
       "date"           : ""
-
-    } ,
-  
-    {
-
+    } ,{
       "lang"           : "en",
       "title"          : "Generic Page",
       "description"    : "A responsive site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
       "url"            : "https://apehex.github.io/jekyll-theme-consulting/en/generic/",
       "tags"           : "",
       "date"           : ""
-
-    } ,
-  
-    {
-
+    } ,{
       "lang"           : "en",
       "title"          : "Jekyll Theme Consulting",
       "description"    : "A responsive site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
       "url"            : "https://apehex.github.io/jekyll-theme-consulting/en/",
       "tags"           : "",
       "date"           : ""
-
-    } ,
-  
-    {
-
+    } ,{
       "lang"           : "en",
       "title"          : "Legal Terms",
       "description"    : "A responsive site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
       "url"            : "https://apehex.github.io/jekyll-theme-consulting/en/legal-terms/",
       "tags"           : "",
       "date"           : ""
-
-    } ,
-  
-    {
-
+    } ,{
       "lang"           : "en",
       "title"          : "Privacy Policy",
       "description"    : "A responsive site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
       "url"            : "https://apehex.github.io/jekyll-theme-consulting/en/privacy-policy/",
       "tags"           : "",
       "date"           : ""
-
-    } ,
-  
-    {
-
+    } ,{
       "lang"           : "fr",
       "title"          : "Démonstration des Eléments du Thème",
       "description"    : "A responsive site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
       "url"            : "https://apehex.github.io/jekyll-theme-consulting/fr/elements/",
       "tags"           : "",
       "date"           : ""
-
-    } ,
-  
-    {
-
+    } ,{
       "lang"           : "fr",
       "title"          : "Page Générique",
       "description"    : "A responsive site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
       "url"            : "https://apehex.github.io/jekyll-theme-consulting/fr/generique/",
       "tags"           : "",
       "date"           : ""
-
-    } ,
-  
-    {
-
+    } ,{
       "lang"           : "fr",
       "title"          : "Thème Jekyll Consulting",
       "description"    : "A responsive site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
       "url"            : "https://apehex.github.io/jekyll-theme-consulting/fr/",
       "tags"           : "",
       "date"           : ""
-
-    } ,
-  
-    {
-
+    } ,{
       "lang"           : "fr",
       "title"          : "Mentions Légales",
       "description"    : "A responsive site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
       "url"            : "https://apehex.github.io/jekyll-theme-consulting/fr/mentions-legales/",
       "tags"           : "",
       "date"           : ""
-
-    } ,
-  
-    {
-
+    } ,{
       "lang"           : "fr",
       "title"          : "Politique de Confidentialité",
       "description"    : "A responsive site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
       "url"            : "https://apehex.github.io/jekyll-theme-consulting/fr/politique-de-confidentialite/",
       "tags"           : "",
       "date"           : ""
-
-    } ,
-  
-    {
-
+    } ,{
       "lang"           : "en",
       "title"          : "Welcome to Jekyll!",
       "description"    : "A responsive site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
       "url"            : "https://apehex.github.io/jekyll-theme-consulting/en/jekyll/update/2019/02/08/welcome-to-jekyll/",
       "tags"           : "",
       "date"           : "2019-02-08 13:33:42 +0100"
-
-    } ,
-  
-    {
-
+    } ,{
       "lang"           : "fr",
       "title"          : "Bienvenue sur Jekyll !",
       "description"    : "A responsive site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
       "url"            : "https://apehex.github.io/jekyll-theme-consulting/fr/jekyll/update/2019/02/08/bienvenue/",
       "tags"           : "",
       "date"           : "2019-02-08 13:33:42 +0100"
-
-    } 
-  
-]
+    } ]
