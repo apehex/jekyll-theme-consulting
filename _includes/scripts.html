@@ -8,14 +8,14 @@
 <script src="{{ 'assets/js/cookieconsent.min.js' | absolute_url }}" data-cfasync="false"></script>
 <script>
 window.cookieconsent.initialise({
-	"palette": {
-		"popup": {
-			"background": "#252e39"
-		},
-		"button": {
-			"background": "#14a7d0"
-		}
-	}
+    "palette": {
+        "popup": {
+            "background": "#252e39"
+        },
+        "button": {
+            "background": "#14a7d0"
+        }
+    }
 });
 </script>
 <script src="{{ 'assets/js/simple-jekyll-search.min.js' | absolute_url }}" type="text/javascript"></script>
@@ -23,6 +23,11 @@ window.cookieconsent.initialise({
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('search-results'),
-	json: "{{ '/index.json' | absolute_url }}"
+  json: "{{ '/index.json' | absolute_url }}"
 })
 </script>
+{%- if include.scripts -%}
+{%- for file in include.scripts -%}
+<script src="{{ file.url | absolute_url }}" /></script>
+{%- endfor -%}
+{%- endif -%}
