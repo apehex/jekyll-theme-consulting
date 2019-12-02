@@ -4,10 +4,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="{{ 'assets/css/main.css' | absolute_url }}" />
+    {%- if include.stylesheets -%}
+    {%- for file in include.stylesheets -%}
+    <link rel="stylesheet" href="{{ file.url | absolute_url }}" />
+    {%- endfor -%}
+    {%- endif -%}
     {%- for page in pages -%}
     <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url }}" />
     {%- endfor -%}
+    {%- if site.favicon -%}
+    <link rel="icon" href="{{ site.favicon | absolute_url }}" />
+    {%- endif -%}
     <noscript><link rel="stylesheet" href="{{ 'assets/css/noscript.css' | absolute_url }}" /></noscript>
-    {% if site.favicon %}<link rel="icon" href="{{ site.favicon | absolute_url }}" />{% endif %}
     {% seo %}
 </head>
