@@ -370,9 +370,12 @@ header:
                     <h3>Image</h3>
 
                     <h4>Fit</h4>
-                    <span class="image fit"><img src="{{ 'assets/images/pic11.jpg' | absolute_url }}" alt="" /></span>
                     <div class="box alt">
                         <div class="row gtr-50 gtr-uniform">
+                            <div class="col-12">
+                                <span class="image fit"><img src="{{ 'assets/images/pic11.jpg' | absolute_url }}" alt="" /></span>
+                            </div>
+                            <!-- Break -->
                             <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/pic01.jpg' | absolute_url }}" alt="" /></span></div>
                             <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/pic02.jpg' | absolute_url }}" alt="" /></span></div>
                             <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/pic03.jpg' | absolute_url }}" alt="" /></span></div>
@@ -779,9 +782,12 @@ print 'It took ' + i + ' iterations to sort the deck.';
                     <h3>Image</h3>
 
                     <h4>Fit</h4>
-                    <span class="image fit"><img src="{{ 'assets/images/pic11.jpg' | absolute_url }}" alt="" /></span>
                     <div class="box alt">
                         <div class="row gtr-50 gtr-uniform">
+                            <div class="col-12">
+                                <span class="image fit"><img src="{{ 'assets/images/pic11.jpg' | absolute_url }}" alt="" /></span>
+                            </div>
+                            <!-- Break -->
                             <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/pic01.jpg' | absolute_url }}" alt="" /></span></div>
                             <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/pic02.jpg' | absolute_url }}" alt="" /></span></div>
                             <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/pic03.jpg' | absolute_url }}" alt="" /></span></div>
