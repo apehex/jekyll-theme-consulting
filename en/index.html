@@ -26,7 +26,7 @@
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@apehex" />
 <script type="application/ld+json">
-{"headline":"Jekyll Theme Consulting","@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://apehex.github.io/jekyll-theme-consulting/assets/images/logo.png"},"name":"apehex"},"url":"https://apehex.github.io/jekyll-theme-consulting/en/","author":{"@type":"Person","name":"apehex"},"description":"A responsive site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.","@context":"https://schema.org"}</script>
+{"@type":"WebPage","headline":"Jekyll Theme Consulting","url":"https://apehex.github.io/jekyll-theme-consulting/en/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://apehex.github.io/jekyll-theme-consulting/assets/images/logo.png"},"name":"apehex"},"author":{"@type":"Person","name":"apehex"},"description":"A responsive site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -66,7 +66,7 @@
     </header>
     <p>A responsive site template designed by <a href="apehex@protonmail.com">DM</a> for <a href="https://github.com/apehex">apehex</a>.<br /> It’s responsive, built on HTML5/CSS3, and entirely free<br /> under the <a href="https://github.com/apehex/jekyll-theme-consulting/blob/master/LICENSE">Creative Commons license</a>.</p>
     <ul class="actions">
-      <li><a href="#contact" class="button big scrolly">Wow</a></li>
+      <li><a href="#contact" class="button primary big scrolly">Wow</a></li>
     </ul>
   </div>
 </section>
@@ -235,6 +235,7 @@
                     <!-- Break -->
                     <div class="col-12">
                         <ul class="actions">
+                            <li><div id="recaptcha-checkbox"></div></li>
                             <li><input type="submit" value="Send Message" class="primary button solid fa-envelope" /></li>
                             <li><input type="reset" value="Reset" class="icon button fa-undo" /></li>
                         </ul>
@@ -252,6 +253,16 @@
         </div>
     </div>
 </section>
+<script type="text/javascript">
+    var onloadCallback = function() {
+        grecaptcha.render('recaptcha-checkbox', {
+            'sitekey' : '6LfMccgUAAAAAJcASCBTwXpeEXw7qjC-KkqjpsYV',
+            'theme' : 'dark'
+        });
+    };
+</script>
+
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit" async="" defer=""></script>
 
 
 
