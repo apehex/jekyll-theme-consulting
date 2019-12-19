@@ -1,11 +1,11 @@
 <!-- Scripts -->
-<script src="{{ 'assets/js/jquery.min.js' | absolute_url }}"></script>
-<script src="{{ 'assets/js/jquery.scrolly.min.js' | absolute_url }}"></script>
-<script src="{{ 'assets/js/browser.min.js' | absolute_url }}"></script>
-<script src="{{ 'assets/js/breakpoints.min.js' | absolute_url }}"></script>
-<script src="{{ 'assets/js/util.js' | absolute_url }}"></script>
-<script src="{{ 'assets/js/main.js' | absolute_url }}"></script>
-<script src="{{ 'assets/js/cookieconsent.min.js' | absolute_url }}" data-cfasync="false"></script>
+<script src="{{ 'assets/js/jquery.min.js' | absolute_url }}" type="text/javascript" ></script>
+<script src="{{ 'assets/js/jquery.scrolly.min.js' | absolute_url }}" type="text/javascript" ></script>
+<script src="{{ 'assets/js/browser.min.js' | absolute_url }}" type="text/javascript" ></script>
+<script src="{{ 'assets/js/breakpoints.min.js' | absolute_url }}" type="text/javascript" ></script>
+<script src="{{ 'assets/js/util.js' | absolute_url }}" type="text/javascript" ></script>
+<script src="{{ 'assets/js/main.js' | absolute_url }}" type="text/javascript" ></script>
+<script src="{{ 'assets/js/cookieconsent.min.js' | absolute_url }}" type="text/javascript" data-cfasync="false" ></script>
 <script>
 window.cookieconsent.initialise({
     "palette": {
@@ -18,7 +18,7 @@ window.cookieconsent.initialise({
     }
 });
 </script>
-<script src="{{ 'assets/js/simple-jekyll-search.min.js' | absolute_url }}" type="text/javascript"></script>
+<script src="{{ 'assets/js/simple-jekyll-search.min.js' | absolute_url }}" type="text/javascript" ></script>
 <script>
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
@@ -28,6 +28,6 @@ SimpleJekyllSearch({
 </script>
 {%- if include.scripts -%}
 {%- for file in include.scripts -%}
-<script src="{{ file.url | absolute_url }}" /></script>
+<script src="{{ file.url | absolute_url }}" type="text/javascript" /></script>
 {%- endfor -%}
 {%- endif -%}
