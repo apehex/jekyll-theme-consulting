@@ -43,6 +43,11 @@
     var emailInputElement = document.getElementById("contact-email");
     var messageInputElement = document.getElementById("contact-message");
     var submitInputElement = document.getElementById("contact-submit-button");
+    var isInputValid = function() {
+        return (nameInputElement.checkValidity()
+            && emailInputElement.checkValidity()
+            && messageInputElement.checkValidity())
+    };
     var resetContactForm = function() {
         contactFormElement.reset();
         submitInputElement.disabled = true;
@@ -53,9 +58,17 @@
         encodeURIComponent(messageInputElement.value);
     };
     var onloadCallback = function() {
+        var verifyForm = function(response) {
+            if (isInputValid()) {
+                submitInputElement.disabled = false;
+            } else {
+                submitInputElement.disabled = true;
+            }
+        };
         grecaptcha.render('recaptcha-checkbox', {
             'sitekey' : '{{ site.recaptcha.sitekey }}',
-            'theme' : 'dark'
+            'theme' : 'dark',
+            'callback' : verifyForm
         });
     };
 </script>
