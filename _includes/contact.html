@@ -56,9 +56,13 @@
         return true;
     };
 
+    const disableSubmitInputElement = function (disabled = true) {
+        submitInputElement.disabled = disabled;
+    }
+
     const resetContactForm = function() {
         contactFormElement.reset();
-        submitInputElement.disabled = true;
+        disableSubmitInputElement();
     };
     
     const sendContactMessage = function() {
@@ -67,18 +71,19 @@
         encodeURIComponent(messageInputElement.value);
     };
     
-    const onloadCallback = function() {
+    var onloadCallback = function() {
         var verifyForm = function(response) {
             if (isInputValid() && isRecaptchaValid()) {
-                submitInputElement.disabled = false;
+                disableSubmitInputElement(false);
             } else {
-                submitInputElement.disabled = true;
+                disableSubmitInputElement();
             }
         };
         recaptchaWidget = grecaptcha.render('recaptcha-checkbox', {
             'sitekey' : '{{ site.recaptcha.sitekey }}',
             'theme' : 'dark',
-            'callback' : verifyForm
+            'callback' : verifyForm,
+            'expired-callback': disableSubmitInputElement
         });
     };
 </script>
