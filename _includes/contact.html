@@ -4,7 +4,7 @@
     </header>
     <div class="row gtr-200">
         <div class="col-6 col-12-medium">
-            <form method="post" action="#">
+            <form id="contact-form" method="post" action="#" onsubmit="sendContactMessage()" onreset="resetContactForm()" >
                 <div class="row gtr-uniform">
                     <div class="col-6 col-12-xsmall">
                         <input type="text" name="contact-name" id="contact-name" value="" placeholder="Name" required minlength="4" maxlength="64" />
@@ -38,6 +38,20 @@
     </div>
 </section>
 <script type="text/javascript">
+    var contactFormElement = document.getElementById("contact-form");
+    var nameInputElement = document.getElementById("contact-name");
+    var emailInputElement = document.getElementById("contact-email");
+    var messageInputElement = document.getElementById("contact-message");
+    var submitInputElement = document.getElementById("contact-submit-button");
+    var resetContactForm = function() {
+        contactFormElement.reset();
+        submitInputElement.disabled = true;
+    };
+    var sendContactMessage = function() {
+        encodeURIComponent(nameInputElement.value);
+        encodeURIComponent(emailInputElement.value);
+        encodeURIComponent(messageInputElement.value);
+    };
     var onloadCallback = function() {
         grecaptcha.render('recaptcha-checkbox', {
             'sitekey' : '{{ site.recaptcha.sitekey }}',
