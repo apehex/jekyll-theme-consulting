@@ -43,10 +43,15 @@
     var emailInputElement = document.getElementById("contact-email");
     var messageInputElement = document.getElementById("contact-message");
     var submitInputElement = document.getElementById("contact-submit-button");
+    var recaptchaWidget;
     var isInputValid = function() {
         return (nameInputElement.checkValidity()
             && emailInputElement.checkValidity()
             && messageInputElement.checkValidity())
+    };
+    var isRecaptchaValid = function() {
+        var responseToken = grecaptcha.getResponse(recaptchaWidget);
+        return true;
     };
     var resetContactForm = function() {
         contactFormElement.reset();
@@ -59,13 +64,14 @@
     };
     var onloadCallback = function() {
         var verifyForm = function(response) {
-            if (isInputValid()) {
+            if (isInputValid() && isRecaptchaValid()) {
                 submitInputElement.disabled = false;
             } else {
                 submitInputElement.disabled = true;
+                setInputValidityMessage();
             }
         };
-        grecaptcha.render('recaptcha-checkbox', {
+        recaptchaWidget = grecaptcha.render('recaptcha-checkbox', {
             'sitekey' : '{{ site.recaptcha.sitekey }}',
             'theme' : 'dark',
             'callback' : verifyForm
