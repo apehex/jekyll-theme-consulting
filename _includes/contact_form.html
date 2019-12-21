@@ -1,0 +1,39 @@
+<section id="contact" class="inverted" style="{{ include.style | default: nil }}">
+    <header class="major">
+        <h2>Contact Me</h2>
+    </header>
+    <div class="row gtr-200">
+        <div class="col-6 col-12-medium">
+            <form id="contact-form" method="post" action="#" onsubmit="sendContactMessage()" onreset="resetContactForm()" >
+                <div class="row gtr-uniform">
+                    <div class="col-6 col-12-xsmall">
+                        <input type="text" name="contact-name" id="contact-name" value="" placeholder="Name" required minlength="4" maxlength="64" />
+                    </div>
+                    <div class="col-6 col-12-xsmall">
+                        <input type="email" name="contact-email" id="contact-email" value="" placeholder="Email" required minlength="8" maxlength="64" />
+                    </div>
+                    <!-- Break -->
+                    <div class="col-12">
+                        <textarea name="contact-message" id="contact-message" placeholder="Enter your message" rows="6" required minlength="16" maxlength="256" >Please get back to me!</textarea>
+                    </div>
+                    <!-- Break -->
+                    <div class="col-12">
+                        <ul class="actions">
+                            <li><div id="recaptcha-checkbox" ></div></li>
+                            <li><input type="submit" id="contact-submit-button" value="Send Message" class="primary button solid fa-envelope" disabled/></li>
+                            <li><input type="reset" id="contact-reset-button" value="Reset" class="icon button fa-undo" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-6 col-12-medium">
+            <ul class="contact">
+                <li class="icon solid fa-envelope"><a href="#">{{ site.email }}</a></li>
+                <li class="icon solid fa-phone">{{ site.phone }}</li>
+                <li class="icon solid fa-home">{{ site.street_address }}<br />
+                {{ site.zip_code }}, {{ site.city }}</li>
+            </ul>
+        </div>
+    </div>
+</section>
