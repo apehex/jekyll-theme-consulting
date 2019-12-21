@@ -7,7 +7,23 @@
 {%- assign recaptcha_widget_id="recaptcha-checkbox" -%}
 {%- assign onsubmit_callback="sendContactMessage" -%}
 {%- assign onreset_callback="resetContactForm" -%}
+<section id="contact" class="inverted" style="{{ include.style | default: nil }}">
+    <header class="major">
+        <h2>Contact Me</h2>
+    </header>
+    <div class="row gtr-200">
+        <div class="col-6 col-12-medium">
+            {% include contact_form.html form_id=form_id name_input_id=name_input_id email_input_id=email_input_id message_input_id=message_input_id submit_input_id=submit_input_id reset_input_id=reset_input_id recaptcha_widget_id=recaptcha_widget_id onsubmit_callback=onsubmit_callback onreset_callback=onreset_callback %}
+        </div>
+        <div class="col-6 col-12-medium">
+            <ul class="contact">
+                <li class="icon solid fa-envelope"><a href="#">{{ site.email }}</a></li>
+                <li class="icon solid fa-phone">{{ site.phone }}</li>
+                <li class="icon solid fa-home">{{ site.street_address }}<br />
+                {{ site.zip_code }}, {{ site.city }}</li>
+            </ul>
+        </div>
+    </div>
+</section>
 
-{% include contact_form.html form_id=form_id name_input_id=name_input_id email_input_id=email_input_id message_input_id=message_input_id submit_input_id=submit_input_id reset_input_id=reset_input_id recaptcha_widget_id=recaptcha_widget_id onsubmit_callback=onsubmit_callback onreset_callback=onreset_callback %}
-
-{% include contact_script.html  form_id=form_id name_input_id=name_input_id email_input_id=email_input_id message_input_id=message_input_id submit_input_id=submit_input_id reset_input_id=reset_input_id recaptcha_widget_id=recaptcha_widget_id onsubmit_callback=onsubmit_callback onreset_callback=onreset_callback %}
+{% include contact_script.html form_id=form_id name_input_id=name_input_id email_input_id=email_input_id message_input_id=message_input_id submit_input_id=submit_input_id reset_input_id=reset_input_id recaptcha_widget_id=recaptcha_widget_id onsubmit_callback=onsubmit_callback onreset_callback=onreset_callback %}
