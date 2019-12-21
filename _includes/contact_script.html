@@ -1,9 +1,9 @@
 <script type="text/javascript">
-    const contactFormElement = document.getElementById("contact-form");
-    const nameInputElement = document.getElementById("contact-name");
-    const emailInputElement = document.getElementById("contact-email");
-    const messageInputElement = document.getElementById("contact-message");
-    const submitInputElement = document.getElementById("contact-submit-button");
+    const contactFormElement = document.getElementById("{{ include.form_id | default: 'contact-form' }}");
+    const nameInputElement = document.getElementById("{{ include.name_input_id | default: 'contact-name' }}");
+    const emailInputElement = document.getElementById("{{ include.email_input_id | default: 'contact-email' }}");
+    const messageInputElement = document.getElementById("{{ include.message_input_id | default: 'contact-message' }}");
+    const submitInputElement = document.getElementById("{{ include.submit_input_id | default: 'contact-submit-button' }}");
     var recaptchaWidget;
 
     const isInputValid = function() {
@@ -21,12 +21,12 @@
         submitInputElement.disabled = disabled;
     }
 
-    const resetContactForm = function() {
+    const {{ include.onreset_callback | 'resetContactForm' }} = function() {
         contactFormElement.reset();
         disableSubmitInputElement();
     };
     
-    const sendContactMessage = function() {
+    const {{ include.onsubmit_callback | 'sendContactMessage()' }} = function() {
         encodeURIComponent(nameInputElement.value);
         encodeURIComponent(emailInputElement.value);
         encodeURIComponent(messageInputElement.value);
@@ -40,7 +40,7 @@
                 disableSubmitInputElement();
             }
         };
-        recaptchaWidget = grecaptcha.render('recaptcha-checkbox', {
+        recaptchaWidget = grecaptcha.render('{{ include.recaptcha_widget_id | 'recaptcha-checkbox' }}', {
             'sitekey' : '{{ site.recaptcha.sitekey }}',
             'theme' : 'dark',
             'callback' : verifyForm,

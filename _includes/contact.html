@@ -1,2 +1,13 @@
-{% include contact_form.html %}
-{% include contact_script.html %}
+{%- assign form_id="contact-form" -%}
+{%- assign name_input_id="contact-name" -%}
+{%- assign email_input_id="contact-email" -%}
+{%- assign message_input_id="contact-message" -%}
+{%- assign submit_input_id="contact-submit-button" -%}
+{%- assign reset_input_id="contact-reset-button" -%}
+{%- assign recaptcha_widget_id="recaptcha-checkbox" -%}
+{%- assign onsubmit_callback="sendContactMessage" -%}
+{%- assign onreset_callback="resetContactForm" -%}
+
+{% include contact_form.html form_id=form_id name_input_id=name_input_id email_input_id=email_input_id message_input_id=message_input_id submit_input_id=submit_input_id reset_input_id=reset_input_id recaptcha_widget_id=recaptcha_widget_id onsubmit_callback=onsubmit_callback onreset_callback=onreset_callback %}
+
+{% include contact_script.html  form_id=form_id name_input_id=name_input_id email_input_id=email_input_id message_input_id=message_input_id submit_input_id=submit_input_id reset_input_id=reset_input_id recaptcha_widget_id=recaptcha_widget_id onsubmit_callback=onsubmit_callback onreset_callback=onreset_callback %}
