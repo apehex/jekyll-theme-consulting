@@ -22,6 +22,10 @@ You can preview the theme [here](https://apehex.github.io/jekyll-theme-consultin
 
 > **SEO ready**: sitemap, robots.txt and tags are automatically generated for the website
 
+> **Light**: svg images, thumbs and lazy loading for raster images, few libraries
+
+> **Hardened**: form validation, recaptcha, verified libraries
+
 # Installation
 
 Add this line to your Jekyll site's `Gemfile`:
@@ -50,6 +54,11 @@ For those unfamiliar with how Jekyll works, check out [jekyllrb.com](https://jek
 or read up on just the basics of [front matter](https://jekyllrb.com/docs/frontmatter/), [writing posts](https://jekyllrb.com/docs/posts/), 
 and [creating pages](https://jekyllrb.com/docs/pages/).
 
+## Initialization
+
+Copy the file `_config.yml` from the theme repository to the root of your website folder tree.
+The following section explains what the settings impact and how to configure `_config.yml` properly.
+
 ## Configuration
 
 You can use the following custom parameters in `_config.yml`.
@@ -64,6 +73,12 @@ Social icons will appear for each url your fill in, among `facebook_url` etc.
 
 ### Contact
 Your contact information can be used in contact forms, the footer or anywhere else.
+
+### Recaptcha
+
+The contact form is validated using [google's recaptcha plugin][recaptcha-documentation].
+First, you need to [sign your website up] to enable the plugin.
+Google will provide you with a **client-side integration key**: copy it to `_config.yml` under `recaptcha.sitekey`.
 
 ## Publication
 
@@ -151,4 +166,6 @@ The theme is available as open source under the terms of the [CC-BY-4.0](LICENSE
 [cookieconsent]: https://github.com/osano/cookieconsent
 [html5up]: https://html5up.net/
 [jekyll-logo]: https://github.com/jekyll/brand
+[recaptcha-documentation]: https://developers.google.com/recaptcha/intro
+[recaptcha-registering]: https://www.google.com/recaptcha/admin
 [simple-jekyll-search]: https://github.com/christian-fei/Simple-Jekyll-Search
