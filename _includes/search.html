@@ -1,11 +1,18 @@
 <!-- Search -->
 <section id="search" class="alt">
-    <form method="post" action="javascript:void(0);">
+    <form method="post" action="#">
         <input type="text" name="search-input" id="search-input" placeholder="Search" />
     </form>
 </section>
-
 <nav id="results">
     <ul id="search-results">
     </ul>
 </nav>
+<script src="{{ 'assets/js/simple-jekyll-search.min.js' | absolute_url }}" type="text/javascript" ></script>
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('search-results'),
+  json: "{{ '/index.json' | absolute_url }}"
+})
+</script>
