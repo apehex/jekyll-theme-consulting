@@ -73,15 +73,22 @@
 
     <!-- Search -->
 <section id="search" class="alt">
-    <form method="post" action="javascript:void(0);">
+    <form method="post" action="#">
         <input type="text" name="search-input" id="search-input" placeholder="Search" />
     </form>
 </section>
-
 <nav id="results">
     <ul id="search-results">
     </ul>
 </nav>
+<script src="https://apehex.github.io/jekyll-theme-consulting/assets/js/simple-jekyll-search.min.js" type="text/javascript" ></script>
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('search-results'),
+  json: "https://apehex.github.io/jekyll-theme-consulting/index.json"
+})
+</script>
 
 
     <!-- Menu -->
@@ -147,14 +154,6 @@ window.cookieconsent.initialise({
         }
     }
 });
-</script>
-<script src="https://apehex.github.io/jekyll-theme-consulting/assets/js/simple-jekyll-search.min.js" type="text/javascript" ></script>
-<script>
-SimpleJekyllSearch({
-  searchInput: document.getElementById('search-input'),
-  resultsContainer: document.getElementById('search-results'),
-  json: "https://apehex.github.io/jekyll-theme-consulting/index.json"
-})
 </script>
 
 </body>
