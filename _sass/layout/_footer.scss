@@ -7,24 +7,24 @@
 /* Footer */
 
 #footer {
-	.copyright {
-		color: _palette(fg-light);
-		font-size: 0.9em;
+    .copyright {
+        color: _palette(fg-light);
+        font-size: 0.9em;
 
-		a {
-			color: inherit;
-		}
-	}
+        a {
+            color: inherit;
+        }
+    }
 }
 
 /* Inverted */
 
 .inverted #footer {
-	.copyright {
-		color: _palette(fg-light-inverted);
+    .copyright {
+        color: _palette(fg-light-inverted);
 
-		a {
-			color: inherit;
-		}
-	}
+        a {
+            color: inherit;
+        }
+    }
 }
