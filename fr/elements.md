@@ -373,26 +373,26 @@ header:
                     <div class="box alt">
                         <div class="row gtr-50 gtr-uniform">
                             <div class="col-12">
-                                <span class="image fit"><img src="{{ 'assets/images/pic11.jpg' | absolute_url }}" alt="" /></span>
+                                <span class="image fit"><img src="{{ 'assets/images/fullsize/pic11.jpg' | absolute_url }}" alt="" /></span>
                             </div>
                             <!-- Break -->
-                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/pic01.jpg' | absolute_url }}" alt="" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/pic02.jpg' | absolute_url }}" alt="" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/pic03.jpg' | absolute_url }}" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/fullsize/pic01.jpg' | absolute_url }}" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/fullsize/pic02.jpg' | absolute_url }}" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/fullsize/pic03.jpg' | absolute_url }}" alt="" /></span></div>
                             <!-- Break -->
-                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/pic03.jpg' | absolute_url }}" alt="" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/pic01.jpg' | absolute_url }}" alt="" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/pic02.jpg' | absolute_url }}" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/fullsize/pic03.jpg' | absolute_url }}" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/fullsize/pic01.jpg' | absolute_url }}" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/fullsize/pic02.jpg' | absolute_url }}" alt="" /></span></div>
                             <!-- Break -->
-                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/pic02.jpg' | absolute_url }}" alt="" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/pic03.jpg' | absolute_url }}" alt="" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/pic01.jpg' | absolute_url }}" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/fullsize/pic02.jpg' | absolute_url }}" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/fullsize/pic03.jpg' | absolute_url }}" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/fullsize/pic01.jpg' | absolute_url }}" alt="" /></span></div>
                         </div>
                     </div>
 
                     <h4>Left &amp; Right</h4>
-                    <p><span class="image left"><img src="{{ 'assets/images/pic01.jpg' | absolute_url }}" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-                    <p><span class="image right"><img src="{{ 'assets/images/pic02.jpg' | absolute_url }}" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+                    <p><span class="image left"><img src="{{ 'assets/images/fullsize/pic01.jpg' | absolute_url }}" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+                    <p><span class="image right"><img src="{{ 'assets/images/fullsize/pic02.jpg' | absolute_url }}" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
 
                 <!-- Box -->
                     <h3>Box</h3>
@@ -785,26 +785,26 @@ print 'It took ' + i + ' iterations to sort the deck.';
                     <div class="box alt">
                         <div class="row gtr-50 gtr-uniform">
                             <div class="col-12">
-                                <span class="image fit"><img src="{{ 'assets/images/pic11.jpg' | absolute_url }}" alt="" /></span>
+                                <span class="image fit"><img src="{{ 'assets/images/fullsize/pic11.jpg' | absolute_url }}" alt="" /></span>
                             </div>
                             <!-- Break -->
-                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/pic01.jpg' | absolute_url }}" alt="" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/pic02.jpg' | absolute_url }}" alt="" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/pic03.jpg' | absolute_url }}" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/fullsize/pic01.jpg' | absolute_url }}" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/fullsize/pic02.jpg' | absolute_url }}" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/fullsize/pic03.jpg' | absolute_url }}" alt="" /></span></div>
                             <!-- Break -->
-                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/pic03.jpg' | absolute_url }}" alt="" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/pic01.jpg' | absolute_url }}" alt="" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/pic02.jpg' | absolute_url }}" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/fullsize/pic03.jpg' | absolute_url }}" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/fullsize/pic01.jpg' | absolute_url }}" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/fullsize/pic02.jpg' | absolute_url }}" alt="" /></span></div>
                             <!-- Break -->
-                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/pic02.jpg' | absolute_url }}" alt="" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/pic03.jpg' | absolute_url }}" alt="" /></span></div>
-                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/pic01.jpg' | absolute_url }}" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/fullsize/pic02.jpg' | absolute_url }}" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/fullsize/pic03.jpg' | absolute_url }}" alt="" /></span></div>
+                            <div class="col-4"><span class="image fit"><img src="{{ 'assets/images/fullsize/pic01.jpg' | absolute_url }}" alt="" /></span></div>
                         </div>
                     </div>
 
                     <h4>Left &amp; Right</h4>
-                    <p><span class="image left"><img src="{{ 'assets/images/pic01.jpg' | absolute_url }}" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-                    <p><span class="image right"><img src="{{ 'assets/images/pic02.jpg' | absolute_url }}" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+                    <p><span class="image left"><img src="{{ 'assets/images/fullsize/pic01.jpg' | absolute_url }}" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+                    <p><span class="image right"><img src="{{ 'assets/images/fullsize/pic02.jpg' | absolute_url }}" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
 
                 <!-- Box -->
                     <h3>Box</h3>

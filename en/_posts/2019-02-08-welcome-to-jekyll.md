@@ -1,13 +1,13 @@
 ---
 layout: post
-lang: fr
+lang: en
 lang-ref: welcome-to-jekyll
-title:  "Bienvenue sur Jekyll !"
+title:  "Welcome to Jekyll!"
 date:   2019-02-08 13:33:42 +0100
-summary: Comment ajouter un nouveau post
-image: /assets/images/pic01.jpg
+summary: How-to add a new post
+image: /assets/images/fullsize/pic01.jpg
 categories: jekyll update
-excerpt: Pour ajouter un nouveau post, créez simplement un fichier dans le répertoire `_posts` en suivant la convention...
+excerpt: To add new posts, simply add a file in the `_posts` directory that follows the convention...
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
