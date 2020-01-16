@@ -5,7 +5,7 @@ lang-ref: welcome-to-jekyll
 title:  "Welcome to Jekyll!"
 date:   2019-02-08 13:33:42 +0100
 summary: How-to add a new post
-image: /assets/images/fullsize/pic01.jpg
+image: /assets/images/content/pic01.jpg
 categories: jekyll update
 excerpt: To add new posts, simply add a file in the `_posts` directory that follows the convention...
 ---

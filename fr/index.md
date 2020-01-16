@@ -7,7 +7,7 @@ header:
     subtitle: "Mise en Page de l'Accueil"
     style:
         class: inverted
-        image: "/assets/images/fullsize/pillars-of-creation.jpg"
+        image: "/assets/images/content/pillars-of-creation.jpg"
 banner:
     title: "Avec une Bannière"
     subtitle: "Sur Fond Extraterrestre"
@@ -15,7 +15,7 @@ banner:
         A responsive site template designed by <a href="apehex@protonmail.com">DM</a> for <a href="https://github.com/apehex">apehex</a>.<br />It’s responsive, built on HTML5/CSS3, and entirely free<br />under the <a href="https://github.com/apehex/jekyll-theme-consulting/blob/master/LICENSE">Creative Commons license</a>.
     style:
         class: inverted
-        image: "/assets/images/fullsize/pillars-of-creation.jpg"
+        image: "/assets/images/content/pillars-of-creation.jpg"
     button:
         url: "#contact"
         label: "Wow"
@@ -113,7 +113,7 @@ banner:
     </header>
     <div class="posts">
         <article>
-            <a href="#" class="image"><img class="lazy-loading" src="{{ 'assets/images/thumbnail/pic01.jpg' | absolute_url }}" data-src="{{ 'assets/images/fullsize/pic01.jpg' | absolute_url }}" alt="" /></a>
+            <a href="#" class="image"><img class="lazy-loading" src="{{ 'assets/images/placeholder/pic01.jpg' | absolute_url }}" data-src="{{ 'assets/images/content/pic01.jpg' | absolute_url }}" alt="" /></a>
             <h3>Interdum aenean</h3>
             <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
             <ul class="actions">
@@ -121,7 +121,7 @@ banner:
             </ul>
         </article>
         <article>
-            <a href="#" class="image"><img class="lazy-loading" src="{{ 'assets/images/thumbnail/pic02.jpg' | absolute_url }}" data-src="{{ 'assets/images/fullsize/pic02.jpg' | absolute_url }}" alt="" /></a>
+            <a href="#" class="image"><img class="lazy-loading" src="{{ 'assets/images/placeholder/pic02.jpg' | absolute_url }}" data-src="{{ 'assets/images/content/pic02.jpg' | absolute_url }}" alt="" /></a>
             <h3>Nulla amet dolore</h3>
             <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
             <ul class="actions">
@@ -129,7 +129,7 @@ banner:
             </ul>
         </article>
         <article>
-            <a href="#" class="image"><img class="lazy-loading" src="{{ 'assets/images/thumbnail/pic03.jpg' | absolute_url }}" data-src="{{ 'assets/images/fullsize/pic03.jpg' | absolute_url }}" alt="" /></a>
+            <a href="#" class="image"><img class="lazy-loading" src="{{ 'assets/images/placeholder/pic03.jpg' | absolute_url }}" data-src="{{ 'assets/images/content/pic03.jpg' | absolute_url }}" alt="" /></a>
             <h3>Tempus ullamcorper</h3>
             <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
             <ul class="actions">
@@ -137,7 +137,7 @@ banner:
             </ul>
         </article>
         <article>
-            <a href="#" class="image"><img class="lazy-loading" src="{{ 'assets/images/thumbnail/pic04.jpg' | absolute_url }}" data-src="{{ 'assets/images/fullsize/pic04.jpg' | absolute_url }}" alt="" /></a>
+            <a href="#" class="image"><img class="lazy-loading" src="{{ 'assets/images/placeholder/pic04.jpg' | absolute_url }}" data-src="{{ 'assets/images/content/pic04.jpg' | absolute_url }}" alt="" /></a>
             <h3>Sed etiam facilis</h3>
             <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
             <ul class="actions">
@@ -145,7 +145,7 @@ banner:
             </ul>
         </article>
         <article>
-            <a href="#" class="image"><img class="lazy-loading" src="{{ 'assets/images/thumbnail/pic05.jpg' | absolute_url }}" data-src="{{ 'assets/images/fullsize/pic05.jpg' | absolute_url }}" alt="" /></a>
+            <a href="#" class="image"><img class="lazy-loading" src="{{ 'assets/images/placeholder/pic05.jpg' | absolute_url }}" data-src="{{ 'assets/images/content/pic05.jpg' | absolute_url }}" alt="" /></a>
             <h3>Feugiat lorem aenean</h3>
             <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
             <ul class="actions">
@@ -153,7 +153,7 @@ banner:
             </ul>
         </article>
         <article>
-            <a href="#" class="image"><img class="lazy-loading" src="{{ 'assets/images/thumbnail/pic06.jpg' | absolute_url }}" data-src="{{ 'assets/images/fullsize/pic06.jpg' | absolute_url }}" alt="" /></a>
+            <a href="#" class="image"><img class="lazy-loading" src="{{ 'assets/images/placeholder/pic06.jpg' | absolute_url }}" data-src="{{ 'assets/images/content/pic06.jpg' | absolute_url }}" alt="" /></a>
             <h3>Amet varius aliquam</h3>
             <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
             <ul class="actions">

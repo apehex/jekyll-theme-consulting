@@ -8,7 +8,7 @@
     <div class="posts">
         {%- for post in posts -%}
         <article>
-            <a href="{{ post.url | absolute_url }}" class="image"><img class="lazy-loading" src="{{ post.image.thumbnail | absolute_url }}" data-src="{{ post.image.fullsize | absolute_url }}" alt="" /></a>
+            <a href="{{ post.url | absolute_url }}" class="image"><img class="lazy-loading" src="{{ post.image.placeholder | absolute_url }}" data-src="{{ post.image.content | absolute_url }}" alt="" /></a>
             <h3>{{ post.title | escape }}</h3>
             <!-- <span>{{ post.date | date: date_format }}</span> -->
             <p>{{ post.excerpt }}</p>
