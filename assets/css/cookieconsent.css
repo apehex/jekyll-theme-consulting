@@ -78,10 +78,12 @@
 /* 2 basic types of window - floating / banner */
 .cc-window.cc-floating {
   padding: 2em;
-  max-width: 24em; /* 1em == 16px therefore 24em == 384px */
+  width: 100%;
+  max-width: 100%; /* 1em == 16px therefore 24em == 384px */
   flex-direction: column;
 }
 .cc-window.cc-banner {
+  z-index: :10000;
   padding: 1em 1.8em;
   width: 100%;
   flex-direction: row;
@@ -199,7 +201,7 @@
   right: 1em;
 }
 .cc-bottom {
-  bottom: 1em;
+  bottom: 0;
 }
 
 /* links that are direct decendants should be displayed as block */

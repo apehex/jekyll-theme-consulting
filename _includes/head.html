@@ -4,8 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="{{ 'assets/css/main.css' | absolute_url }}" />
-    <link rel="stylesheet" href="{{ 'assets/css/fontawesome-all.min.css' | absolute_url }}" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700&display=swap" />
+    <link rel="stylesheet" href="{{ 'assets/css/fontawesome-all.min.css' | absolute_url }}" />
+    <link rel="stylesheet" href="{{ 'assets/css/cookieconsent.css' | absolute_url }}" />
     {%- if include.stylesheets -%}
     {%- for file in include.stylesheets -%}
     <link rel="stylesheet" href="{{ file.url | absolute_url }}" />
