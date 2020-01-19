@@ -1,58 +1,11 @@
-///
-/// Editorial by HTML5 UP
-/// html5up.net | @ajlkn
-/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-///
-
 /* Main */
 
 #main {
-	@include vendor('flex-grow', '1');
-	@include vendor('flex-shrink', '1');
-	width: 100%;
-
-	> .inner {
-		margin: 0 auto;
-		max-width: 110em;
-
-		> section {
-			@include padding(6em, 6em);
-			border-top: solid 2px _palette(border);
-
-			&:first-of-type {
-			 	border-top: 0 !important;
-			}
-		}
-
-		#header {
-			padding: 2em 6em 1em 6em;
-			margin: 0;
-		}
-
-		@include breakpoint('<=xlarge') {
-			> section {
-				@include padding(5em, 5em);
-			}
-
-			#header {
-				padding: 2em 5em 1em 5em;
-			}
-		}
-
-		@include breakpoint('<=large') {
-			> section {
-				@include padding(4em, 4em);
-			}
-
-			#header {
-				padding: 2em 4em 1em 4em;
-			}
-		}
-
-		@include breakpoint('<=small') {
-			> .inner > section {
-				@include padding(3em, 3em);
-			}
-		}
-	}
+    > .inner {
+        @include breakpoint('<=small') {
+            > .inner > section {
+                @include padding(3em, 3em);
+            }
+        }
+    }
 }
