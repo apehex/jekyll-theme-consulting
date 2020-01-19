@@ -9,7 +9,16 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-consulting/assets/css/main.css" /><link rel="alternate" hreflang="en" href="/en/jekyll/update/2019/02/08/welcome-to-jekyll/" /><link rel="alternate" hreflang="fr" href="/fr/jekyll/update/2019/02/08/bienvenue/" /><link rel="icon" href="https://apehex.github.io/jekyll-theme-consulting/assets/images/favicon.ico" /><noscript><link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-consulting/assets/css/noscript.css" /></noscript>
+    <link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-consulting/assets/css/main.css" media="all" />
+    <link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-consulting/assets/css/large.css" media="screen and (min-width: 981px)" />
+    <link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-consulting/assets/css/medium.css" media="screen and (min-width: 737px) and (max-width:980px)" />
+    <link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-consulting/assets/css/small.css" media="screen and (max-width:736px)" />
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'">
+    <link rel="preload" href="https://apehex.github.io/jekyll-theme-consulting/assets/css/fontawesome-all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'">
+    <link rel="preload" href="https://apehex.github.io/jekyll-theme-consulting/assets/css/cookieconsent.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'"><link rel="alternate" hreflang="en" href="/en/jekyll/update/2019/02/08/welcome-to-jekyll/" /><link rel="alternate" hreflang="fr" href="/fr/jekyll/update/2019/02/08/bienvenue/" /><link rel="icon" href="https://apehex.github.io/jekyll-theme-consulting/assets/images/favicon.ico" /><noscript><link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-consulting/assets/css/noscript.css" /></noscript>
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700&display=swap" /></noscript>
+    <noscript><link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-consulting/assets/css/fontawesome-all.min.css" /></noscript>
+    <noscript><link rel="stylesheet" href="https://apehex.github.io/jekyll-theme-consulting/assets/css/cookieconsent.css" /></noscript>
     <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Welcome to Jekyll! | Jekyll Theme Consulting</title>
 <meta name="generator" content="Jekyll v4.0.0" />
@@ -30,7 +39,7 @@
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@apehex" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://apehex.github.io/jekyll-theme-consulting/assets/images/logo.png"},"name":"apehex"},"url":"https://apehex.github.io/jekyll-theme-consulting/en/jekyll/update/2019/02/08/welcome-to-jekyll/","headline":"Welcome to Jekyll!","dateModified":"2019-02-08T13:33:42+01:00","datePublished":"2019-02-08T13:33:42+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://apehex.github.io/jekyll-theme-consulting/en/jekyll/update/2019/02/08/welcome-to-jekyll/"},"image":"https://apehex.github.io/jekyll-theme-consulting/assets/images/content/pic01.webp","author":{"@type":"Person","name":"apehex"},"description":"To add new posts, simply add a file in the _posts directory that follows the convention…","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://apehex.github.io/jekyll-theme-consulting/assets/images/logo.png"},"name":"apehex"},"headline":"Welcome to Jekyll!","dateModified":"2019-02-08T13:33:42+01:00","datePublished":"2019-02-08T13:33:42+01:00","url":"https://apehex.github.io/jekyll-theme-consulting/en/jekyll/update/2019/02/08/welcome-to-jekyll/","image":"https://apehex.github.io/jekyll-theme-consulting/assets/images/content/pic01.webp","mainEntityOfPage":{"@type":"WebPage","@id":"https://apehex.github.io/jekyll-theme-consulting/en/jekyll/update/2019/02/08/welcome-to-jekyll/"},"author":{"@type":"Person","name":"apehex"},"description":"To add new posts, simply add a file in the _posts directory that follows the convention…","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -106,14 +115,16 @@
     <ul id="search-results">
     </ul>
 </nav>
-<script src="https://apehex.github.io/jekyll-theme-consulting/assets/js/simple-jekyll-search.min.js" type="text/javascript" ></script>
 <script>
-SimpleJekyllSearch({
-  searchInput: document.getElementById('search-input'),
-  resultsContainer: document.getElementById('search-results'),
-  json: "https://apehex.github.io/jekyll-theme-consulting/index.json"
-})
+function attachSearchFunction() {
+    SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('search-results'),
+        json: "https://apehex.github.io/jekyll-theme-consulting/index.json"
+    });
+}
 </script>
+<script src="https://apehex.github.io/jekyll-theme-consulting/assets/js/simple-jekyll-search.min.js" onload="attachSearchFunction()" type="text/javascript" defer ></script>
 
 
     <!-- Menu -->
@@ -161,26 +172,15 @@ SimpleJekyllSearch({
 </footer>
 
     <!-- Scripts -->
-<script src="https://apehex.github.io/jekyll-theme-consulting/assets/js/jquery.min.js" type="text/javascript" ></script>
-<script src="https://apehex.github.io/jekyll-theme-consulting/assets/js/jquery.scrolly.min.js" type="text/javascript" ></script>
-<script src="https://apehex.github.io/jekyll-theme-consulting/assets/js/browser.min.js" type="text/javascript" ></script>
-<script src="https://apehex.github.io/jekyll-theme-consulting/assets/js/breakpoints.min.js" type="text/javascript" ></script>
-<script src="https://apehex.github.io/jekyll-theme-consulting/assets/js/lazy-loading.js" type="text/javascript" ></script>
-<script src="https://apehex.github.io/jekyll-theme-consulting/assets/js/util.js" type="text/javascript" ></script>
-<script src="https://apehex.github.io/jekyll-theme-consulting/assets/js/main.js" type="text/javascript" ></script>
-<script src="https://apehex.github.io/jekyll-theme-consulting/assets/js/cookieconsent.min.js" type="text/javascript" data-cfasync="false" ></script>
-<script>
-window.cookieconsent.initialise({
-    "palette": {
-        "popup": {
-            "background": "#252e39"
-        },
-        "button": {
-            "background": "#14a7d0"
-        }
-    }
-});
-</script>
+<script src="https://apehex.github.io/jekyll-theme-consulting/assets/js/jquery.min.js" type="text/javascript" defer ></script>
+<script src="https://apehex.github.io/jekyll-theme-consulting/assets/js/jquery.scrolly.min.js" type="text/javascript" defer ></script>
+<script src="https://apehex.github.io/jekyll-theme-consulting/assets/js/browser.min.js" type="text/javascript" defer ></script>
+<script src="https://apehex.github.io/jekyll-theme-consulting/assets/js/breakpoints.min.js" type="text/javascript" defer ></script>
+<script src="https://apehex.github.io/jekyll-theme-consulting/assets/js/lazy-loading.js" type="text/javascript" defer ></script>
+<script src="https://apehex.github.io/jekyll-theme-consulting/assets/js/util.js" type="text/javascript" defer ></script>
+<script src="https://apehex.github.io/jekyll-theme-consulting/assets/js/main.js" type="text/javascript" defer ></script>
+<script src="https://apehex.github.io/jekyll-theme-consulting/assets/js/cookieconsent.min.js" type="text/javascript" data-cfasync="false" defer ></script>
+<script src="https://apehex.github.io/jekyll-theme-consulting/assets/js/cookieconsent.style.min.js" type="text/javascript" defer ></script>
 
 </body>
 
