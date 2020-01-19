@@ -3,9 +3,14 @@
 #main {
     > .inner {
         @include breakpoint('<=small') {
-            > .inner > section {
-                @include padding(3em, 3em);
+            section {
+            	padding: 1em 1em 1em 4em;
             }
+        }
+
+        #header {
+            padding: 2em 4em 1em 4em;
+            margin: 0;
         }
     }
 }

@@ -10,9 +10,9 @@ header:
         image: "/assets/images/content/pillars-of-creation.webp"
 banner:
     title: "With a Banner"
-    subtitle: "Enhanced by an Otherwordly Image"
-    desription: >-
-        A responsive site template designed by <a href="apehex@protonmail.com">DM</a> for <a href="https://github.com/apehex">apehex</a>.<br />It’s responsive, built on HTML5/CSS3, and entirely free<br />under the <a href="https://github.com/apehex/jekyll-theme-consulting/blob/master/LICENSE">Creative Commons license</a>.
+    subtitle: "And an Otherwordly Image"
+    description: >-
+        A responsive site template designed by <a href="apehex@protonmail.com">DM</a> for <a href="https://github.com/apehex">apehex</a>.
     style:
         class: inverted
         image: "/assets/images/content/pillars-of-creation.webp"

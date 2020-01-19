@@ -1,9 +1,8 @@
 # Site settings
 title: Jekyll Theme Consulting
 description: >- # this means to ignore newlines until "baseurl:"
-  A responsive site template designed by <a href="apehex@protonmail.com">DM</a> for <a href="https://github.com/apehex">apehex</a>.<br />
-  It’s responsive, built on HTML5/CSS3, and entirely free<br />
-  under the <a href="https://github.com/apehex/jekyll-theme-consulting/blob/master/LICENSE">Creative Commons license</a>.
+  A Jekyll site template designed by <a href="apehex@protonmail.com">DM</a> for <a href="https://github.com/apehex">apehex</a>.<br />
+  It’s responsive, built on HTML5/CSS3, and entirely free<br /> under the <a href="https://github.com/apehex/jekyll-theme-consulting/blob/master/LICENSE">Creative Commons license</a>.
 
 # Contact information
 street_address: 1234 Somewhere Road
