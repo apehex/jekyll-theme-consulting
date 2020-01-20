@@ -24,6 +24,8 @@ You can preview the theme [here](https://apehex.github.io/jekyll-theme-consultin
 
 > **Light**: svg images, thumbs and lazy loading for raster images, few libraries
 
+> **Performant**: parallel loading & execution of assets, support lazy-loading, use webp image format, optimal critical path
+
 > **Hardened**: form validation, recaptcha, verified libraries
 
 # Installation
@@ -79,6 +81,55 @@ Your contact information can be used in contact forms, the footer or anywhere el
 The contact form is validated using [google's recaptcha plugin][recaptcha-documentation].
 First, you need to [sign your website up] to enable the plugin.
 Google will provide you with a **client-side integration key**: copy it to `_config.yml` under `recaptcha.sitekey`.
+
+## Images
+
+### Lazy-Loading
+
+Images downloading & rendering can be defered until they enter the viewport.
+This shortens the loading of the webpage, with no consequence on the displayed content since the images are off-screen.
+
+There are 2 possibilities:
+1) using the scripts bundled with the gem
+2) depending on the browser
+
+Browser support for lazy-loading is varying, so it is recommanded to opt for the first solution.
+
+#### Using the gem functionality
+
+- add `class="lazy-loading"`
+- fill the attribute `src` with the path to the placeholder file
+- fill the attribute `data-src` with the path to the content file
+
+Before:
+```html
+<img src="{{ 'assets/images/content.jpg' | absolute_url }}" />
+```
+
+After:
+```html
+<img class="lazy-loading" src="{{ 'assets/images/placeholder.jpg' | absolute_url }}" data-src="{{ 'assets/images/content.jpg' | absolute_url }}" />
+```
+
+#### Using the browser functionality
+
+- add `loading="lazy"` (optional, depends on browser support)
+
+Before:
+```html
+<img src="{{ 'assets/images/content.jpg' | absolute_url }}" />
+```
+
+After:
+```html
+<img loading="lazy" src="{{ 'assets/images/content.jpg' | absolute_url }}" />
+```
+
+### Compression and file formats
+
+It is recommanded to use the `webp` format.
+
+At a given dimension and compression level (quality) the webp files are at least half the size with a smoother feel.
 
 ## Publication
 
