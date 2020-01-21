@@ -4,6 +4,7 @@
     const emailInputElement = document.getElementById("{{ include.email_input_id | default: 'contact-email' }}");
     const messageInputElement = document.getElementById("{{ include.message_input_id | default: 'contact-message' }}");
     const submitInputElement = document.getElementById("{{ include.submit_input_id | default: 'contact-submit-button' }}");
+    const modalWindowElement = document.getElementById("{{ include.modal_window_id | default: 'modal-recaptcha-window' }}");
     var recaptchaWidget;
 
     const isInputValid = function() {
@@ -29,6 +30,17 @@
         }
     };
 
+    const showModalWindow = function() {
+        modalWindowElement.classList.add('visible');
+        modalWindowElement.classList.add('loaded');
+        modalWindowElement.focus();
+    }
+
+    const hideModalWindow = function() {
+        modalWindowElement.classList.remove('loaded');
+        modalWindowElement.classList.remove('visible');
+        contactFormElement.focus();
+    }
     const {{ include.onreset_callback | default: 'resetContactForm' }} = function() {
         contactFormElement.reset();
         disableSubmitInputElement();
@@ -49,5 +61,8 @@
             'size' : 'compact'
         });
     };
+
+    modalWindowElement.addEventListener('click', hideModalWindow);
+    modalWindowElement.addEventListener('keyup', hideModalWindow);
 </script>
 <script src="https://www.google.com/recaptcha/api.js?onload=onRecaptchaLoadCallback&render=explicit" async defer></script>
