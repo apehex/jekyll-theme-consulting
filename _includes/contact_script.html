@@ -12,11 +12,6 @@
             && emailInputElement.checkValidity()
             && messageInputElement.checkValidity())
     };
-    
-    const isRecaptchaValid = function() {
-        var responseToken = grecaptcha.getResponse(recaptchaWidget);
-        return true;
-    };
 
     const disableSubmitInputElement = function (disabled = true) {
         submitInputElement.disabled = disabled;
@@ -55,10 +50,32 @@
         disableSubmitInputElement();
     };
     
-    const {{ include.onsubmit_callback | default: 'sendContactMessage()' }} = function() {
-        encodeURIComponent(nameInputElement.value);
-        encodeURIComponent(emailInputElement.value);
-        encodeURIComponent(messageInputElement.value);
+    const sendContactMessage = function() {
+        const recaptchaToken = grecaptcha.getResponse(recaptchaWidget);
+
+        const data = {
+            name: encodeURIComponent(nameInputElement.value),
+            email: encodeURIComponent(emailInputElement.value),
+            message: encodeURIComponent(messageInputElement),
+            token: recaptchaToken
+        };
+
+        hideModalWindow();
+
+        if (recaptchaToken.length > 0) {
+            fetch("{{ '/contact' | absolute_url }}", {
+                method: 'POST',
+                mode: 'same-origin',
+                headers: {'Content-Type': 'application/json',},
+                body: JSON.stringify(data),
+            })
+            .then((response) => {
+                alert('Message sent!');
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        }
     };
     
     var onRecaptchaLoadCallback = function() {
