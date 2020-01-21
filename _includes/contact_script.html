@@ -21,6 +21,14 @@
         submitInputElement.disabled = disabled;
     }
 
+    const {{ include.onfocusout_callback | 'toggleSubmitInputElement' }} = function() {
+        if (isInputValid()) {
+            disableSubmitInputElement(false);
+        } else {
+            disableSubmitInputElement();
+        }
+    };
+
     const {{ include.onreset_callback | 'resetContactForm' }} = function() {
         contactFormElement.reset();
         disableSubmitInputElement();

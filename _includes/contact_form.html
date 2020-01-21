@@ -1,14 +1,14 @@
 <form id="{{ include.form_id | 'contact-form' }}" method="post" action="#" onsubmit="{{ include.onsubmit_callback | 'sendContactMessage' }}()" onreset="{{ include.onreset_callback | 'resetContactForm' }}()" >
     <div class="row gtr-uniform">
         <div class="col-6 col-12-small col-12-xsmall">
-            <input type="text" name="{{ include.name_input_id | 'contact-name' }}" id="{{ include.name_input_id | 'contact-name' }}" value="" placeholder="Name" required minlength="4" maxlength="64" />
+            <input type="text" name="{{ include.name_input_id | 'contact-name' }}" id="{{ include.name_input_id | 'contact-name' }}" value="" placeholder="Name" required minlength="4" maxlength="64" onfocusout="{{ include.onfocusout_callback | 'toggleSubmitInputElement' }}()" />
         </div>
         <div class="col-6 col-12-small col-12-xsmall">
-            <input type="email" name="{{ include.email_input_id | 'contact-email' }}" id="{{ include.email_input_id | 'contact-email' }}" value="" placeholder="Email" required minlength="8" maxlength="64" />
+            <input type="email" name="{{ include.email_input_id | 'contact-email' }}" id="{{ include.email_input_id | 'contact-email' }}" value="" placeholder="Email" required minlength="8" maxlength="64" onfocusout="{{ include.onfocusout_callback | 'toggleSubmitInputElement' }}()" />
         </div>
         <!-- Break -->
         <div class="col-12">
-            <textarea name="{{ include.message_input_id | 'contact-message' }}" id="{{ include.message_input_id | 'contact-message' }}" placeholder="Enter your message" rows="6" required minlength="16" maxlength="256" >Please get back to me!</textarea>
+            <textarea name="{{ include.message_input_id | 'contact-message' }}" id="{{ include.message_input_id | 'contact-message' }}" placeholder="Enter your message" rows="6" required minlength="16" maxlength="256" onfocusout="{{ include.onfocusout_callback | 'toggleSubmitInputElement' }}()" >Please get back to me!</textarea>
         </div>
         <!-- Break -->
         <div class="col-12">
