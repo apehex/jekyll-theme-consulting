@@ -1,54 +1,56 @@
 // Misc.
-	$misc: (
-		z-index-base:		10000
-	);
+$misc: (
+    z-index-base:       10000,
+    lightbox-opacity:   0.875
+);
 
 // Duration.
-	$duration: (
-		nav:				0.5s,
-		transition:			0.2s
-	);
+$duration: (
+    nav:                0.5s,
+    transition:         0.2s,
+    lightbox-fadein:    0.5s
+);
 
 // Size.
-	$size: (
-		border-radius:		0.375em,
-		element-height:		2.75em,
-		element-margin:		2em,
-		sidebar-width:		26em,
-		sidebar-width-alt:	24em,
-		gutter:				3em
-	);
+$size: (
+    border-radius:      0.375em,
+    element-height:     2.75em,
+    element-margin:     2em,
+    sidebar-width:      26em,
+    sidebar-width-alt:  24em,
+    gutter:             3em
+);
 
 // Font.
-	$font: (
-		family:				('Open Sans', sans-serif),
-		family-heading:		('Roboto Slab', serif),
-		family-fixed:		('Courier New', monospace),
-		weight:				400,
-		weight-bold:		600,
-		weight-heading:		700,
-		weight-heading-alt:	400,
-		kerning-heading:	0.075em
-	);
+$font: (
+    family:             ('Open Sans', sans-serif),
+    family-heading:     ('Roboto Slab', serif),
+    family-fixed:       ('Courier New', monospace),
+    weight:             400,
+    weight-bold:        600,
+    weight-heading:     700,
+    weight-heading-alt: 400,
+    kerning-heading:    0.075em
+);
 
 // Palette.
-	$palette: (
-		bg:					#ffffff,
-		bg-alt:				#f5f6f7,
-		bg-inverted:		#6666ff,
-		bg-alt-inverted:	#223344,
-		fg:					#000000,
-		fg-bold:			#3d4449,
-		fg-light:			#9fa3a6,
-		fg-inverted:		#ffffff,
-		fg-bold-inverted:	#ffffff,
-		fg-light-inverted:	#ffffff,
-		border:				rgba(210,215,217,0.75),
-		border-bg:			transparentize(#e6ebed, 0.75),
-		border-inverted:	#ffffff,
-		border-bg-inverted:	#ffffff,
-		accent:				#6666ff,
-		accent-cp:			#ffdd44,
-		accent-inverted:	#ffffff,
-		accent-cp-inverted:	#6666ff,
-	);
+$palette: (
+    bg:                 #ffffff,
+    bg-alt:             #f5f6f7,
+    bg-inverted:        #6666ff,
+    bg-alt-inverted:    #223344,
+    fg:                 #000000,
+    fg-bold:            #3d4449,
+    fg-light:           #9fa3a6,
+    fg-inverted:        #ffffff,
+    fg-bold-inverted:   #ffffff,
+    fg-light-inverted:  #ffffff,
+    border:             rgba(210,215,217,0.75),
+    border-bg:          transparentize(#e6ebed, 0.75),
+    border-inverted:    #ffffff,
+    border-bg-inverted: #ffffff,
+    accent:             #6666ff,
+    accent-cp:          #ffdd44,
+    accent-inverted:    #ffffff,
+    accent-cp-inverted: #6666ff,
+);
