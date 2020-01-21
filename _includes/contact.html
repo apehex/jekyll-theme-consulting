@@ -5,7 +5,7 @@
 {%- assign submit_input_id="contact-submit-button" -%}
 {%- assign reset_input_id="contact-reset-button" -%}
 {%- assign recaptcha_widget_id="recaptcha-checkbox" -%}
-{%- assign onsubmit_callback="sendContactMessage" -%}
+{%- assign onsubmit_callback="processContactRequest" -%}
 {%- assign onreset_callback="resetContactForm" -%}
 {%- assign onfocusout_callback="toggleSubmitInputElement" -%}
 <section id="contact" class="inverted" style="{{ include.style | default: nil }}">

@@ -1,4 +1,4 @@
-<form id="{{ include.form_id | default: 'contact-form' }}" method="post" action="#" onsubmit="{{ include.onsubmit_callback | default: 'sendContactMessage' }}()" onreset="{{ include.onreset_callback | default: 'resetContactForm' }}()" >
+<form id="{{ include.form_id | default: 'contact-form' }}" method="post" action="javascript:void(0);" onsubmit="{{ include.onsubmit_callback | default: 'processContactRequest' }}()" onreset="{{ include.onreset_callback | default: 'resetContactForm' }}()" >
     <div class="row gtr-uniform">
         <div class="col-6 col-12-small col-12-xsmall">
             <input type="text" name="{{ include.name_input_id | default: 'contact-name' }}" id="{{ include.name_input_id | default: 'contact-name' }}" value="" placeholder="Name" required minlength="4" maxlength="64" onfocusout="{{ include.onfocusout_callback | default: 'toggleSubmitInputElement' }}()" />

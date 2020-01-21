@@ -41,6 +41,15 @@
         modalWindowElement.classList.remove('visible');
         contactFormElement.focus();
     }
+
+    const {{ include.onsubmit_callback | default: 'processContactRequest()' }} = function() {
+        if (grecaptcha.getResponse(recaptchaWidget).length > 0) {
+            sendContactMessage();
+        } else {
+            showModalWindow();
+        }
+    };
+
     const {{ include.onreset_callback | default: 'resetContactForm' }} = function() {
         contactFormElement.reset();
         disableSubmitInputElement();
@@ -56,9 +65,8 @@
         recaptchaWidget = grecaptcha.render("{{ include.recaptcha_widget_id | default: 'recaptcha-checkbox' }}", {
             'sitekey' : '{{ site.recaptcha.sitekey }}',
             'theme' : 'dark',
-            'callback' : verifyForm,
-            'expired-callback': disableSubmitInputElement,
-            'size' : 'compact'
+            'size' : 'compact',
+            'callback' : sendContactMessage
         });
     };
 
