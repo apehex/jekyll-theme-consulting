@@ -40,14 +40,7 @@
         encodeURIComponent(messageInputElement.value);
     };
     
-    var onloadCallback = function() {
-        var verifyForm = function(response) {
-            if (isInputValid() && isRecaptchaValid()) {
-                disableSubmitInputElement(false);
-            } else {
-                disableSubmitInputElement();
-            }
-        };
+    var onRecaptchaLoadCallback = function() {
         recaptchaWidget = grecaptcha.render("{{ include.recaptcha_widget_id | default: 'recaptcha-checkbox' }}", {
             'sitekey' : '{{ site.recaptcha.sitekey }}',
             'theme' : 'dark',
@@ -57,4 +50,4 @@
         });
     };
 </script>
-<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onRecaptchaLoadCallback&render=explicit" async defer></script>
