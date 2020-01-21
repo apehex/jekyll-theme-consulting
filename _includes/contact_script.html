@@ -21,7 +21,7 @@
         submitInputElement.disabled = disabled;
     }
 
-    const {{ include.onfocusout_callback | 'toggleSubmitInputElement' }} = function() {
+    const {{ include.onfocusout_callback | default: 'toggleSubmitInputElement' }} = function() {
         if (isInputValid()) {
             disableSubmitInputElement(false);
         } else {
@@ -29,12 +29,12 @@
         }
     };
 
-    const {{ include.onreset_callback | 'resetContactForm' }} = function() {
+    const {{ include.onreset_callback | default: 'resetContactForm' }} = function() {
         contactFormElement.reset();
         disableSubmitInputElement();
     };
     
-    const {{ include.onsubmit_callback | 'sendContactMessage()' }} = function() {
+    const {{ include.onsubmit_callback | default: 'sendContactMessage()' }} = function() {
         encodeURIComponent(nameInputElement.value);
         encodeURIComponent(emailInputElement.value);
         encodeURIComponent(messageInputElement.value);
@@ -48,7 +48,7 @@
                 disableSubmitInputElement();
             }
         };
-        recaptchaWidget = grecaptcha.render('{{ include.recaptcha_widget_id | 'recaptcha-checkbox' }}', {
+        recaptchaWidget = grecaptcha.render("{{ include.recaptcha_widget_id | default: 'recaptcha-checkbox' }}", {
             'sitekey' : '{{ site.recaptcha.sitekey }}',
             'theme' : 'dark',
             'callback' : verifyForm,

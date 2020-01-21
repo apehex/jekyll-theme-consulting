@@ -1,23 +1,23 @@
-<form id="{{ include.form_id | 'contact-form' }}" method="post" action="#" onsubmit="{{ include.onsubmit_callback | 'sendContactMessage' }}()" onreset="{{ include.onreset_callback | 'resetContactForm' }}()" >
+<form id="{{ include.form_id | default: 'contact-form' }}" method="post" action="#" onsubmit="{{ include.onsubmit_callback | default: 'sendContactMessage' }}()" onreset="{{ include.onreset_callback | default: 'resetContactForm' }}()" >
     <div class="row gtr-uniform">
         <div class="col-6 col-12-small col-12-xsmall">
-            <input type="text" name="{{ include.name_input_id | 'contact-name' }}" id="{{ include.name_input_id | 'contact-name' }}" value="" placeholder="Name" required minlength="4" maxlength="64" onfocusout="{{ include.onfocusout_callback | 'toggleSubmitInputElement' }}()" />
+            <input type="text" name="{{ include.name_input_id | default: 'contact-name' }}" id="{{ include.name_input_id | default: 'contact-name' }}" value="" placeholder="Name" required minlength="4" maxlength="64" onfocusout="{{ include.onfocusout_callback | default: 'toggleSubmitInputElement' }}()" />
         </div>
         <div class="col-6 col-12-small col-12-xsmall">
-            <input type="email" name="{{ include.email_input_id | 'contact-email' }}" id="{{ include.email_input_id | 'contact-email' }}" value="" placeholder="Email" required minlength="8" maxlength="64" onfocusout="{{ include.onfocusout_callback | 'toggleSubmitInputElement' }}()" />
+            <input type="email" name="{{ include.email_input_id | default: 'contact-email' }}" id="{{ include.email_input_id | default: 'contact-email' }}" value="" placeholder="Email" required minlength="8" maxlength="64" onfocusout="{{ include.onfocusout_callback | default: 'toggleSubmitInputElement' }}()" />
         </div>
         <!-- Break -->
         <div class="col-12">
-            <textarea name="{{ include.message_input_id | 'contact-message' }}" id="{{ include.message_input_id | 'contact-message' }}" placeholder="Enter your message" rows="6" required minlength="16" maxlength="256" onfocusout="{{ include.onfocusout_callback | 'toggleSubmitInputElement' }}()" >Please get back to me!</textarea>
+            <textarea name="{{ include.message_input_id | default: 'contact-message' }}" id="{{ include.message_input_id | default: 'contact-message' }}" placeholder="Enter your message" rows="6" required minlength="16" maxlength="256" onfocusout="{{ include.onfocusout_callback | default: 'toggleSubmitInputElement' }}()" >Please get back to me!</textarea>
         </div>
         <!-- Break -->
         <div class="col-12">
             <ul class="actions">
-                <li><input type="submit" id="{{ include.submit_input_id | 'contact-submit-button' }}" value="Send Message" class="primary button solid fa-envelope" disabled/></li>
-                <li><input type="reset" id="{{ include.reset_input_id | 'contact-reset-button' }}" value="Reset" class="icon button fa-undo" /></li>
+                <li><input type="submit" id="{{ include.submit_input_id | default: 'contact-submit-button' }}" value="Send Message" class="primary button solid fa-envelope" disabled/></li>
+                <li><input type="reset" id="{{ include.reset_input_id | default: 'contact-reset-button' }}" value="Reset" class="icon button fa-undo" /></li>
             </ul>
             <ul class="actions">
-                <li><div id="{{ include.recaptcha_widget_id | 'recaptcha-checkbox' }}" ></div></li>
+                <li><div id="{{ include.recaptcha_widget_id | default: 'recaptcha-checkbox' }}" ></div></li>
             </ul>
         </div>
     </div>
