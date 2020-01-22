@@ -24,7 +24,7 @@ You can preview the theme [here](https://apehex.github.io/jekyll-theme-consultin
 
 > **Light**: svg images, thumbs and lazy loading for raster images, few libraries
 
-> **Performant**: parallel loading & execution of assets, support lazy-loading, use webp image format, optimal critical path
+> **Performant**: parallel loading & execution of assets, support lazy-loading, minified assets, compressed critical path
 
 > **Hardened**: form validation, recaptcha, verified libraries
 
