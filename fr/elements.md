@@ -727,14 +727,14 @@ print 'It took ' + i + ' iterations to sort the deck.';
                                 <label for="demo-email">Another Label</label>
                             </div>
                             <div class="col-6 col-12-xsmall">
-                                <input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+                                <input type="text" name="demo-name" id="inverted-demo-name" value="" placeholder="Name" />
                             </div>
                             <div class="col-6 col-12-xsmall">
-                                <input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+                                <input type="email" name="demo-email" id="inverted-demo-email" value="" placeholder="Email" />
                             </div>
                             <!-- Break -->
                             <div class="col-12">
-                                <select name="demo-category-inverted" id="demo-category-inverted">
+                                <select name="demo-category-inverted" id="inverted-demo-category-inverted">
                                     <option value="">- Category -</option>
                                     <option value="1">Manufacturing</option>
                                     <option value="1">Shipping</option>
@@ -744,29 +744,29 @@ print 'It took ' + i + ' iterations to sort the deck.';
                             </div>
                             <!-- Break -->
                             <div class="col-4 col-12-small">
-                                <input type="radio" id="demo-priority-low-inverted" name="demo-priority-inverted" checked>
+                                <input type="radio" id="inverted-demo-priority-low-inverted" name="demo-priority-inverted" checked>
                                 <label for="demo-priority-low-inverted">Low</label>
                             </div>
                             <div class="col-4 col-12-small">
-                                <input type="radio" id="demo-priority-normal-inverted" name="demo-priority-inverted">
+                                <input type="radio" id="inverted-demo-priority-normal-inverted" name="demo-priority-inverted">
                                 <label for="demo-priority-normal-inverted">Normal</label>
                             </div>
                             <div class="col-4 col-12-small">
-                                <input type="radio" id="demo-priority-high-inverted" name="demo-priority-inverted">
+                                <input type="radio" id="inverted-demo-priority-high-inverted" name="demo-priority-inverted">
                                 <label for="demo-priority-high-inverted">High</label>
                             </div>
                             <!-- Break -->
                             <div class="col-6 col-12-small">
-                                <input type="checkbox" id="demo-copy-inverted" name="demo-copy-inverted">
+                                <input type="checkbox" id="inverted-demo-copy-inverted" name="demo-copy-inverted">
                                 <label for="demo-copy-inverted">Email me a copy</label>
                             </div>
                             <div class="col-6 col-12-small">
-                                <input type="checkbox" id="demo-human-inverted" name="demo-human-inverted" checked>
+                                <input type="checkbox" id="inverted-demo-human-inverted" name="demo-human-inverted" checked>
                                 <label for="demo-human-inverted">I am a human</label>
                             </div>
                             <!-- Break -->
                             <div class="col-12">
-                                <textarea name="demo-message-inverted" id="demo-message-inverted" placeholder="Enter your message" rows="6"></textarea>
+                                <textarea name="demo-message-inverted" id="inverted-demo-message-inverted" placeholder="Enter your message" rows="6"></textarea>
                             </div>
                             <!-- Break -->
                             <div class="col-12">
