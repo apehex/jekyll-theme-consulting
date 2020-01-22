@@ -37,9 +37,11 @@
         contactFormElement.focus();
     }
 
-    const {{ include.onsubmit_callback | default: 'processContactRequest()' }} = function() {
+    const {{ include.onsubmit_callback | default: 'processContactRequest' }} = function() {
         if (grecaptcha.getResponse(recaptchaWidget).length > 0) {
             sendContactMessage();
+            hideModalWindow();
+            resetContactForm();
         } else {
             showModalWindow();
         }
@@ -51,31 +53,25 @@
     };
     
     const sendContactMessage = function() {
-        const recaptchaToken = grecaptcha.getResponse(recaptchaWidget);
-
         const data = {
             name: encodeURIComponent(nameInputElement.value),
             email: encodeURIComponent(emailInputElement.value),
             message: encodeURIComponent(messageInputElement),
-            token: recaptchaToken
+            token: grecaptcha.getResponse(recaptchaWidget)
         };
-
-        hideModalWindow();
-
-        if (recaptchaToken.length > 0) {
-            fetch("{{ '/contact' | absolute_url }}", {
-                method: 'POST',
-                mode: 'same-origin',
-                headers: {'Content-Type': 'application/json',},
-                body: JSON.stringify(data),
-            })
-            .then((response) => {
-                alert('Message sent!');
-            })
-            .catch((error) => {
-                console.error('Error:', error);
-            });
-        }
+        
+        fetch("{{ '/contact' | absolute_url }}", {
+            method: 'POST',
+            mode: 'same-origin',
+            headers: {'Content-Type': 'application/json',},
+            body: JSON.stringify(data),
+        })
+        .then((response) => {
+            alert('Message sent!');
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
     };
     
     var onRecaptchaLoadCallback = function() {
@@ -83,7 +79,7 @@
             'sitekey' : '{{ site.recaptcha.sitekey }}',
             'theme' : 'dark',
             'size' : 'compact',
-            'callback' : sendContactMessage
+            'callback' : processContactRequest
         });
     };
 
