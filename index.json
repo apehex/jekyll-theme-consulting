@@ -1,5 +1,12 @@
 [{
       "lang"           : "",
+      "title"          : "Error 404",
+      "description"    : "A Jekyll site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
+      "url"            : "https://apehex.github.io/jekyll-theme-consulting/404.html",
+      "tags"           : "",
+      "date"           : ""
+    } ,{
+      "lang"           : "",
       "title"          : "Jekyll Theme Consulting",
       "description"    : "A Jekyll site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
       "url"            : "https://apehex.github.io/jekyll-theme-consulting/",
