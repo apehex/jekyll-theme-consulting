@@ -2,26 +2,45 @@
 ---
 {%- assign lang = page.lang | default: site.lang | default: 'en' -%}
 {%- assign menu = site.data.menus[page.menu][lang] -%}
+{%- assign header = page.header | default: site.header -%}
 {%- assign title = page.title | default: site.title -%}
-{%- assign subtitle = page.subtitle | default: site.subtitle -%}
 {%- assign description = page.description | default: site.description -%}
+{%- assign stylesheets = page.stylesheets | default: site.stylesheets -%}
+{%- assign scripts = page.scripts | default: site.scripts -%}
 <!DOCTYPE html>
+<!--
+    Consulting template by apehex
+    https://github.com/apehex/jekyll-theme-consulting
+    Free for personal and commercial use under the CCA 4.0 license
+-->
 <html lang="{{ lang }}">
 
-    {% include head.html title=title subtitle=subtitle %}
+{% include head.html title=title subtitle=subtitle %}
 
-    <body>
+<body>
 
-        {% include navigation.html menu=menu %}
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-        <main class="page-content" aria-label="Content">
-            <div class="wrapper">
-                {{ content }}
-            </div>
-        </main>
+        <div style="position: fixed; z-index: 1; top:0; left: 0; width: 100vw; height: 100vh; display: flex; flex-direction: column;">
+            <div style="position: relative; width: 100%; height: 30%; background-color: rgba(100, 100, 255, 0.5);"></div>
+            <img src="{{ 'assets/images/waves/top_50_90-330-60.svg' | absolute_url }}" style="position: relative; width: 100%; height: 70%;"></img>
+        </div>
+
+        <div style="position: fixed; z-index: 2; top:0; left: 0; width: 100vw; height: 75vh; display: flex; flex-direction: column;">
+            <div style="position: relative; width: 100%; height: 30%; background-color: rgba(100, 100, 255, 0.5);"></div>
+            <img src="{{ 'assets/images/waves/top_70_330-60-330.svg' | absolute_url }}" style="position: relative; width: 100%; height: 70%;"></img>
+        </div>
+
+        <div style="position: fixed; z-index: 3; bottom:0; left: 0; width: 100vw; height: 75vh; display: flex; flex-direction: column;">
+            <img src="{{ 'assets/images/waves/bottom_20_15-60-330.svg' | absolute_url }}" style="position: relative; width: 100%; height: 70%;"></img>
+            <div style="position: relative; width: 100%; height: 30%; background-color: rgba(255, 100, 100, 0.5);"></div>
+        </div>
+    
+    </div>
 
     {% include footer.html %}
-    
-    </body>
+
+</body>
 
 </html>
