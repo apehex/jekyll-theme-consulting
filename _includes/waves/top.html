@@ -1,6 +1,6 @@
 {%- assign x12 = include.x1 | plus: include.x2 | times: 0.5 | round -%}
 {%- assign y12 = include.y1 | plus: include.y2 | times: 0.5 | round -%}
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-  <path id="wave" d="M0,0L0,{{ include.ys }}Q{{ include.x1 }},{{ include.y1 }} {{ x12 }},{{ y12 }}Q{{ include.x2 }},{{ include.y2 }} 100,{{include.ye}}L100,0L0,0Z"></path>
-  <circle id="point" cx="{{ include.cx }}" cy="{{ include.cy }}" r="{{ include.r }}"/>
+  <path d="M0,0L0,{{ include.ys }}Q{{ include.x1 }},{{ include.y1 }} {{ x12 }},{{ y12 }}Q{{ include.x2 }},{{ include.y2 }} 100,{{include.ye}}L100,0L0,0Z"></path>
+  <circle cx="{{ include.cx }}" cy="{{ include.cy }}" r="{{ include.r }}"/>
 </svg>
