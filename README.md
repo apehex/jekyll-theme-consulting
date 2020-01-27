@@ -215,7 +215,6 @@ The theme is available as open source under the terms of the [CC-BY-NC-SA-4.0](L
 [contributor-covenant]: http://contributor-covenant.org
 [cookieconsent]: https://github.com/osano/cookieconsent
 [html5up]: https://html5up.net/
-[jekyll-logo]: https://github.com/jekyll/brand
 [recaptcha-documentation]: https://developers.google.com/recaptcha/intro
 [recaptcha-registering]: https://www.google.com/recaptcha/admin
 [simple-jekyll-search]: https://github.com/christian-fei/Simple-Jekyll-Search
