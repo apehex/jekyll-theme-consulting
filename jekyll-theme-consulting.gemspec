@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "A sober, hassle-free, full-featured, Jekyll template for businesses."
   spec.homepage      = "https://github.com/apehex/jekyll-theme-consulting"
-  spec.license       = "CC-BY-4.0"
+  spec.license       = "CC-BY-NC-SA-4.0"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets/css|assets/js|assets/webfonts|_layouts|_includes|_sass|LICENSE|README)!i) }
 
