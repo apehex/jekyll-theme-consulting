@@ -35,6 +35,13 @@
       "date"           : ""
     } ,{
       "lang"           : "en",
+      "title"          : "Landing Page",
+      "description"    : "A Jekyll site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
+      "url"            : "https://apehex.github.io/jekyll-theme-consulting/en/landing/",
+      "tags"           : "",
+      "date"           : ""
+    } ,{
+      "lang"           : "en",
       "title"          : "Legal Terms",
       "description"    : "A Jekyll site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
       "url"            : "https://apehex.github.io/jekyll-theme-consulting/en/legal-terms/",
@@ -80,6 +87,13 @@
       "title"          : "Politique de Confidentialité",
       "description"    : "A Jekyll site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
       "url"            : "https://apehex.github.io/jekyll-theme-consulting/fr/politique-de-confidentialite/",
+      "tags"           : "",
+      "date"           : ""
+    } ,{
+      "lang"           : "fr",
+      "title"          : "Page Racine",
+      "description"    : "A Jekyll site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
+      "url"            : "https://apehex.github.io/jekyll-theme-consulting/fr/racine/",
       "tags"           : "",
       "date"           : ""
     } ,{

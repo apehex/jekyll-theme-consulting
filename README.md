@@ -207,18 +207,14 @@ Uses the [simple Jekyll search plugin][simple-jekyll-search].
 
 Space image in the banner: the Pillars of Creation, courtesy of NASA.
 
-Repository [Jekyll logo][jekyll-logo] icon licensed under a [Creative Commons Attribution 4.0 International License][cc4-license].
-
 ## License
 
-The theme is available as open source under the terms of the [CC-BY-4.0](LICENSE).
+The theme is available as open source under the terms of the [CC-BY-NC-SA-4.0](LICENSE).
 
 [ajlkn]: https://aj.lkn.io/
-[cc4-license]: http://choosealicense.com/licenses/cc-by-4.0/
 [contributor-covenant]: http://contributor-covenant.org
 [cookieconsent]: https://github.com/osano/cookieconsent
 [html5up]: https://html5up.net/
-[jekyll-logo]: https://github.com/jekyll/brand
 [recaptcha-documentation]: https://developers.google.com/recaptcha/intro
 [recaptcha-registering]: https://www.google.com/recaptcha/admin
 [simple-jekyll-search]: https://github.com/christian-fei/Simple-Jekyll-Search
