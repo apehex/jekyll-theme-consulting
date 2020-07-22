@@ -37,7 +37,7 @@
             height: 20%;
             text-align: center;
             font-size: 3rem;
-            color: _palette(accent);
+            color: _palette(accent) !important;
         }
 
         .fact-intro, .fact-outro {
@@ -105,7 +105,7 @@
     }
 
     article:hover {
-        background-color: _palette(accent);
+        background-color: _palette(accent) !important;
 
         .on {
             display: none;
@@ -113,14 +113,14 @@
 
         .off.icon {
             display: block;
-            color: _palette(accent-cp);
+            color: _palette(accent-cp) !important;
         }
 
         .off.fact-intro {
             display: table;
 
             p {
-                color: #ffffff;
+                color: #ffffff !important;
             }
         }
 
@@ -128,7 +128,7 @@
             display: table;
             
             h3 {
-                color: #ffffff;
+                color: #ffffff !important;
             }
         }
 
@@ -136,7 +136,7 @@
             display: table;
             
             p {
-                color: #ffffff;
+                color: #ffffff !important;
             }
         }
     }
