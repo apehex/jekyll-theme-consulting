@@ -112,54 +112,12 @@ banner:
         <h2>Ipsum sed dolor</h2>
     </header>
     <div class="posts">
-        <article>
-            <a href="#" class="image"><img class="lazy-loading" src="{{ 'assets/images/placeholder/pic01.webp' | absolute_url }}" data-src="{{ 'assets/images/content/pic01.webp' | absolute_url }}" alt="" /></a>
-            <h3>Interdum aenean</h3>
-            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-            <ul class="actions">
-                <li><a href="#" class="button">More</a></li>
-            </ul>
-        </article>
-        <article>
-            <a href="#" class="image"><img class="lazy-loading" src="{{ 'assets/images/placeholder/pic02.webp' | absolute_url }}" data-src="{{ 'assets/images/content/pic02.webp' | absolute_url }}" alt="" /></a>
-            <h3>Nulla amet dolore</h3>
-            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-            <ul class="actions">
-                <li><a href="#" class="button">More</a></li>
-            </ul>
-        </article>
-        <article>
-            <a href="#" class="image"><img class="lazy-loading" src="{{ 'assets/images/placeholder/pic03.webp' | absolute_url }}" data-src="{{ 'assets/images/content/pic03.webp' | absolute_url }}" alt="" /></a>
-            <h3>Tempus ullamcorper</h3>
-            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-            <ul class="actions">
-                <li><a href="#" class="button">More</a></li>
-            </ul>
-        </article>
-        <article>
-            <a href="#" class="image"><img class="lazy-loading" src="{{ 'assets/images/placeholder/pic04.webp' | absolute_url }}" data-src="{{ 'assets/images/content/pic04.webp' | absolute_url }}" alt="" /></a>
-            <h3>Sed etiam facilis</h3>
-            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-            <ul class="actions">
-                <li><a href="#" class="button">More</a></li>
-            </ul>
-        </article>
-        <article>
-            <a href="#" class="image"><img class="lazy-loading" src="{{ 'assets/images/placeholder/pic05.webp' | absolute_url }}" data-src="{{ 'assets/images/content/pic05.webp' | absolute_url }}" alt="" /></a>
-            <h3>Feugiat lorem aenean</h3>
-            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-            <ul class="actions">
-                <li><a href="#" class="button">More</a></li>
-            </ul>
-        </article>
-        <article>
-            <a href="#" class="image"><img class="lazy-loading" src="{{ 'assets/images/placeholder/pic06.webp' | absolute_url }}" data-src="{{ 'assets/images/content/pic06.webp' | absolute_url }}" alt="" /></a>
-            <h3>Amet varius aliquam</h3>
-            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-            <ul class="actions">
-                <li><a href="#" class="button">More</a></li>
-            </ul>
-        </article>
+        {% include post.html target-url="#" image-src="assets/images/placeholder/pic01.webp" image-placeholder-src="assets/images/content/pic01.webp" image-alt-text="" title="Interdum aenean" content="Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam." %}
+        {% include post.html target-url="#" image-src="assets/images/placeholder/pic02.webp" image-placeholder-src="assets/images/content/pic02.webp" image-alt-text="" title="Nulla amet dolore" content="Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam." %}
+        {% include post.html target-url="#" image-src="assets/images/placeholder/pic03.webp" image-placeholder-src="assets/images/content/pic03.webp" image-alt-text="" title="Tempus ullamcorper" content="Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam." %}
+        {% include post.html target-url="#" image-src="assets/images/placeholder/pic04.webp" image-placeholder-src="assets/images/content/pic04.webp" image-alt-text="" title="Sed etiam facilis" content="Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam." %}
+        {% include post.html target-url="#" image-src="assets/images/placeholder/pic05.webp" image-placeholder-src="assets/images/content/pic05.webp" image-alt-text="" title="Feugiat lorem aenean" content="Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam." %}
+        {% include post.html target-url="#" image-src="assets/images/placeholder/pic06.webp" image-placeholder-src="assets/images/content/pic06.webp" image-alt-text="" title="Amet varius aliquam" content="Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam." %}
     </div>
 </section>
 

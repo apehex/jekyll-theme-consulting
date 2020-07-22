@@ -1,0 +1,16 @@
+<article>
+    {%- if include.image-src -%}
+    <a href="{{ include.target-url | absolute_url }}" class="image" >
+        <img class="lazy-loading" src="{{ include.image-src | absolute_url }}" data-src="{{ include.image-placeholder-src | default: image-src | absolute_url }}" alt="{{ include.image-alt-text }}">
+    </a>
+    {%- endif -%}
+    <h3>{{ include.title }}</h3>
+    <p>{{ include.content }}</p>
+    <ul class="actions">
+        <li>
+            <a href="{{ include.target-url | absolute_url }}" class="button">
+                {% if page.lang=="en" %}More{% elsif page.lang=="fr" %}Plus{% endif %}
+            </a>
+        </li>
+    </ul>
+</article>
