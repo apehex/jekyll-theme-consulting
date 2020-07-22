@@ -93,14 +93,26 @@
 
         .on.fact-intro {
             display: table;
+
+            p {
+                color: #000000 !important;
+            }
         }
 
         .on.fact {
             display: table;
+            
+            h3 {
+                color: #000000 !important;
+            }
         }
 
         .on.fact-outro {
             display: table;
+
+            p {
+                color: #000000 !important;
+            }
         }
     }
 
