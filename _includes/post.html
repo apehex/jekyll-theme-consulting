@@ -6,6 +6,7 @@
     {%- endif -%}
     <h3>{{ include.title }}</h3>
     <p>{{ include.content }}</p>
+    {%- if include.target-url -%}
     <ul class="actions">
         <li>
             <a href="{{ include.target-url | absolute_url }}" class="button">
@@ -13,4 +14,5 @@
             </a>
         </li>
     </ul>
+    {%- endif -%}
 </article>
