@@ -153,3 +153,21 @@
         }
     }
 }
+
+.inverted .facts {
+    
+    article {
+
+        .on.fact-intro p {
+            color: #ffffff !important;
+        }
+
+        .on.fact h3 {
+            color: #ffffff !important;
+        }
+
+        .on.fact-outro p {
+            color: #ffffff !important;
+        }
+    }
+}
