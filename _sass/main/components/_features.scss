@@ -100,4 +100,11 @@
             }
         }
     }
+
+    article:hover {
+
+        .icon:before, .content p, .content h3 {
+            color: _palette(accent-cp) !important;
+        }
+    }
 }
