@@ -457,7 +457,7 @@ print 'It took ' + i + ' iterations to sort the deck.';
 </section>
 
 <!-- Inverted Section -->
-<section id="Inverted-style" class="inverted">
+<section id="inverted-style" class="inverted">
     <header class="main">
         <h1>Elements</h1>
     </header>
