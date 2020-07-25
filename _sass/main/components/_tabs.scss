@@ -1,0 +1,107 @@
+/*
+    Toggle
+*/
+
+.tabset > input[type="radio"] {
+    position: absolute;
+    left: -200vw;
+}
+
+.tabset .tab-panel {
+    display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+    display: block;
+}
+
+/*
+    Common style
+*/
+
+.tabset > input[type="radio"] + label {
+    position: relative;
+    display: inline-block;
+    margin: 0 !important;
+    padding: 15px 15px 25px !important;
+    border: 2px solid transparent;
+    border-bottom: 0;
+    cursor: pointer;
+    font-weight: 600;
+
+    &::before {
+        display: none !important;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 15px;
+        bottom: 10px;
+        width: 22px;
+        height: 4px;
+        background: _palette(border);
+    }
+}
+
+/*
+    Active style
+*/
+
+.tabset > label:hover,
+.tabset > input[type="radio"]:focus + label {
+    color: _palette(accent);
+}
+
+.tabset > label:hover::after,
+.tabset > input[type="radio"]:focus + label::after,
+.tabset > input[type="radio"]:checked + label::after {
+    background: _palette(accent);
+}
+
+.tabset > input[type="radio"]:checked + label {
+    border-color: _palette(accent);
+    border-bottom: 2px solid _palette(bg);
+    margin: 0 0 -2px 0 !important;
+}
+
+.tab-panel {
+    padding: 30px 0;
+    border-top: 2px solid _palette(accent);
+}
+
+/*
+    Inverted
+*/
+
+.inverted .tabset > input[type="radio"] + label {
+    color: _palette(fg-inverted);
+
+    &::after {
+        background: _palette(border-inverted);
+    }
+}
+
+/*
+    Inverted & active
+*/
+
+.inverted .tabset > label:hover,
+.inverted .tabset > input[type="radio"]:focus + label {
+    color: _palette(accent);
+}
+
+.inverted .tabset > label:hover::after,
+.inverted .tabset > input[type="radio"]:focus + label::after,
+.inverted .tabset > input[type="radio"]:checked + label::after {
+    background: _palette(accent);
+}
+
+.inverted .tabset > input[type="radio"]:checked + label {
+    border-bottom: 2px solid _palette(bg-alt-inverted);
+}
