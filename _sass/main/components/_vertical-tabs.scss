@@ -87,3 +87,34 @@
     border-color: _palette(accent);
     border-right: 2px solid _palette(bg);
 }
+
+/*
+    Inverted
+*/
+
+.inverted .vertical-tabset input[type="radio"] + label {
+    color: _palette(fg-inverted);
+
+    &::after {
+        background: _palette(border-inverted);
+    }
+}
+
+/*
+    Inverted & active
+*/
+
+.inverted .vertical-tabset input[type="radio"] label:hover,
+.inverted .vertical-tabset input[type="radio"]:focus + label {
+    color: _palette(accent);
+}
+
+.inverted .vertical-tabset input[type="radio"] label:hover::after,
+.inverted .vertical-tabset input[type="radio"]:focus + label::after,
+.inverted .vertical-tabset input[type="radio"]:checked + label::after {
+    background: _palette(accent);
+}
+
+.inverted .vertical-tabset input[type="radio"]:checked + label {
+    border-right: 2px solid _palette(bg-alt-inverted);
+}
