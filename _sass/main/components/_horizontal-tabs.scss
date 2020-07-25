@@ -36,7 +36,8 @@
     border: 2px solid transparent;
     border-bottom: 0;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: bold;
+    z-index: 100;
 
     &::before {
         display: none !important;
@@ -51,6 +52,11 @@
         height: 4px;
         background: _palette(border);
     }
+}
+
+.horizontal-tabset .tab-panels .tab-panel {
+    padding: 30px 0;
+    border-top: 2px solid _palette(accent);
 }
 
 /*
@@ -72,11 +78,6 @@
     border-color: _palette(accent);
     border-bottom: 2px solid _palette(bg);
     margin: 0 0 -2px 0 !important;
-}
-
-.tab-panel {
-    padding: 30px 0;
-    border-top: 2px solid _palette(accent);
 }
 
 /*
