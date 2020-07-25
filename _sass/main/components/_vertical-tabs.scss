@@ -59,11 +59,12 @@
 }
 
 .vertical-tabset .vertical-tab .tab-panel {
-    left: 230px;
-    min-width: 300px;
-    padding: 0 0 0 21px;
-    position: absolute;  
+    position: absolute;
     top: 0;
+    left: 40%;
+    padding: 0 30px;
+    border-left: 2px solid _palette(accent);
+    height: 100%;
 }
 
 .vertical-tabset .vertical-tab .tab-panel:after {
