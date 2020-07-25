@@ -1,0 +1,135 @@
+/*
+    Hide the radio buttons
+*/
+
+.vertical-tabset input[type="radio"] {
+    position: absolute;
+    left: -200vw;
+}
+
+/*
+    Toggle
+*/
+
+.vertical-tabset .horizontal-tab .tab-panel {
+    display: none;
+}
+
+.vertical-tabset .horizontal-tab input[type="radio"]:checked ~ .tab-panel {
+    display: block;
+}
+
+/*
+    Common style
+*/
+
+.vertical-tabset {
+    position: relative;
+}
+
+.vertical-tabset .horizontal-tab {
+    display: block;
+}
+
+.vertical-tabset input[type="radio"] + label {
+    background: #ccc;
+    border:1px solid #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 15px 20px;
+    position: relative;
+    width: 180px;
+    z-index:100;
+
+    &::before {
+        display: none !important;
+    }
+}
+
+.vertical-tabset .horizontal-tab .tab-panel {
+    left: 230px;
+    min-width: 300px;
+    padding: 0 0 0 21px;
+    position: absolute;  
+    top: 0;
+}
+
+.vertical-tabset .horizontal-tab .tab-panel:after {
+    background-color: #ccc;
+    bottom: 0;
+    content: "";
+    display: block;
+    left:-229px;
+    position: absolute;
+    top: 0;
+    width: 220px;
+    z-index:1;
+}
+
+/*
+    Active
+*/
+
+.vertical-tabset input[type="radio"]:checked + label { 
+    background: #eee;
+    color: #bbb;
+}
+
+@media (max-width: 533px) {
+
+h1 {
+width: 100%;
+}
+
+.vertical-tabset {
+width: 100%;
+}
+
+.vertical-tabset .horizontal-tab label {
+font-size: 1em;
+width: 160px;
+}  
+
+.vertical-tabset .horizontal-tab .tab-panel {
+left: 200px;
+min-width: 270px;
+} 
+
+.vertical-tabset .horizontal-tab .tab-panel:after {
+background-color: #ccc;
+bottom: 0;
+content: "";
+display: block;
+left:-199px;
+position: absolute;
+top: 0;
+width: 200px;
+
+}  
+
+}
+
+
+@media (max-width: 768px) {
+h1 {
+width: 96%;
+}
+
+.vertical-tabset {
+width: 96%;
+}
+}
+
+
+@media (min-width: 1366px) {
+h1 {
+width: 70%;
+}
+
+.vertical-tabset {
+width: 70%;
+}
+}
+
