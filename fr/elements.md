@@ -249,18 +249,18 @@ header:
                     </tfoot>
                 </table>
             </div>
-            <!-- Table -->
-            <h3>Table</h3>
-            <div class="tabset">
+            <!-- Tabs -->
+            <h3>Horizontal Tabs</h3>
+            <div class="horizontal-tabset">
                 <!-- Tab 1 -->
-                <input type="radio" name="normal-tabset" id="normal-tab1" aria-controls="normal-panel1" checked>
-                <label for="normal-tab1">Märzen</label>
+                <input type="radio" name="horizontal-tabset" id="horizontal-tab1" aria-controls="normal-panel1" checked>
+                <label for="horizontal-tab1">Märzen</label>
                 <!-- Tab 2 -->
-                <input type="radio" name="normal-tabset" id="normal-tab2" aria-controls="normal-panel2">
-                <label for="normal-tab2">Rauchbier</label>
+                <input type="radio" name="horizontal-tabset" id="horizontal-tab2" aria-controls="normal-panel2">
+                <label for="horizontal-tab2">Rauchbier</label>
                 <!-- Tab 3 -->
-                <input type="radio" name="normal-tabset" id="normal-tab3" aria-controls="normal-panel3">
-                <label for="normal-tab3">Dunkles Bock</label>
+                <input type="radio" name="horizontal-tabset" id="horizontal-tab3" aria-controls="normal-panel3">
+                <label for="horizontal-tab3">Dunkles Bock</label>
                 <div class="tab-panels">
                     <section id="normal-panel1" class="tab-panel">
                         <h2>6A. Märzen</h2>
@@ -663,18 +663,18 @@ print 'It took ' + i + ' iterations to sort the deck.';
                     </tfoot>
                 </table>
             </div>
-            <!-- Table -->
-            <h3>Table</h3>
-            <div class="tabset">
+            <!-- Tabs -->
+            <h3>Horizontal Tabs</h3>
+            <div class="horizontal-tabset">
                 <!-- Tab 1 -->
-                <input type="radio" name="inverted-tabset" id="inverted-tab1" aria-controls="inverted-panel1" checked>
-                <label for="inverted-tab1">Märzen</label>
+                <input type="radio" name="horizontal-tabset-inverted" id="horizontal-tab-inverted1" aria-controls="inverted-panel1" checked>
+                <label for="horizontal-tab-inverted1">Märzen</label>
                 <!-- Tab 2 -->
-                <input type="radio" name="inverted-tabset" id="inverted-tab2" aria-controls="inverted-panel2">
-                <label for="inverted-tab2">Rauchbier</label>
+                <input type="radio" name="horizontal-tabset-inverted" id="horizontal-tab-inverted2" aria-controls="inverted-panel2">
+                <label for="horizontal-tab-inverted2">Rauchbier</label>
                 <!-- Tab 3 -->
-                <input type="radio" name="inverted-tabset" id="inverted-tab3" aria-controls="inverted-panel3">
-                <label for="inverted-tab3">Dunkles Bock</label>
+                <input type="radio" name="horizontal-tabset-inverted" id="horizontal-tab-inverted3" aria-controls="inverted-panel3">
+                <label for="horizontal-tab-inverted3">Dunkles Bock</label>
                 <div class="tab-panels">
                     <section id="inverted-panel1" class="tab-panel">
                         <h2>6A. Märzen</h2>

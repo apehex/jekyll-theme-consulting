@@ -11,11 +11,11 @@
     Toggle
 */
 
-.vertical-tabset .horizontal-tab .tab-panel {
+.vertical-tabset .vertical-tab .tab-panel {
     display: none;
 }
 
-.vertical-tabset .horizontal-tab input[type="radio"]:checked ~ .tab-panel {
+.vertical-tabset .vertical-tab input[type="radio"]:checked ~ .tab-panel {
     display: block;
 }
 
@@ -27,7 +27,7 @@
     position: relative;
 }
 
-.vertical-tabset .horizontal-tab {
+.vertical-tabset .vertical-tab {
     display: block;
 }
 
@@ -48,7 +48,7 @@
     }
 }
 
-.vertical-tabset .horizontal-tab .tab-panel {
+.vertical-tabset .vertical-tab .tab-panel {
     left: 230px;
     min-width: 300px;
     padding: 0 0 0 21px;
@@ -56,7 +56,7 @@
     top: 0;
 }
 
-.vertical-tabset .horizontal-tab .tab-panel:after {
+.vertical-tabset .vertical-tab .tab-panel:after {
     background-color: #ccc;
     bottom: 0;
     content: "";
@@ -87,17 +87,17 @@ width: 100%;
 width: 100%;
 }
 
-.vertical-tabset .horizontal-tab label {
+.vertical-tabset .vertical-tab label {
 font-size: 1em;
 width: 160px;
 }  
 
-.vertical-tabset .horizontal-tab .tab-panel {
+.vertical-tabset .vertical-tab .tab-panel {
 left: 200px;
 min-width: 270px;
 } 
 
-.vertical-tabset .horizontal-tab .tab-panel:after {
+.vertical-tabset .vertical-tab .tab-panel:after {
 background-color: #ccc;
 bottom: 0;
 content: "";
