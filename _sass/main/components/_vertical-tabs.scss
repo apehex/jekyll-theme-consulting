@@ -63,6 +63,7 @@
     top: 0;
     left: 40%;
     padding: 0 30px;
+    margin: 0 0 0 -2px;
     border-left: 2px solid _palette(accent);
     height: 100%;
 }
@@ -71,7 +72,18 @@
     Active
 */
 
-.vertical-tabset input[type="radio"]:checked + label { 
-    background: #eee;
-    color: #bbb;
+.vertical-tabset label:hover,
+.vertical-tabset input[type="radio"]:focus + label {
+    color: _palette(accent);
+}
+
+.vertical-tabset label:hover::after,
+.vertical-tabset input[type="radio"]:focus + label::after,
+.vertical-tabset input[type="radio"]:checked + label::after {
+    background: _palette(accent);
+}
+
+.vertical-tabset input[type="radio"]:checked + label {
+    border-color: _palette(accent);
+    border-right: 2px solid _palette(bg);
 }
