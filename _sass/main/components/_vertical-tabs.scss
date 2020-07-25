@@ -67,18 +67,6 @@
     height: 100%;
 }
 
-.vertical-tabset .vertical-tab .tab-panel:after {
-    background-color: #ccc;
-    bottom: 0;
-    content: "";
-    display: block;
-    left:-229px;
-    position: absolute;
-    top: 0;
-    width: 220px;
-    z-index:1;
-}
-
 /*
     Active
 */
