@@ -866,6 +866,42 @@ i++;
 
 print 'It took ' + i + ' iterations to sort the deck.';
             </code></pre>
+            <!-- Tabs -->
+            <h3>Vertical Tabs</h3>
+            <div class="vertical-tabset">
+                <div id="section1" class="vertical-tab">
+                    <input type="radio" name="sections" id="option1" checked>
+                    <label for="option1">John Lennon</label>
+                    <section class="tab-panel">
+                        <h2>John Lennon</h2>
+                        <p>John Ono Lennon, (born John Winston Lennon; 9 October 1940 – 8 December 1980), was an English musician.</p>
+                    </section>
+                </div>
+                <div id="section2" class="vertical-tab">
+                    <input type="radio" name="sections" id="option2">
+                    <label for="option2">Paul McCartney</label>
+                    <section class="tab-panel">
+                        <h2>Paul McCartney</h2>
+                        <p>Sir James Paul McCartney, (born 18 June 1942), is an English musician.</p>
+                    </section>
+                </div>
+                <div id="section3" class="vertical-tab">
+                    <input type="radio" name="sections" id="option3">
+                    <label for="option3">George Harrison</label>
+                    <section class="tab-panel">
+                        <h2>George Harrison</h2>
+                        <p>George Harrison, (25 February 1943 – 29 November 2001), was an English musician.</p>
+                    </section>
+                </div>
+                <div id="section4" class="vertical-tab">
+                    <input type="radio" name="sections" id="option4">
+                    <label for="option4">Ringo Starr</label>
+                    <section class="tab-panel">
+                        <h2>Ringo Starr</h2>
+                        <p>Richard Starkey, (born 7 July 1940), better known by his stage name Ringo Starr, is an English musician.</p>
+                    </section>
+                </div>
+            </div>
         </div>
     </div>
 </section>

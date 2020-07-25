@@ -11,7 +11,7 @@ header:
     <header class="main">
         <h1>Divers Eléments</h1>
     </header>
-    <!-- Content -->
+        <!-- Content -->
     <h2 id="content">Sample Content</h2>
     <p>Praesent ac adipiscing ullamcorper semper ut amet ac risus. Lorem sapien ut odio odio nunc. Ac adipiscing nibh porttitor erat risus justo adipiscing adipiscing amet placerat accumsan. Vis. Faucibus odio magna tempus adipiscing a non. In mi primis arcu ut non accumsan vivamus ac blandit adipiscing adipiscing arcu metus praesent turpis eu ac lacinia nunc ac commodo gravida adipiscing eget accumsan ac nunc adipiscing adipiscing lorem ipsum dolor sit amet nullam veroeros adipiscing.</p>
     <div class="row">
@@ -253,26 +253,26 @@ header:
             <h3>Horizontal Tabs</h3>
             <div class="horizontal-tabset">
                 <!-- Tab 1 -->
-                <input type="radio" name="horizontal-tabset" id="horizontal-tab1" aria-controls="normal-panel1" checked>
+                <input type="radio" name="horizontal-tabset" id="horizontal-tab1" aria-controls="horizontal-panel1" checked>
                 <label for="horizontal-tab1">Märzen</label>
                 <!-- Tab 2 -->
-                <input type="radio" name="horizontal-tabset" id="horizontal-tab2" aria-controls="normal-panel2">
+                <input type="radio" name="horizontal-tabset" id="horizontal-tab2" aria-controls="horizontal-panel2">
                 <label for="horizontal-tab2">Rauchbier</label>
                 <!-- Tab 3 -->
-                <input type="radio" name="horizontal-tabset" id="horizontal-tab3" aria-controls="normal-panel3">
+                <input type="radio" name="horizontal-tabset" id="horizontal-tab3" aria-controls="horizontal-panel3">
                 <label for="horizontal-tab3">Dunkles Bock</label>
                 <div class="tab-panels">
-                    <section id="normal-panel1" class="tab-panel">
+                    <section id="horizontal-panel1" class="tab-panel">
                         <h2>6A. Märzen</h2>
                         <p><strong>Overall Impression:</strong> An elegant, malty German amber lager with a clean, rich, toasty and bready malt flavor, restrained bitterness, and a dry finish that encourages another drink. The overall malt impression is soft, elegant, and complex, with a rich aftertaste that is never cloying or heavy.</p>
                         <p><strong>History:</strong> As the name suggests, brewed as a stronger “March beer” in March and lagered in cold caves over the summer. Modern versions trace back to the lager developed by Spaten in 1841, contemporaneous to the development of Vienna lager. However, the Märzen name is much older than 1841; the early ones were dark brown, and in Austria the name implied a strength band (14 °P) rather than a style. The German amber lager version (in the Viennese style of the time) was first served at Oktoberfest in 1872, a tradition that lasted until 1990 when the golden Festbier was adopted as the standard festival beer.</p>
                     </section>
-                    <section id="normal-panel2" class="tab-panel">
+                    <section id="horizontal-panel2" class="tab-panel">
                         <h2>6B. Rauchbier</h2>
                         <p><strong>Overall Impression:</strong>  An elegant, malty German amber lager with a balanced, complementary beechwood smoke character. Toasty-rich malt in aroma and flavor, restrained bitterness, low to high smoke flavor, clean fermentation profile, and an attenuated finish are characteristic.</p>
                         <p><strong>History:</strong> A historical specialty of the city of Bamberg, in the Franconian region of Bavaria in Germany. Beechwood-smoked malt is used to make a Märzen-style amber lager. The smoke character of the malt varies by maltster; some breweries produce their own smoked malt (rauchmalz).</p>
                     </section>
-                    <section id="normal-panel3" class="tab-panel">
+                    <section id="horizontal-panel3" class="tab-panel">
                         <h2>6C. Dunkles Bock</h2>
                         <p><strong>Overall Impression:</strong> A dark, strong, malty German lager beer that emphasizes the malty-rich and somewhat toasty qualities of continental malts without being sweet in the finish.</p>
                         <p><strong>History:</strong> Originated in the Northern German city of Einbeck, which was a brewing center and popular exporter in the days of the Hanseatic League (14th to 17th century). Recreated in Munich starting in the 17th century. The name “bock” is based on a corruption of the name “Einbeck” in the Bavarian dialect, and was thus only used after the beer came to Munich. “Bock” also means “Ram” in German, and is often used in logos and advertisements.</p>
@@ -416,6 +416,42 @@ i++;
 
 print 'It took ' + i + ' iterations to sort the deck.';
             </code></pre>
+            <!-- Tabs -->
+            <h3>Vertical Tabs</h3>
+            <div class="vertical-tabset">
+                <div id="section1" class="vertical-tab">
+                    <input type="radio" name="sections" id="option1" checked>
+                    <label for="option1">John Lennon</label>
+                    <section class="tab-panel">
+                        <h2>John Lennon</h2>
+                        <p>John Ono Lennon, (born John Winston Lennon; 9 October 1940 – 8 December 1980), was an English musician.</p>
+                    </section>
+                </div>
+                <div id="section2" class="vertical-tab">
+                    <input type="radio" name="sections" id="option2">
+                    <label for="option2">Paul McCartney</label>
+                    <section class="tab-panel">
+                        <h2>Paul McCartney</h2>
+                        <p>Sir James Paul McCartney, (born 18 June 1942), is an English musician.</p>
+                    </section>
+                </div>
+                <div id="section3" class="vertical-tab">
+                    <input type="radio" name="sections" id="option3">
+                    <label for="option3">George Harrison</label>
+                    <section class="tab-panel">
+                        <h2>George Harrison</h2>
+                        <p>George Harrison, (25 February 1943 – 29 November 2001), was an English musician.</p>
+                    </section>
+                </div>
+                <div id="section4" class="vertical-tab">
+                    <input type="radio" name="sections" id="option4">
+                    <label for="option4">Ringo Starr</label>
+                    <section class="tab-panel">
+                        <h2>Ringo Starr</h2>
+                        <p>Richard Starkey, (born 7 July 1940), better known by his stage name Ringo Starr, is an English musician.</p>
+                    </section>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -667,26 +703,26 @@ print 'It took ' + i + ' iterations to sort the deck.';
             <h3>Horizontal Tabs</h3>
             <div class="horizontal-tabset">
                 <!-- Tab 1 -->
-                <input type="radio" name="horizontal-tabset-inverted" id="horizontal-tab-inverted1" aria-controls="inverted-panel1" checked>
+                <input type="radio" name="horizontal-tabset-inverted" id="horizontal-tab-inverted1" aria-controls="horizontal-panel-inverted1" checked>
                 <label for="horizontal-tab-inverted1">Märzen</label>
                 <!-- Tab 2 -->
-                <input type="radio" name="horizontal-tabset-inverted" id="horizontal-tab-inverted2" aria-controls="inverted-panel2">
+                <input type="radio" name="horizontal-tabset-inverted" id="horizontal-tab-inverted2" aria-controls="horizontal-panel-inverted2">
                 <label for="horizontal-tab-inverted2">Rauchbier</label>
                 <!-- Tab 3 -->
-                <input type="radio" name="horizontal-tabset-inverted" id="horizontal-tab-inverted3" aria-controls="inverted-panel3">
+                <input type="radio" name="horizontal-tabset-inverted" id="horizontal-tab-inverted3" aria-controls="horizontal-panel-inverted3">
                 <label for="horizontal-tab-inverted3">Dunkles Bock</label>
                 <div class="tab-panels">
-                    <section id="inverted-panel1" class="tab-panel">
+                    <section id="horizontal-panel-inverted1" class="tab-panel">
                         <h2>6A. Märzen</h2>
                         <p><strong>Overall Impression:</strong> An elegant, malty German amber lager with a clean, rich, toasty and bready malt flavor, restrained bitterness, and a dry finish that encourages another drink. The overall malt impression is soft, elegant, and complex, with a rich aftertaste that is never cloying or heavy.</p>
                         <p><strong>History:</strong> As the name suggests, brewed as a stronger “March beer” in March and lagered in cold caves over the summer. Modern versions trace back to the lager developed by Spaten in 1841, contemporaneous to the development of Vienna lager. However, the Märzen name is much older than 1841; the early ones were dark brown, and in Austria the name implied a strength band (14 °P) rather than a style. The German amber lager version (in the Viennese style of the time) was first served at Oktoberfest in 1872, a tradition that lasted until 1990 when the golden Festbier was adopted as the standard festival beer.</p>
                     </section>
-                    <section id="inverted-panel2" class="tab-panel">
+                    <section id="horizontal-panel-inverted2" class="tab-panel">
                         <h2>6B. Rauchbier</h2>
                         <p><strong>Overall Impression:</strong>  An elegant, malty German amber lager with a balanced, complementary beechwood smoke character. Toasty-rich malt in aroma and flavor, restrained bitterness, low to high smoke flavor, clean fermentation profile, and an attenuated finish are characteristic.</p>
                         <p><strong>History:</strong> A historical specialty of the city of Bamberg, in the Franconian region of Bavaria in Germany. Beechwood-smoked malt is used to make a Märzen-style amber lager. The smoke character of the malt varies by maltster; some breweries produce their own smoked malt (rauchmalz).</p>
                     </section>
-                    <section id="inverted-panel3" class="tab-panel">
+                    <section id="horizontal-panel-inverted3" class="tab-panel">
                         <h2>6C. Dunkles Bock</h2>
                         <p><strong>Overall Impression:</strong> A dark, strong, malty German lager beer that emphasizes the malty-rich and somewhat toasty qualities of continental malts without being sweet in the finish.</p>
                         <p><strong>History:</strong> Originated in the Northern German city of Einbeck, which was a brewing center and popular exporter in the days of the Hanseatic League (14th to 17th century). Recreated in Munich starting in the 17th century. The name “bock” is based on a corruption of the name “Einbeck” in the Bavarian dialect, and was thus only used after the beer came to Munich. “Bock” also means “Ram” in German, and is often used in logos and advertisements.</p>
@@ -830,6 +866,42 @@ i++;
 
 print 'It took ' + i + ' iterations to sort the deck.';
             </code></pre>
+            <!-- Tabs -->
+            <h3>Vertical Tabs</h3>
+            <div class="vertical-tabset">
+                <div id="section1" class="vertical-tab">
+                    <input type="radio" name="sections" id="option1" checked>
+                    <label for="option1">John Lennon</label>
+                    <section class="tab-panel">
+                        <h2>John Lennon</h2>
+                        <p>John Ono Lennon, (born John Winston Lennon; 9 October 1940 – 8 December 1980), was an English musician.</p>
+                    </section>
+                </div>
+                <div id="section2" class="vertical-tab">
+                    <input type="radio" name="sections" id="option2">
+                    <label for="option2">Paul McCartney</label>
+                    <section class="tab-panel">
+                        <h2>Paul McCartney</h2>
+                        <p>Sir James Paul McCartney, (born 18 June 1942), is an English musician.</p>
+                    </section>
+                </div>
+                <div id="section3" class="vertical-tab">
+                    <input type="radio" name="sections" id="option3">
+                    <label for="option3">George Harrison</label>
+                    <section class="tab-panel">
+                        <h2>George Harrison</h2>
+                        <p>George Harrison, (25 February 1943 – 29 November 2001), was an English musician.</p>
+                    </section>
+                </div>
+                <div id="section4" class="vertical-tab">
+                    <input type="radio" name="sections" id="option4">
+                    <label for="option4">Ringo Starr</label>
+                    <section class="tab-panel">
+                        <h2>Ringo Starr</h2>
+                        <p>Richard Starkey, (born 7 July 1940), better known by his stage name Ringo Starr, is an English musician.</p>
+                    </section>
+                </div>
+            </div>
         </div>
     </div>
 </section>
