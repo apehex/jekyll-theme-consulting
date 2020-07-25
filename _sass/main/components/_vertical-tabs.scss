@@ -32,19 +32,29 @@
 }
 
 .vertical-tabset input[type="radio"] + label {
-    background: #ccc;
-    border:1px solid #fff;
-    cursor: pointer;
-    display: block;
-    font-size: 1.2em;
-    font-weight: bold;
-    padding: 15px 20px;
     position: relative;
-    width: 180px;
+    display: inline-block;
+    margin: 0 !important;
+    padding: 15px 15px 25px !important;
+    border: 2px solid transparent;
+    border-right: 0;
+    cursor: pointer;
+    font-weight: bold;
+    width: 40%;
     z-index:100;
 
     &::before {
         display: none !important;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 15px;
+        bottom: 10px;
+        width: 22px;
+        height: 4px;
+        background: _palette(border);
     }
 }
 
