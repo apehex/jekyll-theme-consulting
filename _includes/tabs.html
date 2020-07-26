@@ -1,0 +1,17 @@
+<div id="{{ include.id }}" class="vertical-tabset">
+	{%- for tab in include.tabs -%}
+	{%- capture tab-id -%}{{ tab.id | default: tab.title | slugify }}{{ forloop.index }}{%- endcapture -%}
+    <div id="tab-{{ tab-id }}" class="vertical-tab">
+    	{%- if forloop.first == true -%}
+        <input type="radio" name="{{ include.id }}" id="option-{{ tab-id }}" checked>
+        {%- else -%}
+        <input type="radio" name="{{ include.id }}" id="option-{{ tab-id }}">
+        {%- endif -%}
+        <label for="option-{{ tab-id }}" style="width: {{ include.header-width | default: 30 }}%;">{{ tab.title }}</label>
+        <section class="tab-panel" style="left: {{ include.header-width | default: 30 }}%;">
+            <h2>{{ tab.title }}</h2>
+            <p>{{ tab.content }}</p>
+        </section>
+    </div>
+	{%- endfor -%}
+</div>

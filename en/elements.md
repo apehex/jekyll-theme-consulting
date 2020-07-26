@@ -5,6 +5,26 @@ title: Theme Elements Showcase
 header:
     title: "Consulting"
     subtitle: Elements
+vertical-tabs:
+    id: vertical-tabs-showcase
+    orientation: vertical
+    tabs:
+        - id: praesent-ac
+          title: Praesent ac
+          content: >-
+            Adipiscing ullamcorper semper ut amet ac risus. Lorem sapien ut odio odio nunc.
+        - id: ac-adipiscing
+          title: Ac adipiscing
+          content: >-
+            Nibh porttitor erat risus justo adipiscing adipiscing amet placerat accumsan.
+        - id: faucibus
+          title: Faucibus
+          content: >-
+            Odio magna tempus adipiscing a non.
+        - id: in-mi-primis
+          title: In mi primis
+          content: >-
+            Arcu ut non accumsan vivamus ac blandit adipiscing adipiscing arcu metus praesent turpis eu ac lacinia nunc ac commodo gravida adipiscing eget accumsan ac nunc adipiscing adipiscing lorem ipsum dolor sit amet nullam veroeros adipiscing.
 ---
 <!-- Content -->
 <section id="normal-style">
@@ -418,40 +438,7 @@ print 'It took ' + i + ' iterations to sort the deck.';
             </code></pre>
             <!-- Tabs -->
             <h3>Vertical Tabs</h3>
-            <div class="vertical-tabset">
-                <div id="vertical-tab1" class="vertical-tab">
-                    <input type="radio" name="vertical-tabs" id="vertical-tab-option1" checked>
-                    <label for="vertical-tab-option1">John Lennon</label>
-                    <section class="tab-panel">
-                        <h2>John Lennon</h2>
-                        <p>John Ono Lennon, (born John Winston Lennon; 9 October 1940 – 8 December 1980), was an English musician.</p>
-                    </section>
-                </div>
-                <div id="vertical-tab2" class="vertical-tab">
-                    <input type="radio" name="vertical-tabs" id="vertical-tab-option2">
-                    <label for="vertical-tab-option2">Paul McCartney</label>
-                    <section class="tab-panel">
-                        <h2>Paul McCartney</h2>
-                        <p>Sir James Paul McCartney, (born 18 June 1942), is an English musician.</p>
-                    </section>
-                </div>
-                <div id="vertical-tab3" class="vertical-tab">
-                    <input type="radio" name="vertical-tabs" id="vertical-tab-option3">
-                    <label for="vertical-tab-option3">George Harrison</label>
-                    <section class="tab-panel">
-                        <h2>George Harrison</h2>
-                        <p>George Harrison, (25 February 1943 – 29 November 2001), was an English musician.</p>
-                    </section>
-                </div>
-                <div id="vertical-tab4" class="vertical-tab">
-                    <input type="radio" name="vertical-tabs" id="vertical-tab-option4">
-                    <label for="vertical-tab-option4">Ringo Starr</label>
-                    <section class="tab-panel">
-                        <h2>Ringo Starr</h2>
-                        <p>Richard Starkey, (born 7 July 1940), better known by his stage name Ringo Starr, is an English musician.</p>
-                    </section>
-                </div>
-            </div>
+            {% include tabs.html id=page.vertical-tabs.id tabs=page.vertical-tabs.tabs %}
         </div>
     </div>
 </section>
