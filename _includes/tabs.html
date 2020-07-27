@@ -1,9 +1,9 @@
 {%- assign show-title = include.show-title | default: true -%}
 <div {% if include.id %}id="{{ include.id }}"{% endif %} class="vertical-tabset">
-	{%- for tab in include.tabs -%}
-	{%- capture tab-id -%}tab{{ forloop.index }}-{{ tab.id | default: tab.title | slugify }}{%- endcapture -%}
+    {%- for tab in include.tabs -%}
+    {%- capture tab-id -%}tab{{ forloop.index }}-{{ tab.id | default: tab.title | slugify }}{%- endcapture -%}
     <div id="{{ tab-id }}" class="vertical-tab">
-    	{%- if forloop.first == true -%}
+        {%- if forloop.first == true -%}
         <input type="radio" name="{{ include.id }}" id="option-{{ tab-id }}" checked>
         {%- else -%}
         <input type="radio" name="{{ include.id }}" id="option-{{ tab-id }}">
@@ -14,5 +14,5 @@
             <p>{{ tab.content }}</p>
         </section>
     </div>
-	{%- endfor -%}
+    {%- endfor -%}
 </div>
