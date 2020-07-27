@@ -12,19 +12,19 @@ vertical-tabs:
         - id: praesent-ac
           title: Praesent ac
           content: >-
-            Adipiscing ullamcorper semper ut amet ac risus. Lorem sapien ut odio odio nunc.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mattis justo nibh, eleifend volutpat odio ullamcorper a. Nullam malesuada pharetra tincidunt. Mauris sed velit id leo congue commodo. Phasellus vel blandit magna. Etiam ut risus mattis, maximus lorem a, facilisis quam. Suspendisse potenti. Suspendisse at nisl metus. Nullam vitae quam eu nisl fringilla venenatis. Suspendisse tincidunt pulvinar lacus pretium convallis.
         - id: ac-adipiscing
           title: Ac adipiscing
           content: >-
-            Nibh porttitor erat risus justo adipiscing adipiscing amet placerat accumsan.
+            Sed cursus porta dictum. Proin volutpat odio pulvinar, egestas orci vel, placerat nunc. Nunc nunc libero, dignissim et eleifend ac, fringilla ut dolor. Vivamus ac quam nisi. Morbi ipsum dolor, luctus quis risus at, facilisis rutrum dolor. Duis eu gravida ipsum, eget luctus augue. Aliquam nec luctus leo, at faucibus lorem. Pellentesque placerat sed ex sed pellentesque. Sed et libero id tellus dapibus auctor sit amet a erat.
         - id: faucibus
           title: Faucibus
           content: >-
-            Odio magna tempus adipiscing a non.
+            Etiam eget malesuada lectus. Pellentesque ac mollis elit. Quisque tincidunt ex vel urna rutrum, et aliquet erat volutpat. Praesent consequat mi ac metus tempus congue in ac orci. Duis rutrum ultricies pretium. Cras fermentum elit blandit orci suscipit porta. Quisque vel ante odio. Quisque lacinia eros sit amet dui tempus fringilla at quis orci. Aliquam purus nibh, aliquet et sem id, rhoncus gravida enim. Ut maximus tortor vel tempor tincidunt. Aliquam est ante, condimentum eget facilisis non, suscipit a nibh.
         - id: in-mi-primis
           title: In mi primis
           content: >-
-            Arcu ut non accumsan vivamus ac blandit adipiscing adipiscing arcu metus praesent turpis eu ac lacinia nunc ac commodo gravida adipiscing eget accumsan ac nunc adipiscing adipiscing lorem ipsum dolor sit amet nullam veroeros adipiscing.
+            Vivamus iaculis in erat in vulputate. Mauris hendrerit auctor ipsum, vel viverra felis suscipit in. Proin blandit ex quis ante lacinia egestas. Vivamus pulvinar lobortis ex, at efficitur quam placerat vitae. Proin aliquam placerat sapien, ut facilisis felis ultricies eget. Sed tincidunt risus nec tempus vestibulum. Suspendisse felis tortor, dictum eget magna id, faucibus suscipit lorem. Sed nisl eros, tempus non tempus in, tincidunt sed sapien. Nunc purus erat, fermentum id tortor in, imperdiet finibus tellus.
 ---
 <!-- Content -->
 <section id="normal-style">
@@ -438,7 +438,7 @@ print 'It took ' + i + ' iterations to sort the deck.';
             </code></pre>
             <!-- Tabs -->
             <h3>Vertical Tabs</h3>
-            {% include tabs.html id=page.vertical-tabs.id tabs=page.vertical-tabs.tabs %}
+            {% include tabs.html id=page.vertical-tabs.id headers-width="30" show-title="false" tabs=page.vertical-tabs.tabs %}
         </div>
     </div>
 </section>
@@ -858,34 +858,34 @@ print 'It took ' + i + ' iterations to sort the deck.';
             <div class="vertical-tabset">
                 <div id="vertical-tab-inverted1" class="vertical-tab">
                     <input type="radio" name="vertical-tabs-inverted" id="vertical-tab-inverted-option1" checked>
-                    <label for="vertical-tab-inverted-option1">John Lennon</label>
+                    <label for="vertical-tab-inverted-option1">Praesent ac</label>
                     <section class="tab-panel">
-                        <h2>John Lennon</h2>
-                        <p>John Ono Lennon, (born John Winston Lennon; 9 October 1940 – 8 December 1980), was an English musician.</p>
+                        <h2>Praesent ac</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mattis justo nibh, eleifend volutpat odio ullamcorper a. Nullam malesuada pharetra tincidunt. Mauris sed velit id leo congue commodo. Phasellus vel blandit magna. Etiam ut risus mattis, maximus lorem a, facilisis quam. Suspendisse potenti. Suspendisse at nisl metus. Nullam vitae quam eu nisl fringilla venenatis. Suspendisse tincidunt pulvinar lacus pretium convallis.</p>
                     </section>
                 </div>
                 <div id="vertical-tab-inverted2" class="vertical-tab">
                     <input type="radio" name="vertical-tabs-inverted" id="vertical-tab-inverted-option2">
-                    <label for="vertical-tab-inverted-option2">Paul McCartney</label>
+                    <label for="vertical-tab-inverted-option2">Ac adipiscing</label>
                     <section class="tab-panel">
-                        <h2>Paul McCartney</h2>
-                        <p>Sir James Paul McCartney, (born 18 June 1942), is an English musician.</p>
+                        <h2>Ac adipiscing</h2>
+                        <p>Sed cursus porta dictum. Proin volutpat odio pulvinar, egestas orci vel, placerat nunc. Nunc nunc libero, dignissim et eleifend ac, fringilla ut dolor. Vivamus ac quam nisi. Morbi ipsum dolor, luctus quis risus at, facilisis rutrum dolor. Duis eu gravida ipsum, eget luctus augue. Aliquam nec luctus leo, at faucibus lorem. Pellentesque placerat sed ex sed pellentesque. Sed et libero id tellus dapibus auctor sit amet a erat.</p>
                     </section>
                 </div>
                 <div id="vertical-tab-inverted3" class="vertical-tab">
                     <input type="radio" name="vertical-tabs-inverted" id="vertical-tab-inverted-option3">
-                    <label for="vertical-tab-inverted-option3">George Harrison</label>
+                    <label for="vertical-tab-inverted-option3">Faucibus</label>
                     <section class="tab-panel">
-                        <h2>George Harrison</h2>
-                        <p>George Harrison, (25 February 1943 – 29 November 2001), was an English musician.</p>
+                        <h2>Faucibus</h2>
+                        <p>Etiam eget malesuada lectus. Pellentesque ac mollis elit. Quisque tincidunt ex vel urna rutrum, et aliquet erat volutpat. Praesent consequat mi ac metus tempus congue in ac orci. Duis rutrum ultricies pretium. Cras fermentum elit blandit orci suscipit porta. Quisque vel ante odio. Quisque lacinia eros sit amet dui tempus fringilla at quis orci. Aliquam purus nibh, aliquet et sem id, rhoncus gravida enim. Ut maximus tortor vel tempor tincidunt.</p>
                     </section>
                 </div>
                 <div id="vertical-tab-inverted4" class="vertical-tab">
                     <input type="radio" name="vertical-tabs-inverted" id="vertical-tab-inverted-option4">
-                    <label for="vertical-tab-inverted-option4">Ringo Starr</label>
+                    <label for="vertical-tab-inverted-option4">In mi primis</label>
                     <section class="tab-panel">
-                        <h2>Ringo Starr</h2>
-                        <p>Richard Starkey, (born 7 July 1940), better known by his stage name Ringo Starr, is an English musician.</p>
+                        <h2>In mi primis</h2>
+                        <p>Vivamus iaculis in erat in vulputate. Mauris hendrerit auctor ipsum, vel viverra felis suscipit in. Proin blandit ex quis ante lacinia egestas. Vivamus pulvinar lobortis ex, at efficitur quam placerat vitae. Proin aliquam placerat sapien, ut facilisis felis ultricies eget. Sed tincidunt risus nec tempus vestibulum. Suspendisse felis tortor, dictum eget magna id, faucibus suscipit lorem. Sed nisl eros, tempus non tempus in, tincidunt sed sapien. Nunc purus erat, fermentum id tortor in, imperdiet finibus tellus.</p>
                     </section>
                 </div>
             </div>
