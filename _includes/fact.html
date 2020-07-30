@@ -1,0 +1,28 @@
+<article class="{{ include.class }}">
+    {%- if include.target_url -%}
+    <a href='{{ include.target_url | absolute_url }}'>
+    {%- endif -%}
+        <div class="fact-intro on">
+            <p>{{ include.default.intro | default: &nbsp; }}</p>
+        </div>
+        <div class="fact on">
+            <h3>{{ include.default.fact | default: &nbsp; }}</h3>
+        </div>
+        <div class="fact-outro on">
+            <p>{{ include.default.outro | default: &nbsp; }}</p>
+        </div>
+        <span class="icon solid {{ include.default.icon | default: 'fa-play' }} on"></span>
+        <div class="fact-intro off">
+            <p>{{ include.hover.intro | default: &nbsp; }}</p>
+        </div>
+        <div class="fact off">
+            <h3>{{ include.hover.fact | default: &nbsp; }}</h3>
+        </div>
+        <div class="fact-outro off">
+            <p>{{ include.hover.outro | default: &nbsp; }}</p>
+        </div>
+        <span class="icon solid {{ include.hover.icon | default: 'fa-exclamation' }} off"></span>
+    {%- if include.target_url -%}
+    </a>
+    {%- endif -%}
+</article>
