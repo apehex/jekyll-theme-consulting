@@ -11,7 +11,7 @@
         <div class="fact-outro on">
             <p>{{ include.default.outro | default: &nbsp; }}</p>
         </div>
-        <span class="icon solid {{ include.default.icon | default: 'fa-play' }} on"></span>
+        <span class="icon {{ include.default.icon | default: 'fa-play' }} on"></span>
         <div class="fact-intro off">
             <p>{{ include.hover.intro | default: &nbsp; }}</p>
         </div>
@@ -21,7 +21,7 @@
         <div class="fact-outro off">
             <p>{{ include.hover.outro | default: &nbsp; }}</p>
         </div>
-        <span class="icon solid {{ include.hover.icon | default: 'fa-exclamation' }} off"></span>
+        <span class="icon {{ include.hover.icon | default: 'fa-exclamation' }} off"></span>
     {%- if include.target_url -%}
     </a>
     {%- endif -%}
