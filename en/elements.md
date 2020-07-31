@@ -61,7 +61,7 @@ vertical-tabs:
     <!-- Elements -->
     <h2 id="elements">Elements</h2>
     <div class="row gtr-200">
-        <div class="col-6 col-12-medium">
+        <div class="col-6 col-12-medium col-12-small">
             <!-- Text stuff -->
             <h3>Text</h3>
             <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
@@ -300,7 +300,7 @@ vertical-tabs:
                 </div>
             </div>
         </div>
-        <div class="col-6 col-12-medium">
+        <div class="col-6 col-12-medium col-12-small">
             <!-- Buttons -->
             <h3>Buttons</h3>
             <ul class="actions">
@@ -478,7 +478,7 @@ print 'It took ' + i + ' iterations to sort the deck.';
     <!-- Elements -->
     <h2 id="elements">Elements</h2>
     <div class="row gtr-200">
-        <div class="col-6 col-12-medium">
+        <div class="col-6 col-12-medium col-12-small">
             <!-- Text stuff -->
             <h3>Text</h3>
             <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
@@ -717,7 +717,7 @@ print 'It took ' + i + ' iterations to sort the deck.';
                 </div>
             </div>
         </div>
-        <div class="col-6 col-12-medium">
+        <div class="col-6 col-12-medium col-12-small">
             <!-- Buttons -->
             <h3>Buttons</h3>
             <ul class="actions">
