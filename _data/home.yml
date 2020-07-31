@@ -1,0 +1,187 @@
+facts:
+  en:
+    id: facts
+    title: >-
+      In et posuere neque
+    facts:
+      - class: >-
+          col-2 col-4-medium col-12-small
+        target_url: >-
+          /en/
+        default:
+          intro: >-
+            Pellentesque habitant
+          fact: >-
+            874
+          outro: >-
+            morbi tristique senectus et netus
+          icon: >-
+            solid fa-gem
+        hover:
+          intro: >-
+            Habitant pellentesque
+          fact: >-
+            478
+          outro: >-
+            netus et senectus trisitque morbi
+          icon: >-
+            solid fa-moon
+      - class: >-
+          col-2 col-4-medium col-12-small
+        target_url: >-
+          /en/
+        default:
+          intro: >-
+            Et malesuada
+          fact: >-
+            10+
+          outro: >-
+            fames ac turpis egestas
+          icon: >-
+            solid fa-hand-paper
+        hover:
+          intro: >-
+            Malesuada et
+          fact: >-
+            +01
+          outro: >-
+            egestas turpis ac fames
+          icon: >-
+            solid fa-hand-paper
+      - class: >-
+          col-2 col-4-medium col-12-small
+        target_url: >-
+          /en/
+        default:
+          intro: >-
+            Mauris vitae
+          fact: >-
+            90
+          outro: >-
+            viverra lorem, nec dapibus nisl
+          icon: >-
+            solid fa-rocket
+        hover:
+          intro: >-
+            Vitae mauris
+          fact: >-
+            09
+          outro: >-
+            nisl dapibus nec, lorem viverra
+          icon: >-
+            solid fa-rocket
+      - class: >-
+          col-2 col-4-medium col-12-small
+        target_url: >-
+          /en/
+        default:
+          intro: >-
+            Maecenas
+          fact: >-
+            425
+          outro: >-
+            ultricies mollis purus non dictum
+          icon: >-
+            brands fa-canadian-maple-leaf
+        hover:
+          intro: >-
+            Maecenas
+          fact: >-
+            524
+          outro: >-
+            dictum non purus mollis ultricies
+          icon: >-
+            brands fa-canadian-maple-leaf
+  fr:
+    id: facts
+    title: >-
+      In et posuere neque
+    facts:
+      - class: >-
+          col-2 col-4-medium col-12-small
+        target_url: >-
+          /fr/
+        default:
+          intro: >-
+            Pellentesque habitant
+          fact: >-
+            874
+          outro: >-
+            morbi tristique senectus et netus
+          icon: >-
+            solid fa-gem
+        hover:
+          intro: >-
+            Habitant pellentesque
+          fact: >-
+            478
+          outro: >-
+            netus et senectus trisitque morbi
+          icon: >-
+            solid fa-moon
+      - class: >-
+          col-2 col-4-medium col-12-small
+        target_url: >-
+          /fr/
+        default:
+          intro: >-
+            Et malesuada
+          fact: >-
+            10+
+          outro: >-
+            fames ac turpis egestas
+          icon: >-
+            solid fa-hand-paper
+        hover:
+          intro: >-
+            Malesuada et
+          fact: >-
+            +01
+          outro: >-
+            egestas turpis ac fames
+          icon: >-
+            solid fa-hand-paper
+      - class: >-
+          col-2 col-4-medium col-12-small
+        target_url: >-
+          /fr/
+        default:
+          intro: >-
+            Mauris vitae
+          fact: >-
+            90
+          outro: >-
+            viverra lorem, nec dapibus nisl
+          icon: >-
+            solid fa-rocket
+        hover:
+          intro: >-
+            Vitae mauris
+          fact: >-
+            09
+          outro: >-
+            nisl dapibus nec, lorem viverra
+          icon: >-
+            solid fa-rocket
+      - class: >-
+          col-2 col-4-medium col-12-small
+        target_url: >-
+          /fr/
+        default:
+          intro: >-
+            Maecenas
+          fact: >-
+            425
+          outro: >-
+            ultricies mollis purus non dictum
+          icon: >-
+            brands fa-canadian-maple-leaf
+        hover:
+          intro: >-
+            Maecenas
+          fact: >-
+            524
+          outro: >-
+            dictum non purus mollis ultricies
+          icon: >-
+            brands fa-canadian-maple-leaf

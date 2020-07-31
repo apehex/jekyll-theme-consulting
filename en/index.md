@@ -20,52 +20,16 @@ banner:
         url: "#contact"
         label: "Wow"
 ---
+{%- assign facts = site.data.home.facts[page.lang] -%}
 <!-- Section -->
-<section>
+<section id="{{ facts.id }}">
     <header class="major">
-        <h2>In et posuere neque</h2>
+        <h2>{{ facts.title }}</h2>
     </header>
     <div class="facts row">
-        <article class="col-1 col-4-medium col-12-small">
-            <div class="fact-intro on"><p>Pellentesque habitant</p></div>
-            <div class="fact on"><h3>874</h3></div>
-            <div class="fact-outro on"><p>morbi tristique senectus et netus</p></div>
-            <span class="icon fa-gem on"></span>
-            <div class="fact-intro off"><p>Habitant pellentesque</p></div>
-            <div class="fact off"><h3>478</h3></div>
-            <div class="fact-outro off"><p>netus et senectus trisitque morbi</p></div>
-            <span class="icon fa-moon off"></span>
-        </article>
-        <article class="col-1 col-4-medium col-12-small">
-            <div class="fact-intro on"><p>Et malesuada</p></div>
-            <div class="fact on"><h3>10+</h3></div>
-            <div class="fact-outro on"><p>fames ac turpis egestas</p></div>
-            <span class="icon fa-hand-paper on"></span>
-            <div class="fact-intro off"><p>Malesuada et</p></div>
-            <div class="fact off"><h3>+01</h3></div>
-            <div class="fact-outro off"><p>egestas turpis ac fames</p></div>
-            <span class="icon fa-hand-paper off"></span>
-        </article>
-        <article class="col-1 col-4-medium col-12-small">
-            <div class="fact-intro on"><p>Mauris vitae</p></div>
-            <div class="fact on"><h3>90</h3></div>
-            <div class="fact-outro on"><p>viverra lorem, nec dapibus nisl</p></div>
-            <span class="icon solid fa-rocket on"></span>
-            <div class="fact-intro off"><p>Vitae mauris</p></div>
-            <div class="fact off"><h3>09</h3></div>
-            <div class="fact-outro off"><p>nisl dapibus nec, lorem viverra</p></div>
-            <span class="icon solid fa-rocket off"></span>
-        </article>
-        <article class="col-1 col-4-medium col-12-small">
-            <div class="fact-intro on"><p>Maecenas</p></div>
-            <div class="fact on"><h3>425</h3></div>
-            <div class="fact-outro on"><p>ultricies mollis purus non dictum</p></div>
-            <span class="icon brands fa-canadian-maple-leaf on"></span>
-            <div class="fact-intro off"><p>Maecenas</p></div>
-            <div class="fact off"><h3>524</h3></div>
-            <div class="fact-outro off"><p>dictum non purus mollis ultricies</p></div>
-            <span class="icon brands fa-canadian-maple-leaf off"></span>
-        </article>
+        {% for fact in facts.facts %}
+            {% include fact.html class="col-2 col-4-medium col-12-small" target_url=fact.target_url default=fact.default hover=fact.hover %}
+        {% endfor %}
     </div>
 </section>
 
