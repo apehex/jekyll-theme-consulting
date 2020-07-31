@@ -274,28 +274,25 @@ vertical-tabs:
             <div class="horizontal-tabset">
                 <!-- Tab 1 -->
                 <input type="radio" name="horizontal-tabset" id="horizontal-tab1" aria-controls="horizontal-panel1" checked>
-                <label for="horizontal-tab1">Märzen</label>
+                <label for="horizontal-tab1">Praesent ac</label>
                 <!-- Tab 2 -->
                 <input type="radio" name="horizontal-tabset" id="horizontal-tab2" aria-controls="horizontal-panel2">
-                <label for="horizontal-tab2">Rauchbier</label>
+                <label for="horizontal-tab2">Ac adipiscing</label>
                 <!-- Tab 3 -->
                 <input type="radio" name="horizontal-tabset" id="horizontal-tab3" aria-controls="horizontal-panel3">
-                <label for="horizontal-tab3">Dunkles Bock</label>
+                <label for="horizontal-tab3">Faucibus</label>
                 <div class="tab-panels">
                     <section id="horizontal-panel1" class="tab-panel">
-                        <h2>6A. Märzen</h2>
-                        <p><strong>Overall Impression:</strong> An elegant, malty German amber lager with a clean, rich, toasty and bready malt flavor, restrained bitterness, and a dry finish that encourages another drink. The overall malt impression is soft, elegant, and complex, with a rich aftertaste that is never cloying or heavy.</p>
-                        <p><strong>History:</strong> As the name suggests, brewed as a stronger “March beer” in March and lagered in cold caves over the summer. Modern versions trace back to the lager developed by Spaten in 1841, contemporaneous to the development of Vienna lager. However, the Märzen name is much older than 1841; the early ones were dark brown, and in Austria the name implied a strength band (14 °P) rather than a style. The German amber lager version (in the Viennese style of the time) was first served at Oktoberfest in 1872, a tradition that lasted until 1990 when the golden Festbier was adopted as the standard festival beer.</p>
+                        <h2>Praesent ac</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mattis justo nibh, eleifend volutpat odio ullamcorper a. Nullam malesuada pharetra tincidunt. Mauris sed velit id leo congue commodo. Phasellus vel blandit magna. Etiam ut risus mattis, maximus lorem a, facilisis quam. Suspendisse potenti. Suspendisse at nisl metus. Nullam vitae quam eu nisl fringilla venenatis. Suspendisse tincidunt pulvinar lacus pretium convallis.</p>
                     </section>
                     <section id="horizontal-panel2" class="tab-panel">
-                        <h2>6B. Rauchbier</h2>
-                        <p><strong>Overall Impression:</strong>  An elegant, malty German amber lager with a balanced, complementary beechwood smoke character. Toasty-rich malt in aroma and flavor, restrained bitterness, low to high smoke flavor, clean fermentation profile, and an attenuated finish are characteristic.</p>
-                        <p><strong>History:</strong> A historical specialty of the city of Bamberg, in the Franconian region of Bavaria in Germany. Beechwood-smoked malt is used to make a Märzen-style amber lager. The smoke character of the malt varies by maltster; some breweries produce their own smoked malt (rauchmalz).</p>
+                        <h2>Ac adipiscing</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mattis justo nibh, eleifend volutpat odio ullamcorper a. Nullam malesuada pharetra tincidunt. Mauris sed velit id leo congue commodo. Phasellus vel blandit magna. Etiam ut risus mattis, maximus lorem a, facilisis quam. Suspendisse potenti. Suspendisse at nisl metus. Nullam vitae quam eu nisl fringilla venenatis. Suspendisse tincidunt pulvinar lacus pretium convallis.</p>
                     </section>
                     <section id="horizontal-panel3" class="tab-panel">
-                        <h2>6C. Dunkles Bock</h2>
-                        <p><strong>Overall Impression:</strong> A dark, strong, malty German lager beer that emphasizes the malty-rich and somewhat toasty qualities of continental malts without being sweet in the finish.</p>
-                        <p><strong>History:</strong> Originated in the Northern German city of Einbeck, which was a brewing center and popular exporter in the days of the Hanseatic League (14th to 17th century). Recreated in Munich starting in the 17th century. The name “bock” is based on a corruption of the name “Einbeck” in the Bavarian dialect, and was thus only used after the beer came to Munich. “Bock” also means “Ram” in German, and is often used in logos and advertisements.</p>
+                        <h2>Faucibus</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mattis justo nibh, eleifend volutpat odio ullamcorper a. Nullam malesuada pharetra tincidunt. Mauris sed velit id leo congue commodo. Phasellus vel blandit magna. Etiam ut risus mattis, maximus lorem a, facilisis quam. Suspendisse potenti. Suspendisse at nisl metus. Nullam vitae quam eu nisl fringilla venenatis. Suspendisse tincidunt pulvinar lacus pretium convallis.</p>
                     </section>
                 </div>
             </div>
@@ -691,28 +688,25 @@ print 'It took ' + i + ' iterations to sort the deck.';
             <div class="horizontal-tabset">
                 <!-- Tab 1 -->
                 <input type="radio" name="horizontal-tabset-inverted" id="horizontal-tab-inverted1" aria-controls="horizontal-panel-inverted1" checked>
-                <label for="horizontal-tab-inverted1">Märzen</label>
+                <label for="horizontal-tab-inverted1">Praesent ac</label>
                 <!-- Tab 2 -->
                 <input type="radio" name="horizontal-tabset-inverted" id="horizontal-tab-inverted2" aria-controls="horizontal-panel-inverted2">
-                <label for="horizontal-tab-inverted2">Rauchbier</label>
+                <label for="horizontal-tab-inverted2">Ac adipiscing</label>
                 <!-- Tab 3 -->
                 <input type="radio" name="horizontal-tabset-inverted" id="horizontal-tab-inverted3" aria-controls="horizontal-panel-inverted3">
-                <label for="horizontal-tab-inverted3">Dunkles Bock</label>
+                <label for="horizontal-tab-inverted3">Faucibus</label>
                 <div class="tab-panels">
                     <section id="horizontal-panel-inverted1" class="tab-panel">
-                        <h2>6A. Märzen</h2>
-                        <p><strong>Overall Impression:</strong> An elegant, malty German amber lager with a clean, rich, toasty and bready malt flavor, restrained bitterness, and a dry finish that encourages another drink. The overall malt impression is soft, elegant, and complex, with a rich aftertaste that is never cloying or heavy.</p>
-                        <p><strong>History:</strong> As the name suggests, brewed as a stronger “March beer” in March and lagered in cold caves over the summer. Modern versions trace back to the lager developed by Spaten in 1841, contemporaneous to the development of Vienna lager. However, the Märzen name is much older than 1841; the early ones were dark brown, and in Austria the name implied a strength band (14 °P) rather than a style. The German amber lager version (in the Viennese style of the time) was first served at Oktoberfest in 1872, a tradition that lasted until 1990 when the golden Festbier was adopted as the standard festival beer.</p>
+                        <h2>Praesent ac</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mattis justo nibh, eleifend volutpat odio ullamcorper a. Nullam malesuada pharetra tincidunt. Mauris sed velit id leo congue commodo. Phasellus vel blandit magna. Etiam ut risus mattis, maximus lorem a, facilisis quam. Suspendisse potenti. Suspendisse at nisl metus. Nullam vitae quam eu nisl fringilla venenatis. Suspendisse tincidunt pulvinar lacus pretium convallis.</p>
                     </section>
                     <section id="horizontal-panel-inverted2" class="tab-panel">
-                        <h2>6B. Rauchbier</h2>
-                        <p><strong>Overall Impression:</strong>  An elegant, malty German amber lager with a balanced, complementary beechwood smoke character. Toasty-rich malt in aroma and flavor, restrained bitterness, low to high smoke flavor, clean fermentation profile, and an attenuated finish are characteristic.</p>
-                        <p><strong>History:</strong> A historical specialty of the city of Bamberg, in the Franconian region of Bavaria in Germany. Beechwood-smoked malt is used to make a Märzen-style amber lager. The smoke character of the malt varies by maltster; some breweries produce their own smoked malt (rauchmalz).</p>
+                        <h2>Ac adipiscing</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mattis justo nibh, eleifend volutpat odio ullamcorper a. Nullam malesuada pharetra tincidunt. Mauris sed velit id leo congue commodo. Phasellus vel blandit magna. Etiam ut risus mattis, maximus lorem a, facilisis quam. Suspendisse potenti. Suspendisse at nisl metus. Nullam vitae quam eu nisl fringilla venenatis. Suspendisse tincidunt pulvinar lacus pretium convallis.</p>
                     </section>
                     <section id="horizontal-panel-inverted3" class="tab-panel">
-                        <h2>6C. Dunkles Bock</h2>
-                        <p><strong>Overall Impression:</strong> A dark, strong, malty German lager beer that emphasizes the malty-rich and somewhat toasty qualities of continental malts without being sweet in the finish.</p>
-                        <p><strong>History:</strong> Originated in the Northern German city of Einbeck, which was a brewing center and popular exporter in the days of the Hanseatic League (14th to 17th century). Recreated in Munich starting in the 17th century. The name “bock” is based on a corruption of the name “Einbeck” in the Bavarian dialect, and was thus only used after the beer came to Munich. “Bock” also means “Ram” in German, and is often used in logos and advertisements.</p>
+                        <h2>Faucibus</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mattis justo nibh, eleifend volutpat odio ullamcorper a. Nullam malesuada pharetra tincidunt. Mauris sed velit id leo congue commodo. Phasellus vel blandit magna. Etiam ut risus mattis, maximus lorem a, facilisis quam. Suspendisse potenti. Suspendisse at nisl metus. Nullam vitae quam eu nisl fringilla venenatis. Suspendisse tincidunt pulvinar lacus pretium convallis.</p>
                     </section>
                 </div>
             </div>
