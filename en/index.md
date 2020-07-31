@@ -21,6 +21,7 @@ banner:
         label: "Wow"
 ---
 {%- assign facts = site.data.home.facts[page.lang] -%}
+{%- assign features = site.data.home.features[page.lang] -%}
 <!-- Section -->
 <section id="{{ facts.id }}">
     <header class="major">
@@ -34,39 +35,14 @@ banner:
 </section>
 
 <!-- Section -->
-<section class="inverted">
+<section id="{{ features.id }}" class="inverted">
     <header class="major">
-        <h2>Erat lacinia</h2>
+        <h2>{{ features.title }}</h2>
     </header>
-    <div class="features">
-        <article>
-            <span class="icon fa-gem"></span>
-            <div class="content">
-                <h3>Portitor ullamcorper</h3>
-                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-            </div>
-        </article>
-        <article>
-            <span class="icon solid fa-paper-plane"></span>
-            <div class="content">
-                <h3>Sapien veroeros</h3>
-                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-            </div>
-        </article>
-        <article>
-            <span class="icon solid fa-rocket"></span>
-            <div class="content">
-                <h3>Quam lorem ipsum</h3>
-                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-            </div>
-        </article>
-        <article>
-            <span class="icon solid fa-signal"></span>
-            <div class="content">
-                <h3>Sed magna finibus</h3>
-                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-            </div>
-        </article>
+    <div class="features row gtr-100">
+        {% for feature in features.features %}
+            {% include feature.html class="col-6 col-12-small" target_url=feature.target_url icon=feature.icon title=feature.title content=feature.content %}
+        {% endfor %}
     </div>
 </section>
 

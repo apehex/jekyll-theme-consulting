@@ -185,3 +185,94 @@ facts:
             dictum non purus mollis ultricies
           icon: >-
             brands fa-canadian-maple-leaf
+features:
+  en:
+    id: features
+    title: >-
+      Erat lacinia
+    features:
+      - class: >-
+          col-2 col-4-medium col-12-small
+        target_url: >-
+          /en/
+        icon: >-
+          fa-gem
+        title: >-
+          Portitor ullamcorper
+        content: >-
+          Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+      - class: >-
+          col-2 col-4-medium col-12-small
+        target_url: >-
+          /en/
+        icon: >-
+          solid fa-paper-plane
+        title: >-
+          Sapien veroeros
+        content: >-
+          Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+      - class: >-
+          col-2 col-4-medium col-12-small
+        target_url: >-
+          /en/
+        icon: >-
+          solid fa-rocket
+        title: >-
+          Quam lorem ipsum
+        content: >-
+          Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+      - class: >-
+          col-2 col-4-medium col-12-small
+        target_url: >-
+          /en/
+        icon: >-
+          solid fa-signal
+        title: >-
+          Sed magna finibus
+        content: >-
+          Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+  fr:
+    id: features
+    title: >-
+      Erat lacinia
+    features:
+      - class: >-
+          col-2 col-4-medium col-12-small
+        target_url: >-
+          /fr/
+        icon: >-
+          fa-gem
+        title: >-
+          Portitor ullamcorper
+        content: >-
+          Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+      - class: >-
+          col-2 col-4-medium col-12-small
+        target_url: >-
+          /fr/
+        icon: >-
+          solid fa-paper-plane
+        title: >-
+          Sapien veroeros
+        content: >-
+          Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+      - class: >-
+          col-2 col-4-medium col-12-small
+        target_url: >-
+          /fr/
+        icon: >-
+          solid fa-rocket
+        title: >-
+          Quam lorem ipsum
+        content: >-
+          Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+      - class: >-
+          col-2 col-4-medium col-12-small
+        target_url: >-
+          /fr/
+        icon: >-
+          solid fa-signal
+        title: >-
+          Sed magna finibus
+        content: >-
+          Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
