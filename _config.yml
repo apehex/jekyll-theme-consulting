@@ -96,6 +96,7 @@ defaults:
 permalink: pretty
 markdown: kramdown
 sass:
+  sourcemap: never
   style: compressed
 plugins:
   - jekyll-seo-tag
