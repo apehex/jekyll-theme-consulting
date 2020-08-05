@@ -11,7 +11,7 @@
         <label for="option-{{ tab-id }}" style="width: {{ include.header-width | default: 30 }}%;">{{ tab.title }}</label>
         <section class="tab-panel" style="left: {{ include.header-width | default: 30 }}%;">
             {% if show-title == true %}<h2>{{ tab.title }}</h2>{% endif %}
-            <p>{{ tab.content }}</p>
+            {{ tab.content }}
         </section>
     </div>
     {%- endfor -%}
