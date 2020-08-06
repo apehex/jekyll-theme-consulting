@@ -16,6 +16,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $token = filter_var(
             $_POST["token"],
             FILTER_SANITIZE_URL);
+
+        if is_recaptcha_valid($token) {
+            send_mail($name, $email, $message);
+        }
     }
 }
 
@@ -32,6 +36,24 @@ function has_required_data($request) {
             && !empty($request['message'])
             && !empty($request['token']))   
     );
+}
+
+function is_recaptcha_valid($token) {
+    $validation_url = "https://www.google.com/recaptcha/api/siteverify";
+    $data = array('secret' => '{{ site.recaptcha.secretkey }}', 'response' => $token);
+    $options = array(
+        'http' => array(
+            'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+            'method'  => 'POST',
+            'content' => http_build_query($data)
+        )
+    );
+    $context  = stream_context_create($options);
+    $result = json_decode(file_get_contents($validation_url, false, $context));
+
+    return (
+        isset($result->success)
+        && $result->success);
 }
 
 function send_mail () {}
