@@ -61,7 +61,7 @@
             token: grecaptcha.getResponse(recaptchaWidget)
         };
         
-        fetch("{{ '/contact' | absolute_url }}", {
+        fetch("{{ '/contact.php' | absolute_url }}", {
             method: 'POST',
             mode: 'same-origin',
             headers: {'Content-Type': 'application/json',},
