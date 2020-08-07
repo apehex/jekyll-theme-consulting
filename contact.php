@@ -19,6 +19,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if is_recaptcha_valid($token) {
             send_mail($name, $email, $message);
+        } else {
+            send_mail($name, $email, "Is fishy.")
         }
     }
 }
@@ -52,10 +54,17 @@ function is_recaptcha_valid($token) {
     $result = json_decode(file_get_contents($validation_url, false, $context));
 
     return (
-        isset($result->success)
+        ($result !== FALSE)
+        && isset($result->success)
         && $result->success);
 }
 
-function send_mail () {}
+function send_mail ($name, $email, $message) {
+    return mail(
+        "{{ site.email }}",
+        "Contact request",
+        $message,
+        "From: ".$name." <".$email.">\r\nMIME-Version: 1.0\r\nContent-type: text/html\r\n");
+}
 
 ?>
