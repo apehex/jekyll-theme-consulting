@@ -1,5 +1,6 @@
 ---
-layout: null
+permalink: /contact.php
+subject: Contact request
 ---
 <?php
 
@@ -70,9 +71,10 @@ function is_recaptcha_valid($token) {
 function send_mail ($name, $email, $message) {
     return mail(
         "{{ site.email }}",
-        "{{ site.subject | default: 'Contact request' }}",
+        "{{ page.subject | default: 'Contact request' }}",
         $message."\r\n\nFrom: ".$name." @ ".$ip,
         "From: ".$name." <".$email.">\r\nMIME-Version: 1.0\r\nContent-type: text/html\r\n");
 }
 
 ?>
+
