@@ -1,6 +1,6 @@
 <?php
 
-$name = $email = $message = $token = "";
+$name = $email = $message = $token = $ip = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (has_required_data($_POST)) {
@@ -16,11 +16,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $token = filter_var(
             $_POST["token"],
             FILTER_SANITIZE_URL);
+        if (filter_var(
+            $_SERVER['REMOTE_ADDR'],
+            FILTER_VALIDATE_IP)) {
+            $ip = $_SERVER['REMOTE_ADDR'];
+        }
 
         if is_recaptcha_valid($token) {
             send_mail($name, $email, $message);
         } else {
-            send_mail($name, $email, "Is fishy.")
+            send_mail($name, $email, "Got a fishy request from ".$ip)
         }
     }
 }
@@ -63,7 +68,7 @@ function send_mail ($name, $email, $message) {
     return mail(
         "{{ site.email }}",
         "{{ include.subject | default: 'Contact request' }}",
-        $message,
+        $message."\r\n\nFrom: ".$name." @ ".$ip,
         "From: ".$name." <".$email.">\r\nMIME-Version: 1.0\r\nContent-type: text/html\r\n");
 }
 
