@@ -41,7 +41,7 @@ function has_required_data($request) {
             !empty($request['name'])
             && !empty($request['email'])
             && !empty($request['message'])
-            && !empty($request['token']))
+            && !empty($request['token']))   
     );
 }
 
@@ -67,9 +67,10 @@ function is_recaptcha_valid($token) {
 function send_mail ($name, $email, $message) {
     return mail(
         "youremailaddress@gmail.com",
-        "contact request",
+        "Hello!",
         $message."\r\n\nFrom: ".$name." @ ".$ip,
         "From: ".$name." <".$email.">\r\nMIME-Version: 1.0\r\nContent-type: text/html\r\n");
 }
 
 ?>
+
