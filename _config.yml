@@ -61,6 +61,7 @@ privacy_policy:
 # Recaptcha in forms
 recaptcha:
   sitekey: 6LfMccgUAAAAAJcASCBTwXpeEXw7qjC-KkqjpsYV
+  secretkey: 6LfMccgUAAAAAEYb9GfycbY2FQR_EcEypQFG1_32
 
 # Collections
 collections:
