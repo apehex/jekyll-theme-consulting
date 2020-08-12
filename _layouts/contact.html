@@ -1,7 +1,10 @@
 ---
 permalink: /contact.php
-subject: Contact request
+mail:
+    subject:
+    intro:
 ---
+{%- capture mail-intro -%}You received a message on <a href="{{ site.url }}">your website</a>.{%- endcapture -%}
 <?php
 
 $contact_name = $contact_email = $contact_message = $token = $contact_ip = "";
@@ -68,9 +71,9 @@ function is_recaptcha_valid($token) {
 function send_mail ($name, $email, $message, $ip) {
     return mail(
         "{{ site.email }}",
-        "{{ page.subject | default: 'Contact request' }}",
+        "{{ page.mail.subject | default: 'Contact request' }}",
         (
-            "{{ page.intro | default: 'You received a message.' }}<br>\r\n"
+            "{{ page.mail.intro | default: mail-intro }}<br>\r\n"
             ."Ip: ".$ip."<br>\r\n"
             ."Name: ".$name."<br>\r\n"
             ."Email: ".$email."<br>\r\n"
