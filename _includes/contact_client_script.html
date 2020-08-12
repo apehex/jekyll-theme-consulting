@@ -55,9 +55,9 @@
     
     const sendContactMessage = function() {
         const formData = new FormData();
-        formData.append('name', encodeURIComponent(nameInputElement.value));
-        formData.append('email', encodeURIComponent(emailInputElement.value));
-        formData.append('message', encodeURIComponent(messageInputElement.value));
+        formData.append('name', encodeURI(nameInputElement.value));
+        formData.append('email', encodeURI(emailInputElement.value));
+        formData.append('message', encodeURI(messageInputElement.value));
         formData.append('token', grecaptcha.getResponse(recaptchaWidget));
         
         fetch("{{ '/contact.php' | absolute_url }}", {
