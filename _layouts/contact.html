@@ -4,17 +4,17 @@ subject: Contact request
 ---
 <?php
 
-$name = $email = $message = $token = $ip = "";
+$contact_name = $contact_email = $contact_message = $token = $contact_ip = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (has_required_data($_POST)) {
-        $name = filter_var(
+        $contact_name = filter_var(
             $_POST["name"],
             FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-        $email = filter_var(
+        $contact_email = filter_var(
             $_POST["email"],
             FILTER_SANITIZE_EMAIL);
-        $message = filter_var(
+        $contact_message = filter_var(
             $_POST["message"],
             FILTER_SANITIZE_FULL_SPECIAL_CHARS);
         $token = filter_var(
@@ -23,13 +23,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (filter_var(
             $_SERVER['REMOTE_ADDR'],
             FILTER_VALIDATE_IP)) {
-            $ip = $_SERVER['REMOTE_ADDR'];
+            $contact_ip = $_SERVER['REMOTE_ADDR'];
         }
 
         if (is_recaptcha_valid($token)) {
-            send_mail($name, $email, $message);
+            send_mail($contact_name, $contact_email, $contact_message, $contact_ip);
         } else {
-            send_mail($name, $email, "Got a fishy request from ".$ip);
+            send_mail($contact_name, $contact_email, "Tried to contact you, but his recaptcha is not valid.", $contact_ip);
         }
     }
 }
