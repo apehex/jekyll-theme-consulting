@@ -45,8 +45,7 @@ function has_required_data($request) {
             !empty($request['name'])
             && !empty($request['email'])
             && !empty($request['message'])
-            && !empty($request['token']))   
-    );
+            && !empty($request['token'])));
 }
 
 function is_recaptcha_valid($token) {
@@ -56,9 +55,7 @@ function is_recaptcha_valid($token) {
         'http' => array(
             'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
             'method'  => 'POST',
-            'content' => http_build_query($data)
-        )
-    );
+            'content' => http_build_query($data)));
     $context  = stream_context_create($options);
     $result = json_decode(file_get_contents($validation_url, false, $context));
 
@@ -68,12 +65,21 @@ function is_recaptcha_valid($token) {
         && $result->success);
 }
 
-function send_mail ($name, $email, $message) {
+function send_mail ($name, $email, $message, $ip) {
     return mail(
         "{{ site.email }}",
         "{{ page.subject | default: 'Contact request' }}",
-        $message."\r\n\nFrom: ".$name." @ ".$ip,
-        "From: ".$name." <".$email.">\r\nMIME-Version: 1.0\r\nContent-type: text/html\r\n");
+        (
+            "{{ page.intro | default: 'You received a message.' }}<br>\r\n"
+            ."Ip: ".$ip."<br>\r\n"
+            ."Name: ".$name."<br>\r\n"
+            ."Email: ".$email."<br>\r\n"
+            ."Message: ".$message."<br>\r\n"),
+        (
+            "From: ".$name
+            ." <".$email.">\r\n"
+            ."MIME-Version: 1.0\r\n"
+            ."Content-type: text/html\r\n"));
 }
 
 ?>
