@@ -26,10 +26,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $ip = $_SERVER['REMOTE_ADDR'];
         }
 
-        if is_recaptcha_valid($token) {
+        if (is_recaptcha_valid($token)) {
             send_mail($name, $email, $message);
         } else {
-            send_mail($name, $email, "Got a fishy request from ".$ip)
+            send_mail($name, $email, "Got a fishy request from ".$ip);
         }
     }
 }
