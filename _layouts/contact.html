@@ -74,10 +74,10 @@ function send_mail ($name, $email, $message, $ip) {
         "{{ page.mail.subject | default: 'Contact request' }}",
         (
             "{{ page.mail.intro | default: mail-intro }}<br>\r\n"
-            ."Ip: ".$ip."<br>\r\n"
-            ."Name: ".$name."<br>\r\n"
-            ."Email: ".$email."<br>\r\n"
-            ."Message: ".$message."<br>\r\n"),
+            ."Ip: ".$ip."<br><br>\r\n"
+            ."Name: ".$name."<br><br>\r\n"
+            ."Email: ".$email."<br><br>\r\n"
+            ."Message: ".$message."<br><br>\r\n"),
         (
             "From: ".$name
             ." <".$email.">\r\n"
