@@ -2,7 +2,6 @@
 ---
 {%- assign lang = page.lang | default: site.lang | default: 'en' -%}
 {%- assign menu = site.data.menus[page.menu][lang] -%}
-{%- assign header = page.header | default: site.header -%}
 {%- assign title = page.title | default: site.title -%}
 {%- assign description = page.description | default: site.description -%}
 {%- assign stylesheets = page.stylesheets | default: site.stylesheets -%}
@@ -14,47 +13,13 @@
     Free for personal and commercial use under the CCA 4.0 license
 -->
 <html lang="{{ lang }}">
-
-{% include head.html title=title subtitle=subtitle %}
-
+{% include head.html title=title description=description stylesheets=stylesheets %}
 <body>
-
-    <style type="text/css">
-        .upper-half svg {
-            fill: rgba(10,100,130,0.4);
-        }
-        .lower-half svg {
-            fill: rgba(130,0,130,0.4);
-        }
-    </style>
-
-    <!-- Wrapper -->
-    <div id="wrapper">
-
-        <div class="upper-half" style="position: fixed; z-index: 2; top:0; left: 0; width: 100vw; height: 100vh; display: flex; flex-direction: column;">
-            {% include waves/top.html ys=80 ye=20 x1=40 y1=80 x2=60 y2=20 cx=50 cy=50 r=4 %}
-        </div>
-
-        <div class="upper-half" style="position: fixed; z-index: 4; top:0; left: 0; width: 100vw; height: 100vh; display: flex; flex-direction: column;">
-            {% include waves/top.html ys=70 ye=30 x1=20 y1=90 x2=40 y2=20 cx=10 cy=76 r=2%}
-        </div>
-
-        <div class="upper-half" style="position: fixed; z-index: 4; top:0; left: 0; width: 100vw; height: 100vh; display: flex; flex-direction: column;">
-            {% include waves/top.html ys=65 ye=35 x1=15 y1=85 x2=35 y2=20 cx=10 cy=76 r=2%}
-        </div>
-
-        <div class="lower-half" style="position: fixed; z-index: 3; bottom:0; left: 0; width: 100vw; height: 100vh; display: flex; flex-direction: column;">
-            {% include waves/bottom.html ys=80 ye=20 x1=40 y1=80 x2=60 y2=20 cx=50 cy=50 r=4 %}
-        </div>
-
-        <div class="upper-half" style="position: fixed; z-index: 1; bottom:0; left: 0; width: 100vw; height: 100vh; display: flex; flex-direction: column;">
-            {% include waves/bottom.html ys=60 ye=80 x1=20 y1=80 x2=60 y2=100 cx=80 cy=88 r=2 %}
-        </div>
-    
+    <div>
+        {{ content }}
+        {% include sidebar.html menu=menu %}
     </div>
-
     {% include footer.html %}
-
+    {% include scripts.html scripts=scripts %}
 </body>
-
 </html>
