@@ -66,7 +66,7 @@ function send_mail ($name, $email, $message, $ip) {
         "youremailaddress@gmail.com",
         "Hello!",
         (
-            "You received a message on <a href='http://localhost:4000'>your website</a>.<br>\r\n"
+            "You received a message on <a href='https://apehex.github.io/jekyll-theme-consulting'>your website</a>.<br>\r\n"
             ."Ip: ".$ip."<br><br>\r\n"
             ."Name: ".$name."<br><br>\r\n"
             ."Email: ".$email."<br><br>\r\n"
