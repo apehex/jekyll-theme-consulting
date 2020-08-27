@@ -2,112 +2,112 @@
       "lang"           : "",
       "title"          : "Error 404",
       "description"    : "A Jekyll site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
-      "url"            : "https://apehex.github.io/jekyll-theme-consulting/404.html",
+      "url"            : "http://localhost:4000/404.html",
       "tags"           : "",
       "date"           : ""
     } ,{
       "lang"           : "",
       "title"          : "Jekyll Theme Consulting",
       "description"    : "A Jekyll site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
-      "url"            : "https://apehex.github.io/jekyll-theme-consulting/",
+      "url"            : "http://localhost:4000/",
       "tags"           : "",
       "date"           : ""
     } ,{
       "lang"           : "en",
       "title"          : "Theme Elements Showcase",
       "description"    : "A Jekyll site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
-      "url"            : "https://apehex.github.io/jekyll-theme-consulting/en/elements/",
+      "url"            : "http://localhost:4000/en/elements/",
       "tags"           : "",
       "date"           : ""
     } ,{
       "lang"           : "en",
       "title"          : "Generic Page",
       "description"    : "A Jekyll site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
-      "url"            : "https://apehex.github.io/jekyll-theme-consulting/en/generic/",
+      "url"            : "http://localhost:4000/en/generic/",
       "tags"           : "",
       "date"           : ""
     } ,{
       "lang"           : "en",
       "title"          : "Jekyll Theme Consulting",
       "description"    : "A Jekyll site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
-      "url"            : "https://apehex.github.io/jekyll-theme-consulting/en/",
+      "url"            : "http://localhost:4000/en/",
       "tags"           : "",
       "date"           : ""
     } ,{
       "lang"           : "en",
       "title"          : "Landing Page",
       "description"    : "A Jekyll site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
-      "url"            : "https://apehex.github.io/jekyll-theme-consulting/en/landing/",
+      "url"            : "http://localhost:4000/en/landing/",
       "tags"           : "",
       "date"           : ""
     } ,{
       "lang"           : "en",
       "title"          : "Legal Terms",
       "description"    : "A Jekyll site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
-      "url"            : "https://apehex.github.io/jekyll-theme-consulting/en/legal-terms/",
+      "url"            : "http://localhost:4000/en/legal-terms/",
       "tags"           : "",
       "date"           : ""
     } ,{
       "lang"           : "en",
       "title"          : "Privacy Policy",
       "description"    : "A Jekyll site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
-      "url"            : "https://apehex.github.io/jekyll-theme-consulting/en/privacy-policy/",
+      "url"            : "http://localhost:4000/en/privacy-policy/",
       "tags"           : "",
       "date"           : ""
     } ,{
       "lang"           : "fr",
       "title"          : "Démonstration des Eléments du Thème",
       "description"    : "A Jekyll site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
-      "url"            : "https://apehex.github.io/jekyll-theme-consulting/fr/elements/",
+      "url"            : "http://localhost:4000/fr/elements/",
       "tags"           : "",
       "date"           : ""
     } ,{
       "lang"           : "fr",
       "title"          : "Page Générique",
       "description"    : "A Jekyll site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
-      "url"            : "https://apehex.github.io/jekyll-theme-consulting/fr/generique/",
+      "url"            : "http://localhost:4000/fr/generique/",
       "tags"           : "",
       "date"           : ""
     } ,{
       "lang"           : "fr",
       "title"          : "Thème Jekyll Consulting",
       "description"    : "A Jekyll site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
-      "url"            : "https://apehex.github.io/jekyll-theme-consulting/fr/",
+      "url"            : "http://localhost:4000/fr/",
       "tags"           : "",
       "date"           : ""
     } ,{
       "lang"           : "fr",
       "title"          : "Mentions Légales",
       "description"    : "A Jekyll site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
-      "url"            : "https://apehex.github.io/jekyll-theme-consulting/fr/mentions-legales/",
+      "url"            : "http://localhost:4000/fr/mentions-legales/",
       "tags"           : "",
       "date"           : ""
     } ,{
       "lang"           : "fr",
       "title"          : "Politique de Confidentialité",
       "description"    : "A Jekyll site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
-      "url"            : "https://apehex.github.io/jekyll-theme-consulting/fr/politique-de-confidentialite/",
+      "url"            : "http://localhost:4000/fr/politique-de-confidentialite/",
       "tags"           : "",
       "date"           : ""
     } ,{
       "lang"           : "fr",
       "title"          : "Page Racine",
       "description"    : "A Jekyll site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
-      "url"            : "https://apehex.github.io/jekyll-theme-consulting/fr/racine/",
+      "url"            : "http://localhost:4000/fr/racine/",
       "tags"           : "",
       "date"           : ""
     } ,{
       "lang"           : "en",
       "title"          : "Welcome to Jekyll!",
       "description"    : "A Jekyll site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
-      "url"            : "https://apehex.github.io/jekyll-theme-consulting/en/jekyll/update/2019/02/08/welcome-to-jekyll/",
+      "url"            : "http://localhost:4000/en/jekyll/update/2019/02/08/welcome-to-jekyll/",
       "tags"           : "",
       "date"           : "2019-02-08 13:33:42 +0100"
     } ,{
       "lang"           : "fr",
       "title"          : "Bienvenue sur Jekyll !",
       "description"    : "A Jekyll site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.",
-      "url"            : "https://apehex.github.io/jekyll-theme-consulting/fr/jekyll/update/2019/02/08/bienvenue/",
+      "url"            : "http://localhost:4000/fr/jekyll/update/2019/02/08/bienvenue/",
       "tags"           : "",
       "date"           : "2019-02-08 13:33:42 +0100"
     } ]
