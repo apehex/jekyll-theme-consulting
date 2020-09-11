@@ -4,7 +4,7 @@
 
 You can preview the theme [here](https://apehex.github.io/jekyll-theme-consulting)
 
-![Consulting Theme](assets/images/screenshot.webp "Consulting Theme")
+![Consulting Theme](../assets/images/screenshot.webp "Consulting Theme")
 
 # Features
 
