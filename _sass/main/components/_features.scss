@@ -69,6 +69,7 @@
             text-align: center;
 
             &:before {
+                z-index: 10;
                 color: _palette(accent);
                 font-size: 2.75rem;
                 position: relative;
@@ -98,13 +99,31 @@
             > :last-child {
                 margin-bottom: 0;
             }
+
+            p {
+                color: _palette(fg);
+            }
         }
     }
 
     article:hover {
 
-        .icon:before, .content p, .content h3 {
+        .icon:before {
             color: _palette(accent-cp) !important;
         }
+
+        .content h3 {
+            color: _palette(accent) !important;
+        }
+
+        .icon:after {
+            background-color: _palette(accent) !important;
+        }
     }
+}
+
+/* Inverted */
+
+.inverted .features article .content p {
+    color: _palette(fg-inverted);
 }
