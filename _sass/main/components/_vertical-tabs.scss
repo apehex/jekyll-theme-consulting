@@ -74,7 +74,7 @@
 
 .vertical-tabset label:hover,
 .vertical-tabset input[type="radio"]:focus + label {
-    color: _palette(accent);
+    color: _palette(accent) !important;
 }
 
 .vertical-tabset label:hover::after,

@@ -65,7 +65,7 @@
 
 .horizontal-tabset > label:hover,
 .horizontal-tabset > input[type="radio"]:focus + label {
-    color: _palette(accent);
+    color: _palette(accent) !important;
 }
 
 .horizontal-tabset > label:hover::after,
