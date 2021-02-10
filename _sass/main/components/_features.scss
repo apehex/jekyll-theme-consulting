@@ -112,7 +112,7 @@
             color: _palette(accent-cp) !important;
         }
 
-        .content h3 {
+        .content h3, .content p {
             color: _palette(accent) !important;
         }
 
@@ -124,6 +124,14 @@
 
 /* Inverted */
 
-.inverted .features article .content p {
-    color: _palette(fg-inverted);
+.inverted .features article {
+    .content h3, .content p {
+        color: _palette(fg-inverted);
+    }    
+}
+
+.inverted .features article:hover {
+    .content h3, .content p {
+        color: _palette(accent-cp) !important;
+    }    
 }
