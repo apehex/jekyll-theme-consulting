@@ -32,13 +32,21 @@ ul.pagination {
                 color: _palette(bg) !important;
 
                 &:hover {
-                    background-color: lighten(_palette(accent), 3);
+                    background-color: _palette(accent-cp);
+                    color: _palette(accent) !important;
                 }
 
                 &:active {
-                    background-color: darken(_palette(accent), 3);
+                    background-color: _palette(accent-cp);
+                    color: _palette(accent) !important;
                 }
             }
+
+            &:hover {
+                background-color: _palette(accent);
+                color: _palette(accent-cp) !important;
+            }
+
         }
 
         &:first-child {
