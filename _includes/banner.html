@@ -1,5 +1,9 @@
 <!-- Banner -->
-<section id="banner" {% if include.style %}class="{{ include.style.class | default: '' }}" style="background-image: url({{ include.style.image | absolute_url }});"{% endif %}>
+<section id="banner"
+{%- if include.style -%}
+class="{{ include.style.class | default: '' }}"
+style="background-image: url({{ include.style.image | absolute_url }}); background-position: {{ include.style.position | default: center }} -5em; background-size: {{ include.style.size | default: 100% auto }};"
+{% endif %}>
   <div class="content">
     <header>
       <h1>{{ include.title }}</h1>
