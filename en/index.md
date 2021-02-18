@@ -8,6 +8,8 @@ header:
     style:
         class: inverted
         image: "/assets/images/content/pillars-of-creation.webp"
+        position: center
+        size: 100% auto
 banner:
     title: "With a Banner"
     subtitle: "And an Otherwordly Image"
@@ -16,6 +18,8 @@ banner:
     style:
         class: inverted
         image: "/assets/images/content/pillars-of-creation.webp"
+        position: center
+        size: 100% auto
     button:
         url: "#contact"
         label: "Wow"

@@ -8,6 +8,8 @@ header:
     style:
         class: inverted
         image: "/assets/images/content/pillars-of-creation.webp"
+        position: center
+        size: 100% auto
 banner:
     title: "Avec une Bannière"
     subtitle: "Sur Fond Extraterrestre"
@@ -16,6 +18,8 @@ banner:
     style:
         class: inverted
         image: "/assets/images/content/pillars-of-creation.webp"
+        position: center
+        size: 100% auto
     button:
         url: "#contact"
         label: "Wow"
