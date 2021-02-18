@@ -8,7 +8,7 @@
             <ul>
                 {%- for subitem in item.menu -%}
                 <li {% if subitem.url == page.url %} class="current" {% endif %}>
-                    <a href="{{ subitem.url | absolute_url }}">{{ subitem.title }}</a>
+                    <a href="{{ subitem.url | absolute_url }}" class="scrolly">{{ subitem.title }}</a>
                 </li>
                 {%- endfor -%}
             </ul>
