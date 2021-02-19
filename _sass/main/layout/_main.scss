@@ -10,8 +10,8 @@
         max-width: 110em;
 
         > section {
-            @include padding(6em, 6em);
             border-top: solid 2px _palette(border);
+            padding: 1em 1em 1em 4em;
 
             &:first-of-type {
                 border-top: 0 !important;
@@ -19,7 +19,7 @@
         }
 
         #header {
-            padding: 2em 6em 1em 6em;
+            padding: 2em 4em 1em 4em;
             margin: 0;
         }
     }
