@@ -45,7 +45,7 @@ banner:
     </header>
     <div class="features row gtr-100">
         {% for feature in features.features %}
-            {% include feature.html class="col-6 col-12-medium" target_url=feature.target_url icon=feature.icon title=feature.title content=feature.content %}
+            {% include feature.html class="col-6 col-12-medium col-12-small" target_url=feature.target_url icon=feature.icon title=feature.title content=feature.content %}
         {% endfor %}
     </div>
 </section>
