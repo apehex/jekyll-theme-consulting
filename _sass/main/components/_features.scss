@@ -15,46 +15,6 @@
         position: relative;
         width: 50%;
 
-        .ensem {
-            background-image: url('images/ensem.svg');
-        }
-
-        .cie {
-            background-image: url('images/cie.svg');
-        }
-
-        .cnefic {
-            background-image: url('images/cnefic.svg');
-        }
-
-        .eisti {
-            background-image: url('images/eisti.svg');
-        }
-
-        .ieam {
-            background-image: url('images/ieam.svg');
-        }
-
-        .ifag {
-            background-image: url('images/ifag.svg');
-        }
-
-        .ifg {
-            background-image: url('images/ifg.svg');
-        }
-
-        .marine {
-            background-image: url('images/marine.svg');
-        }
-
-        .ub {
-            background-image: url('images/ub.svg');
-        }
-
-        .uca {
-            background-image: url('images/uca.svg');
-        }
-
         .icon {
             @include vendor('flex-grow', '0');
             @include vendor('flex-shrink', '0');

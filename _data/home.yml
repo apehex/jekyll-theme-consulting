@@ -47,7 +47,7 @@ facts:
           outro: >-
             egestas turpis ac fames
           icon: >-
-            solid fa-hand-paper
+            certs icon-ensemmono
       - class: >-
           col-2 col-4-medium col-12-small
         target_url: >-
@@ -140,7 +140,7 @@ facts:
           outro: >-
             egestas turpis ac fames
           icon: >-
-            solid fa-hand-paper
+            certs icon-ensemmono
       - class: >-
           col-2 col-4-medium col-12-small
         target_url: >-
@@ -196,7 +196,7 @@ features:
         target_url: >-
           /en/
         icon: >-
-          fa-gem
+          certs icon-ifgmono
         title: >-
           Portitor ullamcorper
         content: >-
@@ -241,7 +241,7 @@ features:
         target_url: >-
           /fr/
         icon: >-
-          fa-gem
+          certs icon-ifgmono
         title: >-
           Portitor ullamcorper
         content: >-
