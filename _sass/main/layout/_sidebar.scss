@@ -219,15 +219,15 @@
         color: _palette(accent);
 
         &:hover {
-            color: _palette(accent);
+            color: _palette(accent-cp);
+
+            &#sidebar-logo-button svg {
+                fill: _palette(accent-cp);
+                stroke: _palette(accent-cp);
+            }
         }
 
         &#sidebar-logo-button svg {
-            fill: _palette(accent);
-            stroke: _palette(accent);
-        }
-
-        &#sidebar-logo-button:hover svg {
             fill: _palette(accent);
             stroke: _palette(accent);
         }
