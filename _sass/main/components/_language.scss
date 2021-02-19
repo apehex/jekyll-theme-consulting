@@ -1,0 +1,33 @@
+.language {
+    position: absolute;
+    padding: 0 1em 0 0;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+
+    li {
+        display: inline-block;
+        margin: 0;
+        padding: 0 1em 0 0;
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+        .icon {
+            color: inherit;
+
+            &:before {
+                font-size: 1.25em;
+            }
+        }
+    }
+
+    a {
+        border: none;
+    }
+    
+    .en:lang(en), .fr:lang(fr), .de:lang(de){
+        font-weight: bold;
+    }
+}
