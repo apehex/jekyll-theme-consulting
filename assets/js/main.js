@@ -127,6 +127,8 @@
 						var $a = $(this),
 							href = $a.attr('href'),
 							target = $a.attr('target');
+							pathname = $a.length > 0 ? $a[0].pathname : "";
+							hash = href.split('#').length > 1 ? href.split("#")[1] : "";
 
 					// Prevent default.
 						event.preventDefault();
@@ -144,8 +146,14 @@
 
 							if (target == '_blank')
 								window.open(href);
-							else
-								window.location.href = href;
+							else {
+								// Prevent reloading if the page is the same
+								if (pathname && hash && pathname == window.location.pathname) {
+									document.getElementById(hash).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+								}
+								else
+									window.location.href = href;
+							}
 
 						}, 500);
 
