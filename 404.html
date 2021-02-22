@@ -36,7 +36,7 @@
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@apehex" />
 <script type="application/ld+json">
-{"headline":"Error 404","author":{"@type":"Person","name":"apehex"},"url":"https://apehex.github.io/jekyll-theme-consulting/404.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://apehex.github.io/jekyll-theme-consulting/assets/images/logo.png"},"name":"apehex"},"description":"A Jekyll site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.","@type":"WebPage","@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"apehex"},"url":"https://apehex.github.io/jekyll-theme-consulting/404.html","headline":"Error 404","description":"A Jekyll site template designed by DM for apehex. It’s responsive, built on HTML5/CSS3, and entirely free under the Creative Commons license.","@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://apehex.github.io/jekyll-theme-consulting/assets/images/logo.png"},"name":"apehex"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -52,8 +52,12 @@
             <div class="inner">
 
                 <!-- Header -->
-<header id="header"class="inverted"
-style="background-image: url(https://apehex.github.io/jekyll-theme-consulting/assets/images/content/pillars-of-creation.webp); background-position: center top; background-size: 2;"
+<header id="header"
+class="inverted"
+style="
+background-image: url(https://apehex.github.io/jekyll-theme-consulting/assets/css/images/split.curve.svg), url();
+background-position: right top, right top;
+background-size: 47, 47;"
 >
     <a href="https://apehex.github.io/jekyll-theme-consulting" class="logo">
         <span class="title">
@@ -64,13 +68,164 @@ style="background-image: url(https://apehex.github.io/jekyll-theme-consulting/as
 </header>
 
 
-                <!-- Section -->
+                <!-- Banner -->
+<section id="banner"
+class="inverted"
+style="
+background-image: url(https://apehex.github.io/jekyll-theme-consulting/assets/css/images/split.curve.svg), url();
+background-position: right -5em, right -5em;
+background-size: 47, 47;"
+>
+  <div class="content">
+    <header>
+      <h1>Page not found</h1>
+      
+    </header>
+    <p>Looking for more?</p>
+    <ul class="actions">
+      <li><a href="#contact" class="button primary big">Contact me :)</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Section -->
 <section>
     <header class="major">
-        <h2>Page not found!</h2>
+        <h2>Getting back to the main website</h2>
     </header>
-    <p>:(</p>
+    <p>All the pages of the website are listed in the navigation menu.</p>
+    <p>You can access it by clicking the ||| icon in the top left corner of your screen.</p>
 </section>
+
+<section id="contact" class="inverted" style="">
+    <header class="major">
+        <h2>Contact Me</h2>
+    </header>
+    <div class="row gtr-200">
+        <div class="col-6 col-12-medium col-12-small col-12-xsmall">
+            <form id="contact-form" method="post" action="javascript:void(0);" onsubmit="processContactRequest()" onreset="resetContactForm()">
+    <div class="row gtr-uniform">
+        <div class="col-6 col-12-small col-12-xsmall">
+            <input type="text" name="contact-name" id="contact-name" value="" placeholder="Name" required="" minlength="4" maxlength="64" onfocusout="toggleSubmitInputElement()" />
+        </div>
+        <div class="col-6 col-12-small col-12-xsmall">
+            <input type="email" name="contact-email" id="contact-email" value="" placeholder="Email" required="" minlength="8" maxlength="64" onfocusout="toggleSubmitInputElement()" />
+        </div>
+        <!-- Break -->
+        <div class="col-12">
+            <textarea name="contact-message" id="contact-message" placeholder="Enter your message" rows="6" required="" minlength="16" maxlength="256" onfocusout="toggleSubmitInputElement()">Please get back to me!</textarea>
+        </div>
+        <!-- Break -->
+        <div class="col-12">
+            <ul class="actions">
+                <li><input type="submit" id="contact-submit-button" value="Send Message" class="primary button solid fa-envelope" disabled="" /></li>
+                <li><input type="reset" id="contact-reset-button" value="Reset" class="icon button fa-undo" /></li>
+            </ul>
+        </div>
+    </div>
+    <div id="modal-recaptcha-window" class="modal" tabindex="-1">
+        <div class="inner">
+            <div id="recaptcha-checkbox"></div>
+        </div>
+    </div>
+</form>
+
+        </div>
+        <div class="col-6 col-12-medium col-12-small col-12-xsmall">
+            <ul class="contact">
+                <li class="icon solid fa-envelope"><a href="mailto:youremailaddress@gmail.com">youremailaddress@gmail.com</a></li>
+                <li class="icon solid fa-phone"><a href="tel:(716) 555-5555">(716) 555-5555</a></li>
+                <li class="icon solid fa-home">1234 Somewhere Road<br />
+                55555, Nashville</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    const contactFormElement = document.getElementById("contact-form");
+    const nameInputElement = document.getElementById("contact-name");
+    const emailInputElement = document.getElementById("contact-email");
+    const messageInputElement = document.getElementById("contact-message");
+    const submitInputElement = document.getElementById("contact-submit-button");
+    const modalWindowElement = document.getElementById("modal-recaptcha-window");
+    var recaptchaWidget;
+
+    const isInputValid = function() {
+        return (nameInputElement.checkValidity()
+            && emailInputElement.checkValidity()
+            && messageInputElement.checkValidity())
+    };
+
+    const disableSubmitInputElement = function (disabled = true) {
+        submitInputElement.disabled = disabled;
+    }
+
+    const toggleSubmitInputElement = function() {
+        if (isInputValid()) {
+            disableSubmitInputElement(false);
+        } else {
+            disableSubmitInputElement();
+        }
+    };
+
+    const showModalWindow = function() {
+        modalWindowElement.classList.add('visible');
+        modalWindowElement.classList.add('loaded');
+        modalWindowElement.focus();
+    }
+
+    const hideModalWindow = function() {
+        modalWindowElement.classList.remove('loaded');
+        modalWindowElement.classList.remove('visible');
+        contactFormElement.focus();
+    }
+
+    const processContactRequest = function() {
+        if (grecaptcha.getResponse(recaptchaWidget).length > 0) {
+            sendContactMessage();
+            hideModalWindow();
+            resetContactForm();
+            grecaptcha.reset();
+        } else {
+            showModalWindow();
+        }
+    };
+
+    const resetContactForm = function() {
+        contactFormElement.reset();
+        disableSubmitInputElement();
+    };
+    
+    const sendContactMessage = function() {
+        const formData = new FormData();
+        formData.append('name', encodeURI(nameInputElement.value));
+        formData.append('email', encodeURI(emailInputElement.value));
+        formData.append('message', encodeURI(messageInputElement.value));
+        formData.append('token', grecaptcha.getResponse(recaptchaWidget));
+        
+        fetch("https://apehex.github.io/jekyll-theme-consulting/contact.php", {
+            method: 'POST',
+            body: formData})
+        .then((response) => alert('Message sent!'))
+        .catch((error) => console.error('Error:', error));
+    };
+    
+    var onRecaptchaLoadCallback = function() {
+        recaptchaWidget = grecaptcha.render("recaptcha-checkbox", {
+            'sitekey' : '6LfMccgUAAAAAJcASCBTwXpeEXw7qjC-KkqjpsYV',
+            'theme' : 'dark',
+            'size' : 'compact',
+            'callback' : processContactRequest});
+    };
+
+    modalWindowElement.addEventListener('click', hideModalWindow);
+    modalWindowElement.addEventListener('keyup', hideModalWindow);
+</script>
+
+<script src="https://www.google.com/recaptcha/api.js?onload=onRecaptchaLoadCallback&amp;render=explicit" async="" defer=""></script>
+
+
 
 
             </div>
@@ -108,9 +263,9 @@ function attachSearchFunction() {
         </li><li ><a href="https://apehex.github.io/jekyll-theme-consulting/en/generic/">Generic</a>
         </li><li ><span class="opener">Elements</span>
             <ul><li >
-                    <a href="https://apehex.github.io/jekyll-theme-consulting/en/elements/#normal-style" class="scrolly">Normal Style</a>
+                    <a href="https://apehex.github.io/jekyll-theme-consulting/en/elements/#normal-style">Normal Style</a>
                 </li><li >
-                    <a href="https://apehex.github.io/jekyll-theme-consulting/en/elements/#inverted-style" class="scrolly">Inverted Style</a>
+                    <a href="https://apehex.github.io/jekyll-theme-consulting/en/elements/#inverted-style">Inverted Style</a>
                 </li></ul></ul>
 </nav>
 
@@ -154,7 +309,6 @@ function attachSearchFunction() {
 
     <!-- Scripts -->
 <script src="https://apehex.github.io/jekyll-theme-consulting/assets/js/jquery.min.js" type="text/javascript" defer ></script>
-<script src="https://apehex.github.io/jekyll-theme-consulting/assets/js/jquery.scrolly.min.js" type="text/javascript" defer ></script>
 <script src="https://apehex.github.io/jekyll-theme-consulting/assets/js/browser.min.js" type="text/javascript" defer ></script>
 <script src="https://apehex.github.io/jekyll-theme-consulting/assets/js/breakpoints.min.js" type="text/javascript" defer ></script>
 <script src="https://apehex.github.io/jekyll-theme-consulting/assets/js/lazy-loading.min.js" type="text/javascript" defer ></script>
