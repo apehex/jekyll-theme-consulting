@@ -7,9 +7,10 @@ header:
     subtitle: "Page d'Accueil"
     style:
         class: inverted
-        image: "/assets/images/content/pillars-of-creation.webp"
-        position: center
-        size: 100% auto
+        image:
+            url: "/assets/images/content/pillars-of-creation.webp"
+            position: right
+            size: auto 100vh
 banner:
     title: "Avec une Bannière"
     subtitle: "Sur Fond Extraterrestre"
@@ -17,9 +18,10 @@ banner:
         Un patron de site "responsive" par <a href="apehex@protonmail.com">DM</a> pour <a href="https://github.com/apehex">apehex</a>.
     style:
         class: inverted
-        image: "/assets/images/content/pillars-of-creation.webp"
-        position: center
-        size: 100% auto
+        image:
+            url: "/assets/images/content/pillars-of-creation.webp"
+            position: right
+            size: auto 100vh
     button:
         url: "#contact"
         label: "Wow"

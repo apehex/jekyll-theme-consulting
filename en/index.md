@@ -7,9 +7,10 @@ header:
     subtitle: "Home Layout"
     style:
         class: inverted
-        image: "/assets/images/content/pillars-of-creation.cut.webp"
-        position: right
-        size: auto 100vh
+        image:
+            url: "/assets/images/content/pillars-of-creation.webp"
+            position: right
+            size: auto 100vh
 banner:
     title: "With a Banner"
     subtitle: "And an Otherwordly Image"
@@ -17,9 +18,10 @@ banner:
         A responsive site template designed by <a href="apehex@protonmail.com">DM</a> for <a href="https://github.com/apehex">apehex</a>.
     style:
         class: inverted
-        image: "/assets/images/content/pillars-of-creation.cut.webp"
-        position: right
-        size: auto 100vh
+        image:
+            url: "/assets/images/content/pillars-of-creation.webp"
+            position: right
+            size: auto 100vh
     button:
         url: "#contact"
         label: "Wow"

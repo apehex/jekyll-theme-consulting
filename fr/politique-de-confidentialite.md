@@ -5,4 +5,6 @@ title: "Politique de Confidentialité"
 header:
     title: "Consulting"
     subtitle: "Politique de Confidentialité"
+    style:
+        class: inverted
 ---

@@ -5,6 +5,8 @@ title: "Démonstration des Eléments du Thème"
 header:
     title: "Consulting"
     subtitle: "Divers Eléments"
+    style:
+        class: inverted
 vertical-tabs:
     id: vertical-tabs-showcase
     orientation: vertical
