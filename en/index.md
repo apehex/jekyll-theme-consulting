@@ -8,7 +8,7 @@ header:
     style:
         class: inverted
         image:
-            url: "/assets/images/content/pillars-of-creation.webp"
+            url: "/assets/css/images/pillars-of-creation.webp"
             position: right
             size: auto 100vh
 banner:
@@ -19,7 +19,7 @@ banner:
     style:
         class: inverted
         image:
-            url: "/assets/images/content/pillars-of-creation.webp"
+            url: "/assets/css/images/pillars-of-creation.webp"
             position: right
             size: auto 100vh
     button:
