@@ -1,12 +1,12 @@
 ---
 ---
-{%- assign lang = page.lang | default: site.lang | default: 'en' -%}
+{%- assign lang = page.lang | default: layout.lang | default: site.lang | default: 'en' -%}
 {%- assign menu = site.data.menus[page.menu][lang] -%}
-{%- assign header = page.header | default: site.header -%}
-{%- assign title = page.title | default: site.title -%}
-{%- assign description = page.description | default: site.description -%}
-{%- assign stylesheets = page.stylesheets | default: site.stylesheets -%}
-{%- assign scripts = page.scripts | default: site.scripts -%}
+{%- assign header = page.header | default: layout.header | default: site.header -%}
+{%- assign title = page.title | default: layout.title | default: site.title -%}
+{%- assign description = page.description | default: layout.description | default: site.description -%}
+{%- assign stylesheets = page.stylesheets | default: layout.stylesheets | default: site.stylesheets -%}
+{%- assign scripts = page.scripts | default: layout.scripts | default: site.scripts -%}
 <!DOCTYPE html>
 <!--
     Consulting template by apehex
