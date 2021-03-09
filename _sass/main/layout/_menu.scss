@@ -116,7 +116,7 @@
             color: inherit;
 
             &:hover {
-                color: _palette(accent-inverted);
+                color: _palette(accent-cp);
             }
 
             &.opener {
@@ -126,7 +126,7 @@
 
                 &:hover {
                     &:before {
-                        color: _palette(accent-inverted);
+                        color: _palette(accent-cp);
                     }
                 }
             }
