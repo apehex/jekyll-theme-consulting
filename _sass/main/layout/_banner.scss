@@ -38,6 +38,10 @@
         }
     }
 
+    header p {
+        text-transform: none !important;
+    }
+
     @include orientation(portrait) {
         @include vendor('flex-direction', 'column-reverse');
 
