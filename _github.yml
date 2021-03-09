@@ -1,7 +1,7 @@
 # Site settings
 title: Jekyll Theme Consulting
 description: >- # this means to ignore newlines until "baseurl:"
-  A Jekyll site template designed by <a href="apehex@protonmail.com">DM</a> for <a href="https://github.com/apehex">apehex</a>.<br />
+  A Jekyll site template designed by <a href="apehex@protonmail.com">DM</a> for <a href="https://github.com/apehex">APEHEX</a>.<br />
   It’s responsive, built on HTML5/CSS3, and entirely free<br /> under the <a href="https://github.com/apehex/jekyll-theme-consulting/blob/master/LICENSE">Creative Commons license</a>.
 
 # Contact information
@@ -16,7 +16,7 @@ email: youremailaddress@gmail.com
 # Social settings
 500px:
   url:
-  label: 
+  label:
 facebook:
   url: https://github.com/apehex
   label:
@@ -105,7 +105,7 @@ plugins:
 # Publication settings
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://apehex.github.io/jekyll-theme-consulting" # the base hostname & protocol for your site, e.g. http://example.com
-author: apehex
+author: Apehex
 copyright:
   holder: Untitled
   license: CC0 BY-NC-SA

@@ -4,7 +4,7 @@
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-consulting"
   spec.version       = "0.11.9"
-  spec.authors       = ["apehex"]
+  spec.authors       = ["Apehex"]
   spec.email         = ["apehex@protonmail.com"]
 
   spec.summary       = "A sober, hassle-free, full-featured, Jekyll template for businesses."
