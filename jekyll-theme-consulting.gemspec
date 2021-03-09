@@ -3,15 +3,15 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-consulting"
-  spec.version       = "0.11.5"
-  spec.authors       = ["apehex"]
+  spec.version       = "0.11.9"
+  spec.authors       = ["Apehex"]
   spec.email         = ["apehex@protonmail.com"]
 
   spec.summary       = "A sober, hassle-free, full-featured, Jekyll template for businesses."
   spec.homepage      = "https://github.com/apehex/jekyll-theme-consulting"
   spec.license       = "CC-BY-NC-SA-4.0"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets/css|assets/js|assets/webfonts|_layouts|_includes|_sass|LICENSE|README)!i) }
+  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets/css|assets/js|assets/webfonts|_layouts|_includes|_sass|404.md|.github/LICENSE|.github/README)!i) }
 
   spec.add_runtime_dependency "jekyll", "~> 4.0"
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.6"
