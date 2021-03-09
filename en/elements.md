@@ -5,8 +5,7 @@ title: Theme Elements Showcase
 header:
     title: "Consulting"
     subtitle: Elements
-    style:
-        class: inverted
+    class: inverted
 vertical-tabs:
     id: vertical-tabs-showcase
     orientation: vertical

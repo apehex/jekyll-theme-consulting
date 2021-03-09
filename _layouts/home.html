@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
+{%- assign header = page.header | default: layout.header | default: site.header -%}
 {%- assign banner = page.banner | default: layout.banner | default: site.banner -%}
-{%- assign title = banner.title | default: page.title | default: layout.title | default: site.title -%}
-{%- assign subtitle = banner.subtitle | default: page.subtitle | default: layout.subtitle | default: site.subtitle -%}
-{%- assign description = banner.description | default: page.description | default: layout.description | default: site.description -%}
-{% include banner.html title=title subtitle=subtitle description=description button=banner.button style=banner.style %}
+{%- assign background = page.background | default: layout.background | default: site.background -%}
+
+{% include front.html header=header banner=banner background=background %}
 {{ content }}

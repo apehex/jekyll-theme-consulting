@@ -2,26 +2,20 @@
 layout: home
 lang-ref: home-page
 title: "Thème Jekyll Consulting"
+background:
+    class: inverted
+    image:
+        url: "/assets/css/images/pillars-of-creation.webp"
+        position: right
+        size: 100% 100%
 header:
     title: "Consulting"
     subtitle: "Page d'Accueil"
-    style:
-        class: inverted
-        image:
-            url: "/assets/css/images/pillars-of-creation.webp"
-            position: right
-            size: auto 100vh
 banner:
     title: "Avec une Bannière"
     subtitle: "Sur Fond Extraterrestre"
     description: >-
         Un patron de site "responsive" par <a href="apehex@protonmail.com">DM</a> pour <a href="https://github.com/apehex">apehex</a>.
-    style:
-        class: inverted
-        image:
-            url: "/assets/css/images/pillars-of-creation.webp"
-            position: right
-            size: auto 100vh
     button:
         url: "#contact"
         label: "Wow"

@@ -5,6 +5,5 @@ title: Legal Terms
 header:
     title: Consulting
     subtitle: Legal Terms
-    style:
-        class: inverted
+    class: inverted
 ---

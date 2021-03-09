@@ -1,0 +1,15 @@
+{%- assign class = include.background.class | default: header.class | default: banner.class | default: '' -%}
+
+<div id="header-background" class="{{ class | default: '' }}"
+{% if include.background.image %}style="
+background-image: url({{ 'assets/css/images/split.curve.wide.svg' | absolute_url }}), url({{ include.background.image.url | absolute_url }});
+background-position: center top, {{ include.background.image.position | default: 'right' }} top;
+background-size: cover, {{ include.background.image.size | default: '66% 100%' }};"
+{% endif %}>
+    {%- if include.header -%}
+    {% include header.html title=header.title subtitle=header.subtitle class=class %}
+    {%- endif -%}
+    {%- if include.banner -%}
+    {% include banner.html title=banner.title subtitle=banner.subtitle description=banner.description button=banner.button class=class %}
+    {%- endif -%}
+</div>

@@ -1,12 +1,15 @@
 /* Header */
 
+#header-background {
+    background-size: cover, 70% 100%;
+    background-position: center top, right top;
+    background-repeat: no-repeat, no-repeat;
+}
+
 #header {
     @include vendor('display', 'flex');
     border-bottom: solid 5px _palette(accent);
     position: relative;
-    background-size: 100% auto;
-    background-position: center top;
-    background-repeat: no-repeat;
 
     > * {
         margin-bottom: 0;
@@ -27,6 +30,9 @@
 /* Inverted */
 
 #header.inverted {
-    background-color: _palette(bg-alt-inverted);
     border-bottom: solid 5px _palette(accent-inverted);
+}
+
+#header-background.inverted {
+    background-color: _palette(bg-alt-inverted);
 }

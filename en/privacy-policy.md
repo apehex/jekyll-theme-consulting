@@ -5,6 +5,5 @@ title: Privacy Policy
 header:
     title: Consulting
     subtitle: Privacy Policy
-    style:
-        class: inverted
+    class: inverted
 ---

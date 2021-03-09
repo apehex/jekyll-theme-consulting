@@ -1,11 +1,5 @@
 <!-- Banner -->
-<section id="banner"
-{% if include.style.class %}class="{{ include.style.class | default: '' }}"{% endif %}
-{% if include.style.image %}style="
-background-image: url({{ 'assets/css/images/split.curve.svg' | absolute_url }}), url({{ include.style.image.url | absolute_url }});
-background-position: {{ include.style.image.position | default: 'right' }} -5em, {{ include.style.image.position | default: 'right' }} -5em;
-background-size: {{ include.style.image.size | default: 'auto 100vh' }}, {{ include.style.image.size | default: 'auto 100vh' }};"
-{% endif %}>
+<section id="banner" class="{{ include.class | default: '' }}">
   <div class="content">
     <header>
       <h1>{{ include.title }}</h1>

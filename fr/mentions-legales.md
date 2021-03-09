@@ -5,6 +5,5 @@ title: "Mentions Légales"
 header:
     title: "Consulting"
     subtitle: "Mentions Légales"
-    style:
-        class: inverted
+    class: inverted
 ---

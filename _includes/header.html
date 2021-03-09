@@ -1,11 +1,5 @@
 <!-- Header -->
-<header id="header"
-{% if include.style.class %}class="{{ include.style.class | default: '' }}"{% endif %}
-{% if include.style.image %}style="
-background-image: url({{ 'assets/css/images/split.curve.svg' | absolute_url }}), url({{ include.style.image.url | absolute_url }});
-background-position: {{ include.style.image.position | default: 'right' }} top, {{ include.style.image.position | default: 'right' }} top;
-background-size: {{ include.style.image.size | default: 'auto 100vh' }}, {{ include.style.image.size | default: 'auto 100vh' }};"
-{% endif %}>
+<header id="header" class="{{ include.class | default: '' }}">
     <a href="{{ '' | absolute_url }}" class="logo">
         <span class="title">
             <strong>{{ include.title }}</strong>

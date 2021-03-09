@@ -2,26 +2,20 @@
 layout: home
 lang-ref: home-page
 title: "Jekyll Theme Consulting"
+background:
+    class: inverted
+    image:
+        url: "/assets/css/images/pillars-of-creation.webp"
+        position: right
+        size: 100% 100%
 header:
     title: "Consulting"
     subtitle: "Home Layout"
-    style:
-        class: inverted
-        image:
-            url: "/assets/css/images/pillars-of-creation.webp"
-            position: right
-            size: auto 100vh
 banner:
     title: "With a Banner"
     subtitle: "And an Otherwordly Image"
     description: >-
         A responsive site template designed by <a href="apehex@protonmail.com">DM</a> for <a href="https://github.com/apehex">apehex</a>.
-    style:
-        class: inverted
-        image:
-            url: "/assets/css/images/pillars-of-creation.webp"
-            position: right
-            size: auto 100vh
     button:
         url: "#contact"
         label: "Wow"
