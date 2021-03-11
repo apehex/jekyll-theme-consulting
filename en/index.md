@@ -15,7 +15,7 @@ banner:
     title: "With a Banner"
     subtitle: "And an Otherwordly Image"
     description: >-
-        A responsive site template designed by <a href="apehex@protonmail.com">DM</a> for <a href="https://github.com/apehex">apehex</a>.
+        A responsive site template designed by <a href="https://github.com/apehex">ApeHex</a>
     button:
         url: "#contact"
         label: "Wow"

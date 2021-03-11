@@ -15,7 +15,7 @@ banner:
     title: "Avec une Bannière"
     subtitle: "Sur Fond Extraterrestre"
     description: >-
-        Un patron de site "responsive" par <a href="apehex@protonmail.com">DM</a> pour <a href="https://github.com/apehex">apehex</a>.
+        Un patron de site "responsive" par <a href="https://github.com/apehex">ApeHex</a>
     button:
         url: "#contact"
         label: "Wow"
