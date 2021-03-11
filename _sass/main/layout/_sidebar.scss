@@ -108,10 +108,12 @@
 
         &#sidebar-search-button {
             top:6.25em;
+            display: none;
         }
 
         &#sidebar-logo-button {
             top:12.5em;
+            display: none;
         }
 
         &:before {
@@ -155,6 +157,12 @@
     &.inactive {
         margin-left: (_size(sidebar-width-alt) * -1);
         box-shadow: none;
+
+        .toggle {
+            &#sidebar-search-button, &#sidebar-logo-button {
+                display: block;
+            }
+        }
     }
 
     body.is-preload & {
