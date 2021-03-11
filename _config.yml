@@ -101,6 +101,7 @@ sass:
   style: compressed
 plugins:
   - jekyll-seo-tag
+  - jekyll-redirect-from
 
 # Publication settings
 baseurl: "" # the subpath of your site, e.g. /blog
