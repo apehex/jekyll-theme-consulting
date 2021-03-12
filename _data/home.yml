@@ -206,7 +206,7 @@ features:
         target_url: >-
           /en/
         icon: >-
-          solid fa-paper-plane
+          certs icon-cemafroidmono
         title: >-
           Sapien veroeros
         content: >-
@@ -251,7 +251,7 @@ features:
         target_url: >-
           /fr/
         icon: >-
-          solid fa-paper-plane
+          certs icon-cemafroidmono
         title: >-
           Sapien veroeros
         content: >-
