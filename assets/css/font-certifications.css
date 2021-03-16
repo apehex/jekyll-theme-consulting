@@ -1,42 +1,45 @@
 @font-face {
   font-family: 'Certifications';
-  src:  url('../webfonts/certifications.eot?ag9sv7');
-  src:  url('../webfonts/certifications.eot?ag9sv7#iefix') format('embedded-opentype'),
-    url('../webfonts/certifications.ttf?ag9sv7') format('truetype'),
-    url('../webfonts/certifications.woff?ag9sv7') format('woff'),
-    url('../webfonts/certifications.svg?ag9sv7#certs') format('svg');
+  src:  url('../webfonts/certifications.eot?2tt1fi');
+  src:  url('../webfonts/certifications.eot?2tt1fi#iefix') format('embedded-opentype'),
+    url('../webfonts/certifications.ttf?2tt1fi') format('truetype'),
+    url('../webfonts/certifications.woff?2tt1fi') format('woff'),
+    url('../webfonts/certifications.svg?2tt1fi#certs') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-.icon-ciemono:before {
-  content: "\e900";
-}
-.icon-cneficmono:before {
+.icon-cneficbaremono:before {
   content: "\e901";
 }
-.icon-eistimono:before {
+.icon-cemafroidmono:before {
+  content: "\e900";
+}
+.icon-ciemono:before {
   content: "\e902";
 }
-.icon-ensemmono:before {
-  content: "\e903";
-}
-.icon-ieammono:before {
+.icon-eistimono:before {
   content: "\e904";
 }
-.icon-ifagmono:before {
+.icon-ensemmono:before {
   content: "\e905";
 }
-.icon-ifgmono:before {
+.icon-ieammono:before {
   content: "\e906";
 }
-.icon-marinemono:before {
+.icon-ifagmono:before {
   content: "\e907";
 }
-.icon-ubmono:before {
+.icon-ifgmono:before {
   content: "\e908";
 }
-.icon-ucamono:before {
+.icon-marinemono:before {
   content: "\e909";
+}
+.icon-ubmono:before {
+  content: "\e90a";
+}
+.icon-ucamono:before {
+  content: "\e90b";
 }
