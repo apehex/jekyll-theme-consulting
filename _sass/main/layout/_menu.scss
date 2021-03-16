@@ -99,8 +99,12 @@
                 height: 100%;
             }
 
-            &.current::before, &:hover::before {
+            &.current::before {
                 border-left: 6px solid _palette(accent);
+            }
+
+            &:hover::before {
+                border-left: 6px solid _palette(accent-cp);
             }
         }
     }
@@ -147,8 +151,12 @@
                 padding-top: 0;
             }
 
-            &.current::before, &:hover::before {
+            &.current::before {
                 border-left: 6px solid _palette(accent-inverted);
+            }
+
+            &:hover::before {
+                border-left: 6px solid _palette(accent-cp);
             }
         }
     }

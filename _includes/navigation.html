@@ -2,12 +2,22 @@
 <nav id="menu">
     <ul>
     {%- for item in include.menu -%}
-        <li {% if item.url == page.url %} class="current" {% endif %}>
+        {%- assign is_current = false -%}
+        {%- if item.url == page.url %}
+            {%- assign is_current = true -%}
+        {%- elsif item.menu[0] -%}
+            {%- for subitem in item.menu -%}
+                {% if subitem.url == page.url %}
+                    {%- assign is_current = true -%}
+                {%- endif -%}
+            {%- endfor -%}
+        {% endif -%}
+        <li {% if is_current == true %}class="current"{% endif %}>
         {%- if item.menu[0] -%}
             <span class="opener">{{ item.title }}</span>
             <ul>
                 {%- for subitem in item.menu -%}
-                <li {% if subitem.url == page.url %} class="current" {% endif %}>
+                <li>
                     <a href="{{ subitem.url | absolute_url }}">{{ subitem.title }}</a>
                 </li>
                 {%- endfor -%}
