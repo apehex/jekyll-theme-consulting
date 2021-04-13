@@ -18,6 +18,7 @@
         </div>
         <div class="col-6 col-12-medium col-12-small col-12-xsmall">
             <ul class="contact">
+                {% if site.name %}<li class="icon solid fa-user"><a href="">{{ site.name }}</a></li>{% endif %}
                 <li class="icon solid fa-envelope"><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
                 <li class="icon solid fa-phone"><a href="tel:{{ site.phone }}">{{ site.phone }}</a></li>
                 <li class="icon solid fa-home">{{ site.street_address }}<br />
