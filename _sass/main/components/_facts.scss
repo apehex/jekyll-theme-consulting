@@ -32,10 +32,12 @@
         }
 
         .icon {
-            position: relative;
+            position: absolute;
+            bottom:0;
+            left: 0;
             margin: 0;
             width: 100%;
-            height: 20%;
+            height: 50%;
             text-align: center;
             font-size: 3rem;
             color: _palette(accent) !important;
@@ -44,7 +46,7 @@
         .fact-intro, .fact-outro {
             position: relative;
             width: 100%;
-            height: 30%;
+            height: 35%;
             margin: 0;
 
             p {
@@ -69,7 +71,7 @@
         .fact {
             position: relative;
             width: 100%;
-            height: 20%;
+            height: 30%;
             margin: 0;
 
             h3 {
