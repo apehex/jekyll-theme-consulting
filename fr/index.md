@@ -51,13 +51,13 @@ banner:
     <header class="major">
         <h2>Ipsum sed dolor</h2>
     </header>
-    <div class="posts">
-        {% include post.html target-url="#" image-src="assets/images/placeholder/pic01.webp" image-placeholder-src="assets/images/content/pic01.webp" image-alt-text="" title="Interdum aenean" content="Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam." %}
-        {% include post.html target-url="#" image-src="assets/images/placeholder/pic02.webp" image-placeholder-src="assets/images/content/pic02.webp" image-alt-text="" title="Nulla amet dolore" content="Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam." %}
-        {% include post.html target-url="#" image-src="assets/images/placeholder/pic03.webp" image-placeholder-src="assets/images/content/pic03.webp" image-alt-text="" title="Tempus ullamcorper" content="Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam." %}
-        {% include post.html target-url="#" image-src="assets/images/placeholder/pic04.webp" image-placeholder-src="assets/images/content/pic04.webp" image-alt-text="" title="Sed etiam facilis" content="Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam." %}
-        {% include post.html target-url="#" image-src="assets/images/placeholder/pic05.webp" image-placeholder-src="assets/images/content/pic05.webp" image-alt-text="" title="Feugiat lorem aenean" content="Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam." %}
-        {% include post.html target-url="#" image-src="assets/images/placeholder/pic06.webp" image-placeholder-src="assets/images/content/pic06.webp" image-alt-text="" title="Amet varius aliquam" content="Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam." %}
+    <div class="tileset row">
+        {% include tile.html class="col-4 col-6-medium col-12-small" target_url="#" icon="certs icon-ifgmono" title="Interdum aenean" content="Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam." %}
+        {% include tile.html class="col-4 col-6-medium col-12-small" target_url="#" icon="certs icon-ifgmono" title="Nulla amet dolore" content="Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam." %}
+        {% include tile.html class="col-4 col-6-medium col-12-small" target_url="#" icon="certs icon-ifgmono" title="Tempus ullamcorper" content="Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam." %}
+        {% include tile.html class="col-4 col-6-medium col-12-small" target_url="#" icon="certs icon-ifgmono" title="Sed etiam facilis" content="Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam." %}
+        {% include tile.html class="col-4 col-6-medium col-12-small" target_url="#" icon="certs icon-ifgmono" title="Feugiat lorem aenean" content="Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam." %}
+        {% include tile.html class="col-4 col-6-medium col-12-small" target_url="#" icon="certs icon-ifgmono" title="Amet varius aliquam" content="Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam." %}
     </div>
 </section>
 

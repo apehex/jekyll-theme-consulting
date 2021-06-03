@@ -39,6 +39,7 @@ $palette: (
     bg-alt:             #f5f6f7,
     bg-inverted:        #0044dd,
     bg-alt-inverted:    #123456,
+    bg-light-inverted:  #274c6f,
     fg:                 #000000,
     fg-bold:            #000000,
     fg-light:           #9fa3a6,
@@ -51,6 +52,8 @@ $palette: (
     border-bg-inverted: #ffffff,
     accent:             #0044dd,
     accent-cp:          #ffdd44,
+    accent-light:       rgba(130,200,255,0.5),
     accent-inverted:    #ffffff,
     accent-cp-inverted: #6666ff,
+    accent-light-inverted: #ffdd88,
 );

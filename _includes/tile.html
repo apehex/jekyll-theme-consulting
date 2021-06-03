@@ -1,0 +1,13 @@
+<article class="tile-container {{ include.class }}">
+    {%- if include.target_url -%}
+    <a href='{{ include.target_url | absolute_url }}'>
+    {%- endif -%}
+        <div class="tile">
+            <h3>{{ include.title }}</h3>
+            <p>{{ include.content }}</p>
+            <span class="icon {{ include.icon }}"></span>
+        </div>
+    {%- if include.target_url -%}
+    </a>
+    {%- endif -%}
+</article>
