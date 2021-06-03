@@ -3,7 +3,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-consulting"
-  spec.version       = "0.11.13"
+  spec.version       = "0.11.17"
   spec.authors       = ["Apehex"]
   spec.email         = ["apehex@protonmail.com"]
 
@@ -19,4 +19,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 12.0"
+  spec.add_development_dependency "webrick", "~> 1.7"
 end
