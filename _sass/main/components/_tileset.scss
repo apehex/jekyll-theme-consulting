@@ -30,9 +30,9 @@
             border-radius: 0.5rem;
             border: 0;
             display: block;
-            overflox: hidden;
+            overflow: hidden;
 
-            background-color: _palette(accent-light) !important;
+            background-color: rgba(0,55,88,0.75) !important;
 
             h3, p {
                 width: 100%;
@@ -41,7 +41,7 @@
             }
 
             h3, .icon, p {
-                color: _palette(fg);
+                color: _palette(bg) !important;
             }
 
             h3, .icon {
@@ -70,10 +70,6 @@
     }
 
     .tile-container:hover, .tile-container:active {
-        .icon {
-            color: _palette(accent-cp) !important;
-        }
-
         .tile {
             top: 0;
             left: 0;
@@ -101,13 +97,21 @@
 /* Inverted */
 
 .inverted .tileset .tile-container {
-    .tile h3, .tile p {
-        color: _palette(fg-inverted);
-    }    
+    .tile {
+        background-color: rgba(0,100,140,0.3) !important;
+
+        h3, p, icon {
+            color: _palette(bg) !important;
+        }
+    }
 }
 
-.inverted .tileset .tile-container:hover {
-    .tile h3, .tile p {
-        color: _palette(accent-cp) !important;
-    }    
+.inverted .tileset .tile-container:hover, .inverted .tileset .tile-container:active {
+    .tile {
+        background-color: _palette(accent) !important;
+
+        h3, p, icon {
+            color: _palette(accent-cp) !important;
+        }
+    }
 }
