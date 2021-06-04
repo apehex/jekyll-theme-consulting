@@ -7,7 +7,14 @@
                 <h3>{{ include.title }}</h3>
                 <span class="icon {{ include.icon }}"></span>
             </div>
-            <div class="off">{{ include.content }}</div>
+            <div class="off">
+            {%- if include.content and include.content != blank and include.content != nil and include.content != "" -%}
+                {{ include.content }}
+            {%- else -%}
+                <h3>{{ include.title }}</h3>
+                <span class="icon {{ include.icon }}"></span>
+            {%- endif -%}
+            </div>
         </div>
     {%- if include.target_url -%}
     </a>

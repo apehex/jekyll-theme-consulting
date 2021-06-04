@@ -55,9 +55,9 @@ banner:
         {% include tile.html class="col-4 col-6-medium col-12-small" target_url="#" icon="certs icon-ifgmono" title="Interdum aenean" content="Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam." %}
         {% include tile.html class="col-4 col-6-medium col-12-small" target_url="#" icon="certs icon-ifgmono" title="Nulla amet dolore" content="Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam." %}
         {% include tile.html class="col-4 col-6-medium col-12-small" target_url="#" icon="certs icon-ifgmono" title="Tempus ullamcorper" content="Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam." %}
-        {% include tile.html class="col-4 col-6-medium col-12-small" target_url="#" icon="certs icon-ifgmono" title="Sed etiam facilis" content="Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam." %}
-        {% include tile.html class="col-4 col-6-medium col-12-small" target_url="#" icon="certs icon-ifgmono" title="Feugiat lorem aenean" content="Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam." %}
-        {% include tile.html class="col-4 col-6-medium col-12-small" target_url="#" icon="certs icon-ifgmono" title="Amet varius aliquam" content="Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam." %}
+        {% include tile.html class="col-4 col-6-medium col-12-small" target_url="#" icon="certs icon-ifgmono" title="Sed etiam facilis" content="" %}
+        {% include tile.html class="col-4 col-6-medium col-12-small" target_url="#" icon="certs icon-ifgmono" title="Feugiat lorem aenean" %}
+        {% include tile.html class="col-4 col-6-medium col-12-small" target_url="#" icon="certs icon-ifgmono" title="Amet varius aliquam" %}
     </div>
 </section>
 
