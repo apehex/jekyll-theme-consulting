@@ -32,7 +32,7 @@
             display: block;
             overflow: hidden;
 
-            background-color: rgba(0,55,88,0.75) !important;
+            background-color: #336699 !important;
 
             div.on, div.off {
                 position: absolute;
@@ -102,7 +102,7 @@
 
 .inverted .tileset .tile-container {
     .tile {
-        background-color: rgba(0,100,140,0.3) !important;
+        background-color: rgba(0,100,140,0.6) !important;
 
         h3, p, icon {
             color: _palette(bg) !important;
