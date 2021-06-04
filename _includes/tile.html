@@ -3,9 +3,9 @@
     <a href='{{ include.target_url | absolute_url }}'>
     {%- endif -%}
         <div class="tile">
-            <h3>{{ include.title }}</h3>
-            <p>{{ include.content }}</p>
-            <span class="icon {{ include.icon }}"></span>
+            <h3 class="on">{{ include.title }}</h3>
+            <div class="off">{{ include.content }}</div>
+            <span class="on icon {{ include.icon }}"></span>
         </div>
     {%- if include.target_url -%}
     </a>

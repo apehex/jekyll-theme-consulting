@@ -3,7 +3,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-consulting"
-  spec.version       = "0.11.18"
+  spec.version       = "0.11.19"
   spec.authors       = ["Apehex"]
   spec.email         = ["apehex@protonmail.com"]
 

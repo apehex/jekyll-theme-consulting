@@ -40,18 +40,19 @@
                 color: _palette(bg);
             }
 
-            h3, .icon, p {
+            h3, .icon, p, div {
+                margin: 0 !important;
                 color: _palette(bg) !important;
             }
 
-            h3, .icon {
+            .on {
                 display: block;
             }
 
-            p {
+            .off {
                 display: none;
-                margin: 0 !important;
             }
+
 
             .icon {
                 z-index: 10;
@@ -82,13 +83,12 @@
                 color: _palette(accent-cp) !important;
             }
 
-            h3, .icon {
+            .on {
                 display: none;
             }
 
-            p {
+            .off {
                 display: block;
-                margin: 0 !important;
             }
         }
     }
