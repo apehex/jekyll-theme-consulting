@@ -23,7 +23,7 @@
             position: relative;
             top: 10%;
             left: 10%;
-            padding: 1em;
+            padding: 0;
             width: 80%;
             height: 80%;
 
@@ -34,14 +34,18 @@
 
             background-color: rgba(0,55,88,0.75) !important;
 
-            h3, p {
+            div.on, div.off {
+                position: absolute;
                 width: 100%;
-                text-align: center;
-                color: _palette(bg);
+                padding: 1em;
+                top: 50%;
+                transform: translateY(-50%);
             }
 
-            h3, .icon, p, div {
+            h3, p, div, .icon {
                 margin: 0 !important;
+                width: 100%;
+                text-align: center;
                 color: _palette(bg) !important;
             }
 
