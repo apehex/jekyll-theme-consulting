@@ -18,10 +18,10 @@
         </div>
         <div class="col-6 col-12-medium col-12-small col-12-xsmall">
             <ul class="contact">
-                {% if site.name %}<li class="icon solid fa-user"><a href="">{{ site.name }}</a></li>{% endif %}
-                {% if include.show_email and include.show_email==true %}<li class="icon solid fa-envelope"><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>{% endif %}
-                {% if include.show_phone and include.show_phone==true %}<li class="icon solid fa-phone"><a href="tel:{{ site.phone }}">{{ site.phone }}</a></li>{% endif %}
-                {% if include.show_street_address and include.show_street_address==true %}<li class="icon solid fa-home">{{ site.street_address }}<br />
+                {% if site.name and include.show_name and include.show_name==true %}<li class="icon solid fa-user"><a href="">{{ site.name }}</a></li>{% endif %}
+                {% if site.email and include.show_email and include.show_email==true %}<li class="icon solid fa-envelope"><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>{% endif %}
+                {% if site.phone and include.show_phone and include.show_phone==true %}<li class="icon solid fa-phone"><a href="tel:{{ site.phone }}">{{ site.phone }}</a></li>{% endif %}
+                {% if site.street_address and include.show_street_address and include.show_street_address==true %}<li class="icon solid fa-home">{{ site.street_address }}<br />
                 {{ site.zip_code }}, {{ site.city }}</li>{% endif %}
             </ul>
         </div>
