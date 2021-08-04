@@ -61,4 +61,4 @@ banner:
     </div>
 </section>
 
-{% include contact.html %}
+{% include contact.html show_email=true show_phone=true show_street_address=true %}
